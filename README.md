@@ -158,7 +158,7 @@ generate_unit_tests_for_a_method(...)
 ```
 
 
-### 4. Full Experiment Pipeline (⚠️ Please note: This pipeline consumes a significant number of tokens.)
+### 4. Full Experiment Pipeline
 - run `experiment_code/RQ1_step_1_ourApproach_prompts.py` to generate tests
 
 - run `experiment_code/step_2_format_our_approach_results.py` to format and complete test code
