@@ -1,0 +1,5 @@
+package org.apache.commons.compress.harmony.unpack200;
+
+
+public class harmony_unpack200_NewAttributeBands_readNextLayoutElement_StringReader_cfg_path_11_Test {
+}

@@ -1,0 +1,5 @@
+package com.fasterxml.jackson.databind.ser.impl;
+
+
+public class ser_impl_StringArraySerializer_createContextual_SerializerProvider_BeanProperty_cfg_path_80_Test {
+}

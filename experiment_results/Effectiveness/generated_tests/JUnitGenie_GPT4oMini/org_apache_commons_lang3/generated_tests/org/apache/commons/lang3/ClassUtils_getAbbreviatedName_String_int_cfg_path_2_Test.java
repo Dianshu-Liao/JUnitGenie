@@ -1,0 +1,42 @@
+package org.apache.commons.lang3;
+import org.apache.commons.lang3.ClassUtils;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class ClassUtils_getAbbreviatedName_String_int_cfg_path_2_Test {
+
+    @Test(timeout = 4000)
+    public void testGetAbbreviatedName_ValidInput() {
+        String className = "org.apache.commons.lang3.ClassUtils";
+        int lengthHint = 10;
+        String expected = "org.apach...";
+        String actual = ClassUtils.getAbbreviatedName(className, lengthHint);
+        assertEquals(expected, actual);
+    }
+
+    @Test(timeout = 4000)
+    public void testGetAbbreviatedName_LengthHintZero() {
+        try {
+            ClassUtils.getAbbreviatedName("org.apache.commons.lang3.ClassUtils", 0);
+            fail("Expected IllegalArgumentException for lengthHint <= 0");
+        } catch (IllegalArgumentException e) {
+            assertEquals("len must be > 0", e.getMessage());
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testGetAbbreviatedName_NullClassName() {
+        String actual = ClassUtils.getAbbreviatedName((String) null, 5); // Cast to String to resolve ambiguity
+        assertEquals("", actual);
+    }
+
+    @Test(timeout = 4000)
+    public void testGetAbbreviatedName_ClassNameShorterThanLengthHint() {
+        String className = "ShortName";
+        int lengthHint = 20;
+        String actual = ClassUtils.getAbbreviatedName(className, lengthHint);
+        assertEquals(className, actual);
+    }
+
+
+}

@@ -1,0 +1,629 @@
+FEN:ID,:LABEL,Comment,Source Code,Signature,Modifiers
+org.apache.commons.jxpath.JXPathContext.contextFactory,Field,No Comment,private static volatile JXPathContextFactory contextFactory;,org.apache.commons.jxpath.JXPathContextFactory contextFactory,"private , static , volatile "
+org.apache.commons.jxpath.JXPathContext.compilationContext,Field,No Comment,private static volatile JXPathContext compilationContext;,org.apache.commons.jxpath.JXPathContext compilationContext,"private , static , volatile "
+org.apache.commons.jxpath.JXPathContext.GENERIC_FUNCTIONS,Field,No Comment,"private static final PackageFunctions GENERIC_FUNCTIONS = new PackageFunctions("""", null);",org.apache.commons.jxpath.PackageFunctions GENERIC_FUNCTIONS,"private , static , final "
+org.apache.commons.jxpath.JXPathContext.parentContext,Field,Parent context,protected JXPathContext parentContext;,org.apache.commons.jxpath.JXPathContext parentContext,protected 
+org.apache.commons.jxpath.JXPathContext.contextBean,Field,Context bean,protected Object contextBean;,java.lang.Object contextBean,protected 
+org.apache.commons.jxpath.JXPathContext.vars,Field,Variables,protected Variables vars;,org.apache.commons.jxpath.Variables vars,protected 
+org.apache.commons.jxpath.JXPathContext.functions,Field,Functions,protected Functions functions;,org.apache.commons.jxpath.Functions functions,protected 
+org.apache.commons.jxpath.JXPathContext.factory,Field,AbstractFactory,protected AbstractFactory factory;,org.apache.commons.jxpath.AbstractFactory factory,protected 
+org.apache.commons.jxpath.JXPathContext.idManager,Field,IdentityManager,protected IdentityManager idManager;,org.apache.commons.jxpath.IdentityManager idManager,protected 
+org.apache.commons.jxpath.JXPathContext.keyManager,Field,KeyManager,protected KeyManager keyManager;,org.apache.commons.jxpath.KeyManager keyManager,protected 
+org.apache.commons.jxpath.JXPathContext.decimalFormats,Field,Decimal format map,"protected HashMap<String, DecimalFormatSymbols> decimalFormats;",java.util.HashMap decimalFormats,protected 
+org.apache.commons.jxpath.JXPathContext.locale,Field,No Comment,private Locale locale;,java.util.Locale locale,private 
+org.apache.commons.jxpath.JXPathContext.lenientSet,Field,No Comment,private boolean lenientSet = false;,boolean lenientSet,private 
+org.apache.commons.jxpath.JXPathContext.lenient,Field,No Comment,private boolean lenient = false;,boolean lenient,private 
+org.apache.commons.jxpath.JXPathTypeConversionException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -4403564377958943239L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.servlet.PageScopeContextHandler.DEFAULT_LIST_SIZE,Field,No Comment,private static final int DEFAULT_LIST_SIZE = 16;,int DEFAULT_LIST_SIZE,"private , static , final "
+org.apache.commons.jxpath.servlet.ServletContextHandler.DEFAULT_PROPERTY_COUNT,Field,No Comment,private static final int DEFAULT_PROPERTY_COUNT = 16;,int DEFAULT_PROPERTY_COUNT,"private , static , final "
+org.apache.commons.jxpath.servlet.PageScopeContext.pageContext,Field,No Comment,private final PageContext pageContext;,javax.servlet.jsp.PageContext pageContext,"private , final "
+org.apache.commons.jxpath.servlet.KeywordVariables.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 894145608741325442L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.servlet.KeywordVariables.keyword,Field,No Comment,private final String keyword;,java.lang.String keyword,"private , final "
+org.apache.commons.jxpath.servlet.KeywordVariables.object,Field,No Comment,private final Object object;,java.lang.Object object,"private , final "
+org.apache.commons.jxpath.servlet.HttpSessionAndServletContext.session,Field,No Comment,private final HttpSession session;,javax.servlet.http.HttpSession session,"private , final "
+org.apache.commons.jxpath.servlet.HttpSessionAndServletContext.context,Field,No Comment,private final ServletContext context;,javax.servlet.ServletContext context,"private , final "
+org.apache.commons.jxpath.servlet.JXPathServletContexts.factory,Field,No Comment,private static JXPathContextFactory factory;,org.apache.commons.jxpath.JXPathContextFactory factory,"private , static "
+org.apache.commons.jxpath.servlet.ServletRequestAndContext.request,Field,No Comment,private final ServletRequest request;,javax.servlet.ServletRequest request,"private , final "
+org.apache.commons.jxpath.servlet.Constants.APPLICATION_SCOPE,Field,* Variable name for {@link javax.servlet.ServletContext}.,"public static final String APPLICATION_SCOPE = ""application"";",java.lang.String APPLICATION_SCOPE,"public , static , final "
+org.apache.commons.jxpath.servlet.Constants.SESSION_SCOPE,Field,* Variable name for {@link javax.servlet.http.HttpSession}.,"public static final String SESSION_SCOPE = ""session"";",java.lang.String SESSION_SCOPE,"public , static , final "
+org.apache.commons.jxpath.servlet.Constants.REQUEST_SCOPE,Field,* Variable name for {@link javax.servlet.ServletRequest}.,"public static final String REQUEST_SCOPE = ""request"";",java.lang.String REQUEST_SCOPE,"public , static , final "
+org.apache.commons.jxpath.servlet.Constants.PAGE_SCOPE,Field,* Variable name for {@link javax.servlet.jsp.PageContext}.,"public static final String PAGE_SCOPE = ""page"";",java.lang.String PAGE_SCOPE,"public , static , final "
+org.apache.commons.jxpath.servlet.Constants.JXPATH_CONTEXT,Field,"* Attribute  name used in page context, requst, session, and servlet\n     * context to store the corresponding {@link org.apache.commons.jxpath.JXPathContext}.","public static final String JXPATH_CONTEXT = ""org.apache.commons.jxpath.JXPATH_CONTEXT"";",java.lang.String JXPATH_CONTEXT,"public , static , final "
+org.apache.commons.jxpath.JXPathBasicBeanInfo.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -3863803443111484155L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.JXPathBasicBeanInfo.PROPERTY_DESCRIPTOR_COMPARATOR,Field,No Comment,"private static final Comparator PROPERTY_DESCRIPTOR_COMPARATOR = (left, right) -> ((PropertyDescriptor) left).getName().compareTo(((PropertyDescriptor) right).getName());",java.util.Comparator PROPERTY_DESCRIPTOR_COMPARATOR,"private , static , final "
+org.apache.commons.jxpath.JXPathBasicBeanInfo.atomic,Field,No Comment,private boolean atomic = false;,boolean atomic,private 
+org.apache.commons.jxpath.JXPathBasicBeanInfo.clazz,Field,No Comment,private final Class clazz;,java.lang.Class clazz,"private , final "
+org.apache.commons.jxpath.JXPathBasicBeanInfo.dynamicPropertyHandlerClass,Field,No Comment,private Class dynamicPropertyHandlerClass;,java.lang.Class dynamicPropertyHandlerClass,private 
+org.apache.commons.jxpath.JXPathBasicBeanInfo.propertyDescriptors,Field,No Comment,private transient PropertyDescriptor[] propertyDescriptors;,java.beans.PropertyDescriptor[] propertyDescriptors,"private , transient "
+org.apache.commons.jxpath.JXPathBasicBeanInfo.propertyDescriptorMap,Field,No Comment,private transient HashMap propertyDescriptorMap;,java.util.HashMap propertyDescriptorMap,"private , transient "
+org.apache.commons.jxpath.util.BasicTypeConverter$ValueNodeSet.values,Field,No Comment,private final List values;,java.util.List values,"private , final "
+org.apache.commons.jxpath.util.BasicTypeConverter$ValueNodeSet.pointers,Field,No Comment,private List pointers;,java.util.List pointers,private 
+org.apache.commons.jxpath.util.BasicTypeConverter$ValuePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -4817239482392206188L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.util.BasicTypeConverter$ValuePointer.bean,Field,No Comment,private final Object bean;,java.lang.Object bean,"private , final "
+org.apache.commons.jxpath.util.TypeUtils.typeConverter,Field,No Comment,private static TypeConverter typeConverter = new BasicTypeConverter();,org.apache.commons.jxpath.util.TypeConverter typeConverter,"private , static "
+org.apache.commons.jxpath.util.TypeUtils.PRIMITIVE_TYPE_MAP,Field,No Comment,"private static final HashMap PRIMITIVE_TYPE_MAP = new HashMap() {\n\n    private static final long serialVersionUID = 1L;\n\n    {\n        put(int.class, Integer.class);\n        put(byte.class, Byte.class);\n        put(short.class, Short.class);\n        put(char.class, Character.class);\n        put(long.class, Long.class);\n        put(float.class, Float.class);\n        put(double.class, Double.class);\n        put(boolean.class, Boolean.class);\n    }\n};",java.util.HashMap PRIMITIVE_TYPE_MAP,"private , static , final "
+org.apache.commons.jxpath.util.ReverseComparator.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -2795475743948616649L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.util.ReverseComparator.INSTANCE,Field,* Singleton reverse comparator instance.,public static final Comparator INSTANCE = new ReverseComparator();,java.util.Comparator INSTANCE,"public , static , final "
+org.apache.commons.jxpath.util.ClassLoaderUtil.abbreviationMap,Field,* Maps a primitive class name to its corresponding abbreviation used in array class names.,private static Map abbreviationMap = new HashMap();,java.util.Map abbreviationMap,"private , static "
+org.apache.commons.jxpath.util.ValueUtils.dynamicPropertyHandlerMap,Field,No Comment,private static Map dynamicPropertyHandlerMap = new HashMap();,java.util.Map dynamicPropertyHandlerMap,"private , static "
+org.apache.commons.jxpath.util.ValueUtils.UNKNOWN_LENGTH_MAX_COUNT,Field,No Comment,private static final int UNKNOWN_LENGTH_MAX_COUNT = 16000;,int UNKNOWN_LENGTH_MAX_COUNT,"private , static , final "
+org.apache.commons.jxpath.util.MethodLookupUtils.NO_MATCH,Field,No Comment,private static final int NO_MATCH = 0;,int NO_MATCH,"private , static , final "
+org.apache.commons.jxpath.util.MethodLookupUtils.APPROXIMATE_MATCH,Field,No Comment,private static final int APPROXIMATE_MATCH = 1;,int APPROXIMATE_MATCH,"private , static , final "
+org.apache.commons.jxpath.util.MethodLookupUtils.EXACT_MATCH,Field,No Comment,private static final int EXACT_MATCH = 2;,int EXACT_MATCH,"private , static , final "
+org.apache.commons.jxpath.util.KeyManagerUtils$SingleNodeExtendedKeyManager.delegate,Field,No Comment,private final KeyManager delegate;,org.apache.commons.jxpath.KeyManager delegate,"private , final "
+org.apache.commons.jxpath.JXPathInvalidSyntaxException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 504555366032561816L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.JXPathInvalidAccessException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8875537628056117241L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ClassFunctions.EMPTY_ARRAY,Field,No Comment,private static final Object[] EMPTY_ARRAY = {};,java.lang.Object[] EMPTY_ARRAY,"private , static , final "
+org.apache.commons.jxpath.ClassFunctions.functionClass,Field,No Comment,private final Class functionClass;,java.lang.Class functionClass,"private , final "
+org.apache.commons.jxpath.ClassFunctions.namespace,Field,No Comment,private final String namespace;,java.lang.String namespace,"private , final "
+org.apache.commons.jxpath.XMLDocumentContainer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.XMLDocumentContainer.delegate,Field,No Comment,private DocumentContainer delegate;,org.apache.commons.jxpath.xml.DocumentContainer delegate,private 
+org.apache.commons.jxpath.XMLDocumentContainer.document,Field,No Comment,private Object document;,java.lang.Object document,private 
+org.apache.commons.jxpath.XMLDocumentContainer.xmlURL,Field,No Comment,private URL xmlURL;,java.net.URL xmlURL,private 
+org.apache.commons.jxpath.XMLDocumentContainer.source,Field,No Comment,private Source source;,javax.xml.transform.Source source,private 
+org.apache.commons.jxpath.ri.Parser.PARSER,Field,No Comment,"private static final XPathParser PARSER = new XPathParser(new StringReader(""""));",org.apache.commons.jxpath.ri.parser.XPathParser PARSER,"private , static , final "
+org.apache.commons.jxpath.ri.axes.AncestorContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.AncestorContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.AncestorContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.AncestorContext.includeSelf,Field,No Comment,private final boolean includeSelf;,boolean includeSelf,"private , final "
+org.apache.commons.jxpath.ri.axes.ParentContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.ParentContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.ParentContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.stack,Field,No Comment,private Stack stack = null;,java.util.Stack stack,private 
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.currentRootLocation,Field,No Comment,private NodePointer currentRootLocation;,org.apache.commons.jxpath.ri.model.NodePointer currentRootLocation,private 
+org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.axes.NamespaceContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.NamespaceContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.NamespaceContext.iterator,Field,No Comment,private NodeIterator iterator;,org.apache.commons.jxpath.ri.model.NodeIterator iterator,private 
+org.apache.commons.jxpath.ri.axes.NamespaceContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.PredicateContext.expression,Field,No Comment,private final Expression expression;,org.apache.commons.jxpath.ri.compiler.Expression expression,"private , final "
+org.apache.commons.jxpath.ri.axes.PredicateContext.done,Field,No Comment,private boolean done = false;,boolean done,private 
+org.apache.commons.jxpath.ri.axes.PredicateContext.nameTestExpression,Field,No Comment,private Expression nameTestExpression;,org.apache.commons.jxpath.ri.compiler.Expression nameTestExpression,private 
+org.apache.commons.jxpath.ri.axes.PredicateContext.dynamicPropertyPointer,Field,No Comment,private PropertyPointer dynamicPropertyPointer;,org.apache.commons.jxpath.ri.model.beans.PropertyPointer dynamicPropertyPointer,private 
+org.apache.commons.jxpath.ri.axes.NodeSetContext.startedSet,Field,No Comment,private boolean startedSet = false;,boolean startedSet,private 
+org.apache.commons.jxpath.ri.axes.NodeSetContext.nodeSet,Field,No Comment,private final NodeSet nodeSet;,org.apache.commons.jxpath.NodeSet nodeSet,"private , final "
+org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.QNAME_NAME,Field,No Comment,"private static final QName QNAME_NAME = new QName(null, ""name"");",org.apache.commons.jxpath.ri.QName QNAME_NAME,"private , static , final "
+org.apache.commons.jxpath.ri.axes.SimplePathInterpreter.PERFECT_MATCH,Field,No Comment,private static final int PERFECT_MATCH = 1000;,int PERFECT_MATCH,"private , static , final "
+org.apache.commons.jxpath.ri.axes.InitialContext.started,Field,No Comment,private boolean started = false;,boolean started,private 
+org.apache.commons.jxpath.ri.axes.InitialContext.collection,Field,No Comment,private boolean collection;,boolean collection,private 
+org.apache.commons.jxpath.ri.axes.InitialContext.nodePointer,Field,No Comment,private final NodePointer nodePointer;,org.apache.commons.jxpath.ri.model.NodePointer nodePointer,"private , final "
+org.apache.commons.jxpath.ri.axes.DescendantContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.DescendantContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.DescendantContext.stack,Field,No Comment,private Stack stack = null;,java.util.Stack stack,private 
+org.apache.commons.jxpath.ri.axes.DescendantContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer = null;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.DescendantContext.includeSelf,Field,No Comment,private final boolean includeSelf;,boolean includeSelf,"private , final "
+org.apache.commons.jxpath.ri.axes.DescendantContext.ELEMENT_NODE_TEST,Field,No Comment,private static final NodeTest ELEMENT_NODE_TEST = new NodeTypeTest(Compiler.NODE_TYPE_NODE);,org.apache.commons.jxpath.ri.compiler.NodeTest ELEMENT_NODE_TEST,"private , static , final "
+org.apache.commons.jxpath.ri.axes.RootContext.jxpathContext,Field,No Comment,private final JXPathContextReferenceImpl jxpathContext;,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl jxpathContext,"private , final "
+org.apache.commons.jxpath.ri.axes.RootContext.pointer,Field,No Comment,private final NodePointer pointer;,org.apache.commons.jxpath.ri.model.NodePointer pointer,"private , final "
+org.apache.commons.jxpath.ri.axes.RootContext.registers,Field,No Comment,private Object[] registers;,java.lang.Object[] registers,private 
+org.apache.commons.jxpath.ri.axes.RootContext.availableRegister,Field,No Comment,private int availableRegister = 0;,int availableRegister,private 
+org.apache.commons.jxpath.ri.axes.RootContext.UNKNOWN_VALUE,Field,No Comment,public static final Object UNKNOWN_VALUE = new Object();,java.lang.Object UNKNOWN_VALUE,"public , static , final "
+org.apache.commons.jxpath.ri.axes.RootContext.MAX_REGISTER,Field,No Comment,private static final int MAX_REGISTER = 4;,int MAX_REGISTER,"private , static , final "
+org.apache.commons.jxpath.ri.axes.SelfContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.SelfContext.startedSet,Field,No Comment,private boolean startedSet = false;,boolean startedSet,private 
+org.apache.commons.jxpath.ri.axes.SelfContext.nodePointer,Field,No Comment,private NodePointer nodePointer;,org.apache.commons.jxpath.ri.model.NodePointer nodePointer,private 
+org.apache.commons.jxpath.ri.axes.AttributeContext.WILDCARD,Field,No Comment,"private static final QName WILDCARD = new QName(null, ""*"");",org.apache.commons.jxpath.ri.QName WILDCARD,"private , static , final "
+org.apache.commons.jxpath.ri.axes.AttributeContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.AttributeContext.setStarted,Field,No Comment,private boolean setStarted = false;,boolean setStarted,private 
+org.apache.commons.jxpath.ri.axes.AttributeContext.iterator,Field,No Comment,private NodeIterator iterator;,org.apache.commons.jxpath.ri.model.NodeIterator iterator,private 
+org.apache.commons.jxpath.ri.axes.AttributeContext.currentNodePointer,Field,No Comment,private NodePointer currentNodePointer;,org.apache.commons.jxpath.ri.model.NodePointer currentNodePointer,private 
+org.apache.commons.jxpath.ri.axes.UnionContext.contexts,Field,No Comment,private final EvalContext[] contexts;,org.apache.commons.jxpath.ri.EvalContext[] contexts,"private , final "
+org.apache.commons.jxpath.ri.axes.UnionContext.prepared,Field,No Comment,private boolean prepared;,boolean prepared,private 
+org.apache.commons.jxpath.ri.axes.ChildContext.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.axes.ChildContext.startFromParentLocation,Field,No Comment,private final boolean startFromParentLocation;,boolean startFromParentLocation,"private , final "
+org.apache.commons.jxpath.ri.axes.ChildContext.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.axes.ChildContext.iterator,Field,No Comment,private NodeIterator iterator;,org.apache.commons.jxpath.ri.model.NodeIterator iterator,private 
+org.apache.commons.jxpath.ri.Compiler.NODE_TYPE_NODE,Field,No Comment,int NODE_TYPE_NODE = 1;,int NODE_TYPE_NODE,default
+org.apache.commons.jxpath.ri.Compiler.NODE_TYPE_TEXT,Field,No Comment,int NODE_TYPE_TEXT = 2;,int NODE_TYPE_TEXT,default
+org.apache.commons.jxpath.ri.Compiler.NODE_TYPE_COMMENT,Field,No Comment,int NODE_TYPE_COMMENT = 3;,int NODE_TYPE_COMMENT,default
+org.apache.commons.jxpath.ri.Compiler.NODE_TYPE_PI,Field,No Comment,int NODE_TYPE_PI = 4;,int NODE_TYPE_PI,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_SELF,Field,No Comment,int AXIS_SELF = 1;,int AXIS_SELF,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_CHILD,Field,No Comment,int AXIS_CHILD = 2;,int AXIS_CHILD,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_PARENT,Field,No Comment,int AXIS_PARENT = 3;,int AXIS_PARENT,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_ANCESTOR,Field,No Comment,int AXIS_ANCESTOR = 4;,int AXIS_ANCESTOR,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_ATTRIBUTE,Field,No Comment,int AXIS_ATTRIBUTE = 5;,int AXIS_ATTRIBUTE,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_NAMESPACE,Field,No Comment,int AXIS_NAMESPACE = 6;,int AXIS_NAMESPACE,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_PRECEDING,Field,No Comment,int AXIS_PRECEDING = 7;,int AXIS_PRECEDING,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_FOLLOWING,Field,No Comment,int AXIS_FOLLOWING = 8;,int AXIS_FOLLOWING,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_DESCENDANT,Field,No Comment,int AXIS_DESCENDANT = 9;,int AXIS_DESCENDANT,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_ANCESTOR_OR_SELF,Field,No Comment,int AXIS_ANCESTOR_OR_SELF = 10;,int AXIS_ANCESTOR_OR_SELF,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_FOLLOWING_SIBLING,Field,No Comment,int AXIS_FOLLOWING_SIBLING = 11;,int AXIS_FOLLOWING_SIBLING,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_PRECEDING_SIBLING,Field,No Comment,int AXIS_PRECEDING_SIBLING = 12;,int AXIS_PRECEDING_SIBLING,default
+org.apache.commons.jxpath.ri.Compiler.AXIS_DESCENDANT_OR_SELF,Field,No Comment,int AXIS_DESCENDANT_OR_SELF = 13;,int AXIS_DESCENDANT_OR_SELF,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_LAST,Field,No Comment,int FUNCTION_LAST = 1;,int FUNCTION_LAST,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_POSITION,Field,No Comment,int FUNCTION_POSITION = 2;,int FUNCTION_POSITION,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_COUNT,Field,No Comment,int FUNCTION_COUNT = 3;,int FUNCTION_COUNT,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_ID,Field,No Comment,int FUNCTION_ID = 4;,int FUNCTION_ID,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_LOCAL_NAME,Field,No Comment,int FUNCTION_LOCAL_NAME = 5;,int FUNCTION_LOCAL_NAME,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NAMESPACE_URI,Field,No Comment,int FUNCTION_NAMESPACE_URI = 6;,int FUNCTION_NAMESPACE_URI,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NAME,Field,No Comment,int FUNCTION_NAME = 7;,int FUNCTION_NAME,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_STRING,Field,No Comment,int FUNCTION_STRING = 8;,int FUNCTION_STRING,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_CONCAT,Field,No Comment,int FUNCTION_CONCAT = 9;,int FUNCTION_CONCAT,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_STARTS_WITH,Field,No Comment,int FUNCTION_STARTS_WITH = 10;,int FUNCTION_STARTS_WITH,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_CONTAINS,Field,No Comment,int FUNCTION_CONTAINS = 11;,int FUNCTION_CONTAINS,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_SUBSTRING_BEFORE,Field,No Comment,int FUNCTION_SUBSTRING_BEFORE = 12;,int FUNCTION_SUBSTRING_BEFORE,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_SUBSTRING_AFTER,Field,No Comment,int FUNCTION_SUBSTRING_AFTER = 13;,int FUNCTION_SUBSTRING_AFTER,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_SUBSTRING,Field,No Comment,int FUNCTION_SUBSTRING = 14;,int FUNCTION_SUBSTRING,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_STRING_LENGTH,Field,No Comment,int FUNCTION_STRING_LENGTH = 15;,int FUNCTION_STRING_LENGTH,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NORMALIZE_SPACE,Field,No Comment,int FUNCTION_NORMALIZE_SPACE = 16;,int FUNCTION_NORMALIZE_SPACE,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_TRANSLATE,Field,No Comment,int FUNCTION_TRANSLATE = 17;,int FUNCTION_TRANSLATE,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_BOOLEAN,Field,No Comment,int FUNCTION_BOOLEAN = 18;,int FUNCTION_BOOLEAN,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NOT,Field,No Comment,int FUNCTION_NOT = 19;,int FUNCTION_NOT,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_TRUE,Field,No Comment,int FUNCTION_TRUE = 20;,int FUNCTION_TRUE,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_FALSE,Field,No Comment,int FUNCTION_FALSE = 21;,int FUNCTION_FALSE,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_LANG,Field,No Comment,int FUNCTION_LANG = 22;,int FUNCTION_LANG,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NUMBER,Field,No Comment,int FUNCTION_NUMBER = 23;,int FUNCTION_NUMBER,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_SUM,Field,No Comment,int FUNCTION_SUM = 24;,int FUNCTION_SUM,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_FLOOR,Field,No Comment,int FUNCTION_FLOOR = 25;,int FUNCTION_FLOOR,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_CEILING,Field,No Comment,int FUNCTION_CEILING = 26;,int FUNCTION_CEILING,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_ROUND,Field,No Comment,int FUNCTION_ROUND = 27;,int FUNCTION_ROUND,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_NULL,Field,No Comment,int FUNCTION_NULL = 28;,int FUNCTION_NULL,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_KEY,Field,No Comment,int FUNCTION_KEY = 29;,int FUNCTION_KEY,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_FORMAT_NUMBER,Field,No Comment,int FUNCTION_FORMAT_NUMBER = 30;,int FUNCTION_FORMAT_NUMBER,default
+org.apache.commons.jxpath.ri.Compiler.FUNCTION_ENDS_WITH,Field,No Comment,int FUNCTION_ENDS_WITH = 31;,int FUNCTION_ENDS_WITH,default
+org.apache.commons.jxpath.ri.parser.TokenMgrError.serialVersionUID,Field,*,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.parser.TokenMgrError.LEXICAL_ERROR,Field,* Lexical error occurred.,static final int LEXICAL_ERROR = 0;,int LEXICAL_ERROR,"static , final "
+org.apache.commons.jxpath.ri.parser.TokenMgrError.STATIC_LEXER_ERROR,Field,* An attempt wass made to create a second instance of a static token manager.,static final int STATIC_LEXER_ERROR = 1;,int STATIC_LEXER_ERROR,"static , final "
+org.apache.commons.jxpath.ri.parser.TokenMgrError.INVALID_LEXICAL_STATE,Field,* Tried to change to an invalid lexical state.,static final int INVALID_LEXICAL_STATE = 2;,int INVALID_LEXICAL_STATE,"static , final "
+org.apache.commons.jxpath.ri.parser.TokenMgrError.LOOP_DETECTED,Field,* Detected (and bailed out of) an infinite loop in the token manager.,static final int LOOP_DETECTED = 3;,int LOOP_DETECTED,"static , final "
+org.apache.commons.jxpath.ri.parser.TokenMgrError.errorCode,Field,* Indicates the reason why the exception is thrown. It will have\n    * one of the above 4 values.,int errorCode;,int errorCode,default
+org.apache.commons.jxpath.ri.parser.TokenMgrError.position,Field,No Comment,private int position;,int position,private 
+org.apache.commons.jxpath.ri.parser.TokenMgrError.character,Field,No Comment,private char character;,char character,private 
+org.apache.commons.jxpath.ri.parser.ParseException.serialVersionUID,Field,*,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.parser.ParseException.specialConstructor,Field,"* This variable determines which constructor was used to create\n   * this object and thereby affects the semantics of the\n   * ""getMessage"" method (see below).",protected boolean specialConstructor;,boolean specialConstructor,protected 
+org.apache.commons.jxpath.ri.parser.ParseException.currentToken,Field,"* This is the last token that has been consumed successfully.  If\n   * this object has been created due to a parse error, the token\n   * followng this token will (therefore) be the first error token.",public Token currentToken;,org.apache.commons.jxpath.ri.parser.Token currentToken,public 
+org.apache.commons.jxpath.ri.parser.ParseException.expectedTokenSequences,Field,* Each entry in this array is an array of integers.  Each array\n   * of integers represents a sequence of tokens (by their ordinal\n   * values) that is expected at this point of the parse.,public int[][] expectedTokenSequences;,int[][] expectedTokenSequences,public 
+org.apache.commons.jxpath.ri.parser.ParseException.tokenImage,Field,"* This is a reference to the ""tokenImage"" array of the generated\n   * parser within which the parse error occurred.  This array is\n   * defined in the generated ...Constants interface.",public String[] tokenImage;,java.lang.String[] tokenImage,public 
+org.apache.commons.jxpath.ri.parser.ParseException.eol,Field,* The end of line string for this machine.,"protected String eol = System.getProperty(""line.separator"", ""\n"");",java.lang.String eol,protected 
+org.apache.commons.jxpath.ri.parser.XPathParser.compiler,Field,No Comment,private Compiler compiler;,org.apache.commons.jxpath.ri.Compiler compiler,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.token_source,Field,No Comment,public XPathParserTokenManager token_source;,org.apache.commons.jxpath.ri.parser.XPathParserTokenManager token_source,public 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_input_stream,Field,No Comment,SimpleCharStream jj_input_stream;,org.apache.commons.jxpath.ri.parser.SimpleCharStream jj_input_stream,default
+org.apache.commons.jxpath.ri.parser.XPathParser.token,Field,No Comment,"public Token token, jj_nt;",org.apache.commons.jxpath.ri.parser.Token token,public 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_nt,Field,No Comment,"public Token token, jj_nt;",org.apache.commons.jxpath.ri.parser.Token jj_nt,public 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_scanpos,Field,No Comment,"private Token jj_scanpos, jj_lastpos;",org.apache.commons.jxpath.ri.parser.Token jj_scanpos,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_lastpos,Field,No Comment,"private Token jj_scanpos, jj_lastpos;",org.apache.commons.jxpath.ri.parser.Token jj_lastpos,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_la,Field,No Comment,private int jj_la;,int jj_la,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.lookingAhead,Field,No Comment,public boolean lookingAhead = false;,boolean lookingAhead,public 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_semLA,Field,No Comment,private boolean jj_semLA;,boolean jj_semLA,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_gen,Field,No Comment,private int jj_gen;,int jj_gen,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_la1,Field,No Comment,final private int[] jj_la1 = new int[39];,int[] jj_la1,"final , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_la1_0,Field,No Comment,static private int[] jj_la1_0;,int[] jj_la1_0,"static , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_la1_1,Field,No Comment,static private int[] jj_la1_1;,int[] jj_la1_1,"static , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_la1_2,Field,No Comment,static private int[] jj_la1_2;,int[] jj_la1_2,"static , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_2_rtns,Field,No Comment,final private JJCalls[] jj_2_rtns = new JJCalls[6];,org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls[] jj_2_rtns,"final , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_rescan,Field,No Comment,private boolean jj_rescan = false;,boolean jj_rescan,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_gc,Field,No Comment,private int jj_gc = 0;,int jj_gc,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_ls,Field,No Comment,final private LookaheadSuccess jj_ls = new LookaheadSuccess();,org.apache.commons.jxpath.ri.parser.XPathParser$LookaheadSuccess jj_ls,"final , private "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_expentries,Field,No Comment,private final java.util.Vector jj_expentries = new java.util.Vector();,java.util.Vector jj_expentries,"private , final "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_expentry,Field,No Comment,private int[] jj_expentry;,int[] jj_expentry,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_kind,Field,No Comment,private int jj_kind = -1;,int jj_kind,private 
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_lasttokens,Field,No Comment,private final int[] jj_lasttokens = new int[100];,int[] jj_lasttokens,"private , final "
+org.apache.commons.jxpath.ri.parser.XPathParser.jj_endpos,Field,No Comment,private int jj_endpos;,int jj_endpos,private 
+org.apache.commons.jxpath.ri.parser.XPathParser$LookaheadSuccess.serialVersionUID,Field,*,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls.gen,Field,No Comment,int gen;,int gen,default
+org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls.first,Field,No Comment,Token first;,org.apache.commons.jxpath.ri.parser.Token first,default
+org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls.arg,Field,No Comment,int arg;,int arg,default
+org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls.next,Field,No Comment,JJCalls next;,org.apache.commons.jxpath.ri.parser.XPathParser$JJCalls next,default
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.staticFlag,Field,No Comment,public static final boolean staticFlag = false;,boolean staticFlag,"public , static , final "
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.bufsize,Field,No Comment,int bufsize;,int bufsize,default
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.available,Field,No Comment,int available;,int available,default
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.tokenBegin,Field,No Comment,int tokenBegin;,int tokenBegin,default
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.bufpos,Field,No Comment,public int bufpos = -1;,int bufpos,public 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.bufline,Field,No Comment,protected int[] bufline;,int[] bufline,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.bufcolumn,Field,No Comment,protected int[] bufcolumn;,int[] bufcolumn,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.column,Field,No Comment,protected int column = 0;,int column,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.line,Field,No Comment,protected int line = 1;,int line,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.prevCharIsCR,Field,No Comment,protected boolean prevCharIsCR = false;,boolean prevCharIsCR,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.prevCharIsLF,Field,No Comment,protected boolean prevCharIsLF = false;,boolean prevCharIsLF,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.inputStream,Field,No Comment,protected java.io.Reader inputStream;,java.io.Reader inputStream,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.buffer,Field,No Comment,protected char[] buffer;,char[] buffer,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.maxNextCharInd,Field,No Comment,protected int maxNextCharInd = 0;,int maxNextCharInd,protected 
+org.apache.commons.jxpath.ri.parser.SimpleCharStream.inBuf,Field,No Comment,protected int inBuf = 0;,int inBuf,protected 
+org.apache.commons.jxpath.ri.parser.Token.kind,Field,"* An integer that describes the kind of this token.  This numbering\n   * system is determined by JavaCCParser, and a table of these numbers is\n   * stored in the file ...Constants.java.",public int kind;,int kind,public 
+org.apache.commons.jxpath.ri.parser.Token.beginLine,Field,* beginLine and beginColumn describe the position of the first character\n   * of this token; endLine and endColumn describe the position of the\n   * last character of this token.,"public int beginLine, beginColumn, endLine, endColumn;",int beginLine,public 
+org.apache.commons.jxpath.ri.parser.Token.beginColumn,Field,* beginLine and beginColumn describe the position of the first character\n   * of this token; endLine and endColumn describe the position of the\n   * last character of this token.,"public int beginLine, beginColumn, endLine, endColumn;",int beginColumn,public 
+org.apache.commons.jxpath.ri.parser.Token.endLine,Field,* beginLine and beginColumn describe the position of the first character\n   * of this token; endLine and endColumn describe the position of the\n   * last character of this token.,"public int beginLine, beginColumn, endLine, endColumn;",int endLine,public 
+org.apache.commons.jxpath.ri.parser.Token.endColumn,Field,* beginLine and beginColumn describe the position of the first character\n   * of this token; endLine and endColumn describe the position of the\n   * last character of this token.,"public int beginLine, beginColumn, endLine, endColumn;",int endColumn,public 
+org.apache.commons.jxpath.ri.parser.Token.image,Field,* The string image of the token.,public String image;,java.lang.String image,public 
+org.apache.commons.jxpath.ri.parser.Token.next,Field,"* A reference to the next regular (non-special) token from the input\n   * stream.  If this is the last token from the input stream, or if the\n   * token manager has not read tokens beyond this one, this field is\n   * set to null.  This is true only if this token is also a regular\n   * token.  Otherwise, see below for a description of the contents of\n   * this field.",public Token next;,org.apache.commons.jxpath.ri.parser.Token next,public 
+org.apache.commons.jxpath.ri.parser.Token.specialToken,Field,"* This field is used to access special tokens that occur prior to this\n   * token, but after the immediately preceding regular (non-special) token.\n   * If there are no such special tokens, this field is set to null.\n   * When there are more than one such special token, this field refers\n   * to the last of these special tokens, which in turn refers to the next\n   * previous special token through its specialToken field, and so on\n   * until the first special token (whose specialToken field is null).\n   * The next fields of special tokens refer to other special tokens that\n   * immediately follow it (without an intervening regular token).  If there\n   * is no such token, this field is null.",public Token specialToken;,org.apache.commons.jxpath.ri.parser.Token specialToken,public 
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.debugStream,Field,No Comment,public java.io.PrintStream debugStream = System.out;,java.io.PrintStream debugStream,public 
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec0,Field,No Comment,"static final long[] jjbitVec0 = { 0xfffffffffffffffeL, 0xffffffffffffffffL, 0xffffffffffffffffL, 0xffffffffffffffffL };",long[] jjbitVec0,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec2,Field,No Comment,"static final long[] jjbitVec2 = { 0x0L, 0x0L, 0xffffffffffffffffL, 0xffffffffffffffffL };",long[] jjbitVec2,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec3,Field,No Comment,"static final long[] jjbitVec3 = { 0x0L, 0xffffffffffffc000L, 0xfffff0007fffffffL, 0x7fffffL };",long[] jjbitVec3,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec4,Field,No Comment,"static final long[] jjbitVec4 = { 0x0L, 0x0L, 0x0L, 0xff7fffffff7fffffL };",long[] jjbitVec4,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec5,Field,No Comment,"static final long[] jjbitVec5 = { 0x7ff3ffffffffffffL, 0x7ffffffffffffdfeL, 0xffffffffffffffffL, 0xfc31ffffffffe00fL };",long[] jjbitVec5,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec6,Field,No Comment,"static final long[] jjbitVec6 = { 0xffffffL, 0xffffffffffff0000L, 0xf80001ffffffffffL, 0x3L };",long[] jjbitVec6,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec7,Field,No Comment,"static final long[] jjbitVec7 = { 0x0L, 0x0L, 0xfffffffbffffd740L, 0xffffd547f7fffL };",long[] jjbitVec7,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec8,Field,No Comment,"static final long[] jjbitVec8 = { 0xffffffffffffdffeL, 0xffffffffdffeffffL, 0xffffffffffff0003L, 0x33fcfffffff199fL };",long[] jjbitVec8,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec9,Field,No Comment,"static final long[] jjbitVec9 = { 0xfffe000000000000L, 0xfffffffe027fffffL, 0x7fL, 0x707ffffff0000L };",long[] jjbitVec9,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec10,Field,No Comment,"static final long[] jjbitVec10 = { 0x7fffffe00000000L, 0xfffe0000000007feL, 0x7cffffffffffffffL, 0x60002f7fffL };",long[] jjbitVec10,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec11,Field,No Comment,"static final long[] jjbitVec11 = { 0x23ffffffffffffe0L, 0x3ff000000L, 0x3c5fdfffff99fe0L, 0x30003b0000000L };",long[] jjbitVec11,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec12,Field,No Comment,"static final long[] jjbitVec12 = { 0x36dfdfffff987e0L, 0x1c00005e000000L, 0x23edfdfffffbafe0L, 0x100000000L };",long[] jjbitVec12,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec13,Field,No Comment,"static final long[] jjbitVec13 = { 0x23cdfdfffff99fe0L, 0x3b0000000L, 0x3bfc718d63dc7e0L, 0x0L };",long[] jjbitVec13,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec14,Field,No Comment,"static final long[] jjbitVec14 = { 0x3effdfffffddfe0L, 0x300000000L, 0x3effdfffffddfe0L, 0x340000000L };",long[] jjbitVec14,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec15,Field,No Comment,"static final long[] jjbitVec15 = { 0x3fffdfffffddfe0L, 0x300000000L, 0x0L, 0x0L };",long[] jjbitVec15,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec16,Field,No Comment,"static final long[] jjbitVec16 = { 0xd7ffffffffffeL, 0x3fL, 0x200d6caefef02596L, 0x1fL };",long[] jjbitVec16,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec17,Field,No Comment,"static final long[] jjbitVec17 = { 0x0L, 0x3fffffffeffL, 0x0L, 0x0L };",long[] jjbitVec17,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec18,Field,No Comment,"static final long[] jjbitVec18 = { 0x0L, 0x0L, 0xffffffff00000000L, 0x7fffffffff003fL };",long[] jjbitVec18,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec19,Field,No Comment,"static final long[] jjbitVec19 = { 0x500000000007daedL, 0x2c62ab82315001L, 0xf580c90040000000L, 0x201080000000007L };",long[] jjbitVec19,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec20,Field,No Comment,"static final long[] jjbitVec20 = { 0xffffffffffffffffL, 0xffffffffffffffffL, 0xffffffff0fffffffL, 0x3ffffffffffffffL };",long[] jjbitVec20,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec21,Field,No Comment,"static final long[] jjbitVec21 = { 0xffffffff3f3fffffL, 0x3fffffffaaff3f3fL, 0x5fdfffffffffffffL, 0x1fdc1fff0fcf1fdcL };",long[] jjbitVec21,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec22,Field,No Comment,"static final long[] jjbitVec22 = { 0x4c4000000000L, 0x0L, 0x7L, 0x0L };",long[] jjbitVec22,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec23,Field,No Comment,"static final long[] jjbitVec23 = { 0x3fe00000080L, 0xfffffffffffffffeL, 0xfffffffe001fffffL, 0x7ffffffffffffffL };",long[] jjbitVec23,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec24,Field,No Comment,"static final long[] jjbitVec24 = { 0x1fffffffffe0L, 0x0L, 0x0L, 0x0L };",long[] jjbitVec24,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec25,Field,No Comment,"static final long[] jjbitVec25 = { 0xffffffffffffffffL, 0xffffffffffffffffL, 0x3fffffffffL, 0x0L };",long[] jjbitVec25,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec26,Field,No Comment,"static final long[] jjbitVec26 = { 0xffffffffffffffffL, 0xffffffffffffffffL, 0xfffffffffL, 0x0L };",long[] jjbitVec26,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec27,Field,No Comment,"static final long[] jjbitVec27 = { 0x0L, 0x0L, 0x80000000000000L, 0xff7fffffff7fffffL };",long[] jjbitVec27,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec28,Field,No Comment,"static final long[] jjbitVec28 = { 0xffffffL, 0xffffffffffff0000L, 0xf80001ffffffffffL, 0x30003L };",long[] jjbitVec28,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec29,Field,No Comment,"static final long[] jjbitVec29 = { 0xffffffffffffffffL, 0x30000003fL, 0xfffffffbffffd7c0L, 0xffffd547f7fffL };",long[] jjbitVec29,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec30,Field,No Comment,"static final long[] jjbitVec30 = { 0xffffffffffffdffeL, 0xffffffffdffeffffL, 0xffffffffffff007bL, 0x33fcfffffff199fL };",long[] jjbitVec30,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec31,Field,No Comment,"static final long[] jjbitVec31 = { 0xfffe000000000000L, 0xfffffffe027fffffL, 0xbbfffffbfffe007fL, 0x707ffffff0016L };",long[] jjbitVec31,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec32,Field,No Comment,"static final long[] jjbitVec32 = { 0x7fffffe00000000L, 0xffff03ff0007ffffL, 0x7cffffffffffffffL, 0x3ff3dffffef7fffL };",long[] jjbitVec32,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec33,Field,No Comment,"static final long[] jjbitVec33 = { 0xf3ffffffffffffeeL, 0xffcfff1e3fffL, 0xd3c5fdfffff99feeL, 0x3ffcfb080399fL };",long[] jjbitVec33,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec34,Field,No Comment,"static final long[] jjbitVec34 = { 0xd36dfdfffff987e4L, 0x1fffc05e003987L, 0xf3edfdfffffbafeeL, 0xffc100003bbfL };",long[] jjbitVec34,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec35,Field,No Comment,"static final long[] jjbitVec35 = { 0xf3cdfdfffff99feeL, 0xffc3b0c0398fL, 0xc3bfc718d63dc7ecL, 0xff8000803dc7L };",long[] jjbitVec35,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec36,Field,No Comment,"static final long[] jjbitVec36 = { 0xc3effdfffffddfeeL, 0xffc300603ddfL, 0xc3effdfffffddfecL, 0xffc340603ddfL };",long[] jjbitVec36,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec37,Field,No Comment,"static final long[] jjbitVec37 = { 0xc3fffdfffffddfecL, 0xffc300803dcfL, 0x0L, 0x0L };",long[] jjbitVec37,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec38,Field,No Comment,"static final long[] jjbitVec38 = { 0x7ff7ffffffffffeL, 0x3ff7fffL, 0x3bff6caefef02596L, 0x3ff3f5fL };",long[] jjbitVec38,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec39,Field,No Comment,"static final long[] jjbitVec39 = { 0xc2a003ff03000000L, 0xfffe03fffffffeffL, 0x2fe3ffffebf0fdfL, 0x0L };",long[] jjbitVec39,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec40,Field,No Comment,"static final long[] jjbitVec40 = { 0x0L, 0x0L, 0x0L, 0x21fff0000L };",long[] jjbitVec40,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjbitVec41,Field,No Comment,"static final long[] jjbitVec41 = { 0x3efffe000000a0L, 0xfffffffffffffffeL, 0xfffffffe661fffffL, 0x77ffffffffffffffL };",long[] jjbitVec41,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjnextStates,Field,No Comment,"static final int[] jjnextStates = { 1, 2, 4, 5 };",int[] jjnextStates,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjstrLiteralImages,Field,No Comment,"public static final String[] jjstrLiteralImages = { """", null, null, null, null, null, ""\57"", ""\57\57"", ""\174"", ""\53"", ""\55"", ""\75"", ""\41\75"", ""\74"", ""\74\75"", ""\76"", ""\76\75"", ""\44"", null, null, null, null, null, null, null, null, null, ""\157\162"", ""\141\156\144"", ""\155\157\144"", ""\144\151\166"", ""\156\157\144\145"", ""\164\145\170\164"", ""\143\157\155\155\145\156\164"", ""\160\162\157\143\145\163\163\151\156\147\55\151\156\163\164\162\165\143\164\151\157\156"", ""\163\145\154\146\72\72"", ""\143\150\151\154\144\72\72"", ""\160\141\162\145\156\164\72\72"", ""\141\156\143\145\163\164\157\162\72\72"", ""\141\164\164\162\151\142\165\164\145\72\72"", ""\156\141\155\145\163\160\141\143\145\72\72"", ""\160\162\145\143\145\144\151\156\147\72\72"", ""\146\157\154\154\157\167\151\156\147\72\72"", ""\144\145\163\143\145\156\144\141\156\164\72\72"", ""\141\156\143\145\163\164\157\162\55\157\162\55\163\145\154\146\72\72"", ""\146\157\154\154\157\167\151\156\147\55\163\151\142\154\151\156\147\72\72"", ""\160\162\145\143\145\144\151\156\147\55\163\151\142\154\151\156\147\72\72"", ""\144\145\163\143\145\156\144\141\156\164\55\157\162\55\163\145\154\146\72\72"", ""\154\141\163\164"", ""\160\157\163\151\164\151\157\156"", ""\143\157\165\156\164"", ""\151\144"", ""\153\145\171"", ""\154\157\143\141\154\55\156\141\155\145"", ""\156\141\155\145\163\160\141\143\145\55\165\162\151"", ""\156\141\155\145"", ""\163\164\162\151\156\147"", ""\143\157\156\143\141\164"", ""\163\164\141\162\164\163\55\167\151\164\150"", ""\145\156\144\163\55\167\151\164\150"", ""\143\157\156\164\141\151\156\163"", ""\163\165\142\163\164\162\151\156\147\55\142\145\146\157\162\145"", ""\163\165\142\163\164\162\151\156\147\55\141\146\164\145\162"", ""\163\165\142\163\164\162\151\156\147"", ""\163\164\162\151\156\147\55\154\145\156\147\164\150"", ""\156\157\162\155\141\154\151\172\145\55\163\160\141\143\145"", ""\164\162\141\156\163\154\141\164\145"", ""\142\157\157\154\145\141\156"", ""\156\157\164"", ""\164\162\165\145"", ""\146\141\154\163\145"", ""\156\165\154\154"", ""\154\141\156\147"", ""\156\165\155\142\145\162"", ""\163\165\155"", ""\146\154\157\157\162"", ""\143\145\151\154\151\156\147"", ""\162\157\165\156\144"", ""\146\157\162\155\141\164\55\156\165\155\142\145\162"", null, ""\72"", ""\50"", ""\51"", ""\56"", ""\56\56"", ""\133"", ""\135"", ""\100"", ""\54"", ""\52"" };",java.lang.String[] jjstrLiteralImages,"public , static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.lexStateNames,Field,No Comment,"public static final String[] lexStateNames = { ""DEFAULT"" };",java.lang.String[] lexStateNames,"public , static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjtoToken,Field,No Comment,"static final long[] jjtoToken = { 0xfffffffff817ffc1L, 0x3ffffffL };",long[] jjtoToken,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjtoSkip,Field,No Comment,"static final long[] jjtoSkip = { 0x3eL, 0x0L };",long[] jjtoSkip,"static , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.input_stream,Field,No Comment,protected SimpleCharStream input_stream;,org.apache.commons.jxpath.ri.parser.SimpleCharStream input_stream,protected 
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjrounds,Field,No Comment,private final int[] jjrounds = new int[13];,int[] jjrounds,"private , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjstateSet,Field,No Comment,private final int[] jjstateSet = new int[26];,int[] jjstateSet,"private , final "
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.curChar,Field,No Comment,protected char curChar;,char curChar,protected 
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.curLexState,Field,No Comment,int curLexState = 0;,int curLexState,default
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.defaultLexState,Field,No Comment,int defaultLexState = 0;,int defaultLexState,default
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjnewStateCnt,Field,No Comment,int jjnewStateCnt;,int jjnewStateCnt,default
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjround,Field,No Comment,int jjround;,int jjround,default
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjmatchedPos,Field,No Comment,int jjmatchedPos;,int jjmatchedPos,default
+org.apache.commons.jxpath.ri.parser.XPathParserTokenManager.jjmatchedKind,Field,No Comment,int jjmatchedKind;,int jjmatchedKind,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.EOF,Field,No Comment,int EOF = 0;,int EOF,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.SLASH,Field,No Comment,int SLASH = 6;,int SLASH,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.SLASHSLASH,Field,No Comment,int SLASHSLASH = 7;,int SLASHSLASH,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.UNION,Field,No Comment,int UNION = 8;,int UNION,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.PLUS,Field,No Comment,int PLUS = 9;,int PLUS,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.MINUS,Field,No Comment,int MINUS = 10;,int MINUS,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.EQ,Field,No Comment,int EQ = 11;,int EQ,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.NEQ,Field,No Comment,int NEQ = 12;,int NEQ,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.LT,Field,No Comment,int LT = 13;,int LT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.LTE,Field,No Comment,int LTE = 14;,int LTE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.GT,Field,No Comment,int GT = 15;,int GT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.GTE,Field,No Comment,int GTE = 16;,int GTE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.VARIABLE,Field,No Comment,int VARIABLE = 17;,int VARIABLE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Literal,Field,No Comment,int Literal = 18;,int Literal,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Digit,Field,No Comment,int Digit = 19;,int Digit,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Number,Field,No Comment,int Number = 20;,int Number,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Letter,Field,No Comment,int Letter = 21;,int Letter,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.BaseChar,Field,No Comment,int BaseChar = 22;,int BaseChar,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Ideographic,Field,No Comment,int Ideographic = 23;,int Ideographic,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.CombiningChar,Field,No Comment,int CombiningChar = 24;,int CombiningChar,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.UnicodeDigit,Field,No Comment,int UnicodeDigit = 25;,int UnicodeDigit,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.Extender,Field,No Comment,int Extender = 26;,int Extender,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.OR,Field,No Comment,int OR = 27;,int OR,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AND,Field,No Comment,int AND = 28;,int AND,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.MOD,Field,No Comment,int MOD = 29;,int MOD,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.DIV,Field,No Comment,int DIV = 30;,int DIV,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.NODE,Field,No Comment,int NODE = 31;,int NODE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.TEXT,Field,No Comment,int TEXT = 32;,int TEXT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.COMMENT,Field,No Comment,int COMMENT = 33;,int COMMENT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.PI,Field,No Comment,int PI = 34;,int PI,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_SELF,Field,No Comment,int AXIS_SELF = 35;,int AXIS_SELF,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_CHILD,Field,No Comment,int AXIS_CHILD = 36;,int AXIS_CHILD,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_PARENT,Field,No Comment,int AXIS_PARENT = 37;,int AXIS_PARENT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_ANCESTOR,Field,No Comment,int AXIS_ANCESTOR = 38;,int AXIS_ANCESTOR,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_ATTRIBUTE,Field,No Comment,int AXIS_ATTRIBUTE = 39;,int AXIS_ATTRIBUTE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_NAMESPACE,Field,No Comment,int AXIS_NAMESPACE = 40;,int AXIS_NAMESPACE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_PRECEDING,Field,No Comment,int AXIS_PRECEDING = 41;,int AXIS_PRECEDING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_FOLLOWING,Field,No Comment,int AXIS_FOLLOWING = 42;,int AXIS_FOLLOWING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_DESCENDANT,Field,No Comment,int AXIS_DESCENDANT = 43;,int AXIS_DESCENDANT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_ANCESTOR_OR_SELF,Field,No Comment,int AXIS_ANCESTOR_OR_SELF = 44;,int AXIS_ANCESTOR_OR_SELF,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_FOLLOWING_SIBLING,Field,No Comment,int AXIS_FOLLOWING_SIBLING = 45;,int AXIS_FOLLOWING_SIBLING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_PRECEDING_SIBLING,Field,No Comment,int AXIS_PRECEDING_SIBLING = 46;,int AXIS_PRECEDING_SIBLING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.AXIS_DESCENDANT_OR_SELF,Field,No Comment,int AXIS_DESCENDANT_OR_SELF = 47;,int AXIS_DESCENDANT_OR_SELF,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_LAST,Field,No Comment,int FUNCTION_LAST = 48;,int FUNCTION_LAST,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_POSITION,Field,No Comment,int FUNCTION_POSITION = 49;,int FUNCTION_POSITION,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_COUNT,Field,No Comment,int FUNCTION_COUNT = 50;,int FUNCTION_COUNT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_ID,Field,No Comment,int FUNCTION_ID = 51;,int FUNCTION_ID,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_KEY,Field,No Comment,int FUNCTION_KEY = 52;,int FUNCTION_KEY,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_LOCAL_NAME,Field,No Comment,int FUNCTION_LOCAL_NAME = 53;,int FUNCTION_LOCAL_NAME,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NAMESPACE_URI,Field,No Comment,int FUNCTION_NAMESPACE_URI = 54;,int FUNCTION_NAMESPACE_URI,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NAME,Field,No Comment,int FUNCTION_NAME = 55;,int FUNCTION_NAME,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_STRING,Field,No Comment,int FUNCTION_STRING = 56;,int FUNCTION_STRING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_CONCAT,Field,No Comment,int FUNCTION_CONCAT = 57;,int FUNCTION_CONCAT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_STARTS_WITH,Field,No Comment,int FUNCTION_STARTS_WITH = 58;,int FUNCTION_STARTS_WITH,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_ENDS_WITH,Field,No Comment,int FUNCTION_ENDS_WITH = 59;,int FUNCTION_ENDS_WITH,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_CONTAINS,Field,No Comment,int FUNCTION_CONTAINS = 60;,int FUNCTION_CONTAINS,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_SUBSTRING_BEFORE,Field,No Comment,int FUNCTION_SUBSTRING_BEFORE = 61;,int FUNCTION_SUBSTRING_BEFORE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_SUBSTRING_AFTER,Field,No Comment,int FUNCTION_SUBSTRING_AFTER = 62;,int FUNCTION_SUBSTRING_AFTER,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_SUBSTRING,Field,No Comment,int FUNCTION_SUBSTRING = 63;,int FUNCTION_SUBSTRING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_STRING_LENGTH,Field,No Comment,int FUNCTION_STRING_LENGTH = 64;,int FUNCTION_STRING_LENGTH,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NORMALIZE_SPACE,Field,No Comment,int FUNCTION_NORMALIZE_SPACE = 65;,int FUNCTION_NORMALIZE_SPACE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_TRANSLATE,Field,No Comment,int FUNCTION_TRANSLATE = 66;,int FUNCTION_TRANSLATE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_BOOLEAN,Field,No Comment,int FUNCTION_BOOLEAN = 67;,int FUNCTION_BOOLEAN,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NOT,Field,No Comment,int FUNCTION_NOT = 68;,int FUNCTION_NOT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_TRUE,Field,No Comment,int FUNCTION_TRUE = 69;,int FUNCTION_TRUE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_FALSE,Field,No Comment,int FUNCTION_FALSE = 70;,int FUNCTION_FALSE,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NULL,Field,No Comment,int FUNCTION_NULL = 71;,int FUNCTION_NULL,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_LANG,Field,No Comment,int FUNCTION_LANG = 72;,int FUNCTION_LANG,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_NUMBER,Field,No Comment,int FUNCTION_NUMBER = 73;,int FUNCTION_NUMBER,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_SUM,Field,No Comment,int FUNCTION_SUM = 74;,int FUNCTION_SUM,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_FLOOR,Field,No Comment,int FUNCTION_FLOOR = 75;,int FUNCTION_FLOOR,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_CEILING,Field,No Comment,int FUNCTION_CEILING = 76;,int FUNCTION_CEILING,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_ROUND,Field,No Comment,int FUNCTION_ROUND = 77;,int FUNCTION_ROUND,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.FUNCTION_FORMAT_NUMBER,Field,No Comment,int FUNCTION_FORMAT_NUMBER = 78;,int FUNCTION_FORMAT_NUMBER,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.NCName,Field,No Comment,int NCName = 79;,int NCName,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.DEFAULT,Field,No Comment,int DEFAULT = 0;,int DEFAULT,default
+org.apache.commons.jxpath.ri.parser.XPathParserConstants.tokenImage,Field,No Comment,"String[] tokenImage = { ""<EOF>"", ""\"" \"""", ""\""\\t\"""", ""\""\\n\"""", ""\""\\r\"""", ""\""\\f\"""", ""\""/\"""", ""\""//\"""", ""\""|\"""", ""\""+\"""", ""\""-\"""", ""\""=\"""", ""\""!=\"""", ""\""<\"""", ""\""<=\"""", ""\"">\"""", ""\"">=\"""", ""\""$\"""", ""<Literal>"", ""<Digit>"", ""<Number>"", ""<Letter>"", ""<BaseChar>"", ""<Ideographic>"", ""<CombiningChar>"", ""<UnicodeDigit>"", ""<Extender>"", ""\""or\"""", ""\""and\"""", ""\""mod\"""", ""\""div\"""", ""\""node\"""", ""\""text\"""", ""\""comment\"""", ""\""processing-instruction\"""", ""\""self::\"""", ""\""child::\"""", ""\""parent::\"""", ""\""ancestor::\"""", ""\""attribute::\"""", ""\""namespace::\"""", ""\""preceding::\"""", ""\""following::\"""", ""\""descendant::\"""", ""\""ancestor-or-self::\"""", ""\""following-sibling::\"""", ""\""preceding-sibling::\"""", ""\""descendant-or-self::\"""", ""\""last\"""", ""\""position\"""", ""\""count\"""", ""\""id\"""", ""\""key\"""", ""\""local-name\"""", ""\""namespace-uri\"""", ""\""name\"""", ""\""string\"""", ""\""concat\"""", ""\""starts-with\"""", ""\""ends-with\"""", ""\""contains\"""", ""\""substring-before\"""", ""\""substring-after\"""", ""\""substring\"""", ""\""string-length\"""", ""\""normalize-space\"""", ""\""translate\"""", ""\""boolean\"""", ""\""not\"""", ""\""true\"""", ""\""false\"""", ""\""null\"""", ""\""lang\"""", ""\""number\"""", ""\""sum\"""", ""\""floor\"""", ""\""ceiling\"""", ""\""round\"""", ""\""format-number\"""", ""<NCName>"", ""\"":\"""", ""\""(\"""", ""\"")\"""", ""\"".\"""", ""\""..\"""", ""\""[\"""", ""\""]\"""", ""\""@\"""", ""\"",\"""", ""\""*\"""" };",java.lang.String[] tokenImage,default
+org.apache.commons.jxpath.ri.JXPathCompiledExpression.xpath,Field,No Comment,private final String xpath;,java.lang.String xpath,"private , final "
+org.apache.commons.jxpath.ri.JXPathCompiledExpression.expression,Field,No Comment,private final Expression expression;,org.apache.commons.jxpath.ri.compiler.Expression expression,"private , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -5720585681149150822L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer.handler,Field,No Comment,private final DynamicPropertyHandler handler;,org.apache.commons.jxpath.DynamicPropertyHandler handler,"private , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer.name,Field,No Comment,private String name;,java.lang.String name,private 
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer.names,Field,No Comment,private String[] names;,java.lang.String[] names,private 
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer.requiredPropertyName,Field,No Comment,private String requiredPropertyName;,java.lang.String requiredPropertyName,private 
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory.DYNAMIC_POINTER_FACTORY_ORDER,Field,* Factory order constant.,public static final int DYNAMIC_POINTER_FACTORY_ORDER = 800;,int DYNAMIC_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer.bean,Field,No Comment,private final Object bean;,java.lang.Object bean,"private , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer.handler,Field,No Comment,private final DynamicPropertyHandler handler;,org.apache.commons.jxpath.DynamicPropertyHandler handler,"private , final "
+org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -1842347025295904256L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dynabeans.StrictLazyDynaBeanPointerFactory$StrictLazyDynaBeanPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dynabeans.StrictLazyDynaBeanPointerFactory$StrictLazyDynaBeanPointer.lazyDynaBean,Field,No Comment,private final LazyDynaBean lazyDynaBean;,org.apache.commons.beanutils.LazyDynaBean lazyDynaBean,"private , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory.DYNA_BEAN_POINTER_FACTORY_ORDER,Field,Factory order constant,public static final int DYNA_BEAN_POINTER_FACTORY_ORDER = 700;,int DYNA_BEAN_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -9135052498044877965L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointer.dynaBean,Field,No Comment,private final DynaBean dynaBean;,org.apache.commons.beanutils.DynaBean dynaBean,"private , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer.CLASS,Field,No Comment,"private static final String CLASS = ""class"";",java.lang.String CLASS,"private , static , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer.dynaBean,Field,No Comment,private final DynaBean dynaBean;,org.apache.commons.beanutils.DynaBean dynaBean,"private , final "
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer.name,Field,No Comment,private String name;,java.lang.String name,private 
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer.names,Field,No Comment,private String[] names;,java.lang.String[] names,private 
+org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPropertyPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 2094421509141267239L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory.CONTAINER_POINTER_FACTORY_ORDER,Field,Factory order for this factory,public static final int CONTAINER_POINTER_FACTORY_ORDER = 200;,int CONTAINER_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.container.ContainerPointer.container,Field,No Comment,private final Container container;,org.apache.commons.jxpath.Container container,"private , final "
+org.apache.commons.jxpath.ri.model.container.ContainerPointer.valuePointer,Field,No Comment,private NodePointer valuePointer;,org.apache.commons.jxpath.ri.model.NodePointer valuePointer,private 
+org.apache.commons.jxpath.ri.model.container.ContainerPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 6140752946621686118L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.VariablePointer.variables,Field,No Comment,private Variables variables;,org.apache.commons.jxpath.Variables variables,private 
+org.apache.commons.jxpath.ri.model.VariablePointer.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.VariablePointer.valuePointer,Field,No Comment,private NodePointer valuePointer;,org.apache.commons.jxpath.ri.model.NodePointer valuePointer,private 
+org.apache.commons.jxpath.ri.model.VariablePointer.actual,Field,No Comment,private boolean actual;,boolean actual,private 
+org.apache.commons.jxpath.ri.model.VariablePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -454731297397189293L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.NodePointer.serialVersionUID,Field,Serialization version,private static final long serialVersionUID = 8117201322861007777L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.NodePointer.WHOLE_COLLECTION,Field,Whole collection index.,public static final int WHOLE_COLLECTION = Integer.MIN_VALUE;,int WHOLE_COLLECTION,"public , static , final "
+org.apache.commons.jxpath.ri.model.NodePointer.UNKNOWN_NAMESPACE,Field,Constant to indicate unknown namespace,"public static final String UNKNOWN_NAMESPACE = ""<<unknown namespace>>"";",java.lang.String UNKNOWN_NAMESPACE,"public , static , final "
+org.apache.commons.jxpath.ri.model.NodePointer.index,Field,Index for this NodePointer,protected int index = WHOLE_COLLECTION;,int index,protected 
+org.apache.commons.jxpath.ri.model.NodePointer.attribute,Field,No Comment,private boolean attribute = false;,boolean attribute,private 
+org.apache.commons.jxpath.ri.model.NodePointer.namespaceResolver,Field,No Comment,private NamespaceResolver namespaceResolver;,org.apache.commons.jxpath.ri.NamespaceResolver namespaceResolver,private 
+org.apache.commons.jxpath.ri.model.NodePointer.exceptionHandler,Field,No Comment,private ExceptionHandler exceptionHandler;,org.apache.commons.jxpath.ExceptionHandler exceptionHandler,private 
+org.apache.commons.jxpath.ri.model.NodePointer.rootNode,Field,No Comment,private transient Object rootNode;,java.lang.Object rootNode,"private , transient "
+org.apache.commons.jxpath.ri.model.NodePointer.parent,Field,Parent pointer,protected NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,protected 
+org.apache.commons.jxpath.ri.model.NodePointer.locale,Field,Locale,protected Locale locale;,java.util.Locale locale,protected 
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -6008991447676468786L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.UNINITIALIZED,Field,No Comment,private static final Object UNINITIALIZED = new Object();,java.lang.Object UNINITIALIZED,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.propertyName,Field,No Comment,private String propertyName;,java.lang.String propertyName,private 
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.beanInfo,Field,No Comment,private final JXPathBeanInfo beanInfo;,org.apache.commons.jxpath.JXPathBeanInfo beanInfo,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.baseValue,Field,No Comment,private Object baseValue = UNINITIALIZED;,java.lang.Object baseValue,private 
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.value,Field,No Comment,private Object value = UNINITIALIZED;,java.lang.Object value,private 
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.names,Field,No Comment,private transient String[] names;,java.lang.String[] names,"private , transient "
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.propertyDescriptors,Field,No Comment,private transient PropertyDescriptor[] propertyDescriptors;,java.beans.PropertyDescriptor[] propertyDescriptors,"private , transient "
+org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer.propertyDescriptor,Field,No Comment,private transient PropertyDescriptor propertyDescriptor;,java.beans.PropertyDescriptor propertyDescriptor,"private , transient "
+org.apache.commons.jxpath.ri.model.beans.LangAttributePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8665319197100034134L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator.pointer,Field,No Comment,private final CollectionPointer pointer;,org.apache.commons.jxpath.ri.model.beans.CollectionPointer pointer,"private , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator.startWith,Field,No Comment,private final NodePointer startWith;,org.apache.commons.jxpath.ri.model.NodePointer startWith,"private , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator.position,Field,No Comment,private int position;,int position,private 
+org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator.collection,Field,No Comment,private List collection;,java.util.List collection,private 
+org.apache.commons.jxpath.ri.model.beans.CollectionPointer.collection,Field,No Comment,private Object collection;,java.lang.Object collection,private 
+org.apache.commons.jxpath.ri.model.beans.CollectionPointer.valuePointer,Field,No Comment,private NodePointer valuePointer;,org.apache.commons.jxpath.ri.model.NodePointer valuePointer,private 
+org.apache.commons.jxpath.ri.model.beans.CollectionPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 8620254915563256588L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator.test,Field,No Comment,private final NodeTest test;,org.apache.commons.jxpath.ri.compiler.NodeTest test,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator.includeXmlLang,Field,No Comment,private final boolean includeXmlLang;,boolean includeXmlLang,"private , final "
+org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.propertyName,Field,No Comment,"private String propertyName = ""*"";",java.lang.String propertyName,private 
+org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.byNameAttribute,Field,No Comment,private boolean byNameAttribute = false;,boolean byNameAttribute,private 
+org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 5296593071854982754L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.NullElementPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 8714236818791036721L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.NullPointer.name,Field,No Comment,private QName name;,org.apache.commons.jxpath.ri.QName name,private 
+org.apache.commons.jxpath.ri.model.beans.NullPointer.id,Field,No Comment,private String id;,java.lang.String id,private 
+org.apache.commons.jxpath.ri.model.beans.NullPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 2193425983220679887L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPointer.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPointer.bean,Field,No Comment,private final Object bean;,java.lang.Object bean,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPointer.beanInfo,Field,No Comment,private final JXPathBeanInfo beanInfo;,org.apache.commons.jxpath.JXPathBeanInfo beanInfo,"private , final "
+org.apache.commons.jxpath.ri.model.beans.BeanPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8227317938284982440L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.empty,Field,No Comment,private boolean empty = false;,boolean empty,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.name,Field,No Comment,private final String name;,java.lang.String name,"private , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.startIndex,Field,No Comment,private int startIndex = 0;,int startIndex,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.targetReady,Field,No Comment,private boolean targetReady = false;,boolean targetReady,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.propertyNodePointer,Field,No Comment,private final PropertyPointer propertyNodePointer;,org.apache.commons.jxpath.ri.model.beans.PropertyPointer propertyNodePointer,"private , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.startPropertyIndex,Field,No Comment,private int startPropertyIndex;,int startPropertyIndex,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyIterator.includeStart,Field,No Comment,private boolean includeStart = false;,boolean includeStart,private 
+org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer.UNINITIALIZED,Field,No Comment,private static final Object UNINITIALIZED = new Object();,java.lang.Object UNINITIALIZED,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer.value,Field,No Comment,private Object value = UNINITIALIZED;,java.lang.Object value,private 
+org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory.COLLECTION_POINTER_FACTORY_ORDER,Field,Factory order constant,public static final int COLLECTION_POINTER_FACTORY_ORDER = 10;,int COLLECTION_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.UNSPECIFIED_PROPERTY,Field,No Comment,public static final int UNSPECIFIED_PROPERTY = Integer.MIN_VALUE;,int UNSPECIFIED_PROPERTY,"public , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.propertyIndex,Field,Property index,protected int propertyIndex = UNSPECIFIED_PROPERTY;,int propertyIndex,protected 
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.bean,Field,Owning object,protected Object bean;,java.lang.Object bean,protected 
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.UNINITIALIZED,Field,No Comment,private static final Object UNINITIALIZED = new Object();,java.lang.Object UNINITIALIZED,"private , static , final "
+org.apache.commons.jxpath.ri.model.beans.PropertyPointer.value,Field,No Comment,private Object value = UNINITIALIZED;,java.lang.Object value,private 
+org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory.BEAN_POINTER_FACTORY_ORDER,Field,Factory order constant,public static final int BEAN_POINTER_FACTORY_ORDER = 900;,int BEAN_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.dom.NamespacePointer.prefix,Field,No Comment,private final String prefix;,java.lang.String prefix,"private , final "
+org.apache.commons.jxpath.ri.model.dom.NamespacePointer.namespaceURI,Field,No Comment,private String namespaceURI;,java.lang.String namespaceURI,private 
+org.apache.commons.jxpath.ri.model.dom.NamespacePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -7622456151550131709L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8751046933894857319L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.node,Field,No Comment,private final Node node;,org.w3c.dom.Node node,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.namespaces,Field,No Comment,private Map namespaces;,java.util.Map namespaces,private 
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.defaultNamespace,Field,No Comment,private String defaultNamespace;,java.lang.String defaultNamespace,private 
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.id,Field,No Comment,private String id;,java.lang.String id,private 
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.localNamespaceResolver,Field,No Comment,private NamespaceResolver localNamespaceResolver;,org.apache.commons.jxpath.ri.NamespaceResolver localNamespaceResolver,private 
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.XML_NAMESPACE_URI,Field,XML namespace URI,"public static final String XML_NAMESPACE_URI = ""http://www.w3.org/XML/1998/namespace"";",java.lang.String XML_NAMESPACE_URI,"public , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.XMLNS_NAMESPACE_URI,Field,XMLNS namespace URI,"public static final String XMLNS_NAMESPACE_URI = ""http://www.w3.org/2000/xmlns/"";",java.lang.String XMLNS_NAMESPACE_URI,"public , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1115085175427555951L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer.attr,Field,No Comment,private final Attr attr;,org.w3c.dom.Attr attr,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.node,Field,No Comment,private final Node node;,org.w3c.dom.Node node,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.child,Field,No Comment,private Node child = null;,org.w3c.dom.Node child,private 
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.name,Field,No Comment,private final QName name;,org.apache.commons.jxpath.ri.QName name,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.attributes,Field,No Comment,private final List attributes;,java.util.List attributes,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory.DOM_POINTER_FACTORY_ORDER,Field,Factory order,public static final int DOM_POINTER_FACTORY_ORDER = 100;,int DOM_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator.attributes,Field,No Comment,private final List attributes;,java.util.List attributes,"private , final "
+org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.VariablePointerFactory.VARIABLE_POINTER_FACTORY_ORDER,Field,Factory order constant,public static final int VARIABLE_POINTER_FACTORY_ORDER = 890;,int VARIABLE_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.VariablePointerFactory$VariableContextWrapper.context,Field,No Comment,private final JXPathContext context;,org.apache.commons.jxpath.JXPathContext context,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer.attr,Field,No Comment,private final Attribute attr;,org.jdom.Attribute attr,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 8896050354479644028L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -6346532297491082651L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.node,Field,No Comment,private final Object node;,java.lang.Object node,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.id,Field,No Comment,private String id;,java.lang.String id,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.localNamespaceResolver,Field,No Comment,private NamespaceResolver localNamespaceResolver;,org.apache.commons.jxpath.ri.NamespaceResolver localNamespaceResolver,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.XML_NAMESPACE_URI,Field,XML ns uri,"public static final String XML_NAMESPACE_URI = ""http://www.w3.org/XML/1998/namespace"";",java.lang.String XML_NAMESPACE_URI,"public , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.XMLNS_NAMESPACE_URI,Field,XMLNS ns uri,"public static final String XMLNS_NAMESPACE_URI = ""http://www.w3.org/2000/xmlns/"";",java.lang.String XMLNS_NAMESPACE_URI,"public , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.parent,Field,No Comment,private NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.attributes,Field,No Comment,private List attributes;,java.util.List attributes,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer.prefix,Field,No Comment,private final String prefix;,java.lang.String prefix,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer.namespaceURI,Field,No Comment,private String namespaceURI;,java.lang.String namespaceURI,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 7935311686545862379L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator.namespaces,Field,No Comment,private List namespaces;,java.util.List namespaces,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator.prefixes,Field,No Comment,private Set prefixes;,java.util.Set prefixes,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNamespaceIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMPointerFactory.JDOM_POINTER_FACTORY_ORDER,Field,Factory order constant,public static final int JDOM_POINTER_FACTORY_ORDER = 110;,int JDOM_POINTER_FACTORY_ORDER,"public , static , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.parent,Field,No Comment,private final NodePointer parent;,org.apache.commons.jxpath.ri.model.NodePointer parent,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.reverse,Field,No Comment,private final boolean reverse;,boolean reverse,"private , final "
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.position,Field,No Comment,private int position = 0;,int position,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.index,Field,No Comment,private int index = 0;,int index,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.children,Field,No Comment,private List children;,java.util.List children,private 
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodeIterator.child,Field,No Comment,private Object child;,java.lang.Object child,private 
+org.apache.commons.jxpath.ri.QName.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 7616199282015091496L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.QName.prefix,Field,No Comment,private final String prefix;,java.lang.String prefix,"private , final "
+org.apache.commons.jxpath.ri.QName.name,Field,No Comment,private final String name;,java.lang.String name,"private , final "
+org.apache.commons.jxpath.ri.QName.qualifiedName,Field,No Comment,private final String qualifiedName;,java.lang.String qualifiedName,"private , final "
+org.apache.commons.jxpath.ri.InfoSetUtil.ZERO,Field,No Comment,private static final Double ZERO = Double.valueOf(0);,java.lang.Double ZERO,"private , static , final "
+org.apache.commons.jxpath.ri.InfoSetUtil.ONE,Field,No Comment,private static final Double ONE = Double.valueOf(1);,java.lang.Double ONE,"private , static , final "
+org.apache.commons.jxpath.ri.InfoSetUtil.NOT_A_NUMBER,Field,No Comment,private static final Double NOT_A_NUMBER = Double.valueOf(Double.NaN);,java.lang.Double NOT_A_NUMBER,"private , static , final "
+org.apache.commons.jxpath.ri.NamespaceResolver.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1085590057838651311L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.ri.NamespaceResolver.parent,Field,Parent NamespaceResolver,protected final NamespaceResolver parent;,org.apache.commons.jxpath.ri.NamespaceResolver parent,"protected , final "
+org.apache.commons.jxpath.ri.NamespaceResolver.namespaceMap,Field,Namespace map,protected HashMap namespaceMap = new HashMap();,java.util.HashMap namespaceMap,protected 
+org.apache.commons.jxpath.ri.NamespaceResolver.reverseMap,Field,Reverse lookup map,protected HashMap reverseMap = new HashMap();,java.util.HashMap reverseMap,protected 
+org.apache.commons.jxpath.ri.NamespaceResolver.pointer,Field,Pointer,protected NodePointer pointer;,org.apache.commons.jxpath.ri.model.NodePointer pointer,protected 
+org.apache.commons.jxpath.ri.NamespaceResolver.sealed,Field,No Comment,private boolean sealed;,boolean sealed,private 
+org.apache.commons.jxpath.ri.compiler.ExpressionPath.expression,Field,No Comment,private final Expression expression;,org.apache.commons.jxpath.ri.compiler.Expression expression,"private , final "
+org.apache.commons.jxpath.ri.compiler.ExpressionPath.predicates,Field,No Comment,private final Expression[] predicates;,org.apache.commons.jxpath.ri.compiler.Expression[] predicates,"private , final "
+org.apache.commons.jxpath.ri.compiler.ExpressionPath.basicKnown,Field,No Comment,private boolean basicKnown = false;,boolean basicKnown,private 
+org.apache.commons.jxpath.ri.compiler.ExpressionPath.basic,Field,No Comment,private boolean basic;,boolean basic,private 
+org.apache.commons.jxpath.ri.compiler.LocationPath.absolute,Field,No Comment,private final boolean absolute;,boolean absolute,"private , final "
+org.apache.commons.jxpath.ri.compiler.Operation.args,Field,Expression[] of arguments,protected Expression[] args;,org.apache.commons.jxpath.ri.compiler.Expression[] args,protected 
+org.apache.commons.jxpath.ri.compiler.Constant.value,Field,No Comment,private final Object value;,java.lang.Object value,"private , final "
+org.apache.commons.jxpath.ri.compiler.Expression.ZERO,Field,Zero,protected static final Double ZERO = Double.valueOf(0);,java.lang.Double ZERO,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.Expression.ONE,Field,One,protected static final Double ONE = Double.valueOf(1);,java.lang.Double ONE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.Expression.NOT_A_NUMBER,Field,,protected static final Double NOT_A_NUMBER = Double.valueOf(Double.NaN);,java.lang.Double NOT_A_NUMBER,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.Expression.contextDependencyKnown,Field,No Comment,private boolean contextDependencyKnown = false;,boolean contextDependencyKnown,private 
+org.apache.commons.jxpath.ri.compiler.Expression.contextDependent,Field,No Comment,private boolean contextDependent;,boolean contextDependent,private 
+org.apache.commons.jxpath.ri.compiler.Expression$PointerIterator.iterator,Field,No Comment,private final Iterator iterator;,java.util.Iterator iterator,"private , final "
+org.apache.commons.jxpath.ri.compiler.Expression$PointerIterator.qname,Field,No Comment,private final QName qname;,org.apache.commons.jxpath.ri.QName qname,"private , final "
+org.apache.commons.jxpath.ri.compiler.Expression$PointerIterator.locale,Field,No Comment,private final Locale locale;,java.util.Locale locale,"private , final "
+org.apache.commons.jxpath.ri.compiler.Expression$ValueIterator.iterator,Field,No Comment,private final Iterator iterator;,java.util.Iterator iterator,"private , final "
+org.apache.commons.jxpath.ri.compiler.TreeCompiler.QNAME_NAME,Field,No Comment,"private static final QName QNAME_NAME = new QName(null, ""name"");",org.apache.commons.jxpath.ri.QName QNAME_NAME,"private , static , final "
+org.apache.commons.jxpath.ri.compiler.Step.axis,Field,No Comment,private final int axis;,int axis,"private , final "
+org.apache.commons.jxpath.ri.compiler.Step.nodeTest,Field,No Comment,private final NodeTest nodeTest;,org.apache.commons.jxpath.ri.compiler.NodeTest nodeTest,"private , final "
+org.apache.commons.jxpath.ri.compiler.Step.predicates,Field,No Comment,private final Expression[] predicates;,org.apache.commons.jxpath.ri.compiler.Expression[] predicates,"private , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.invert,Field,No Comment,private final boolean invert;,boolean invert,"private , final "
+org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest.target,Field,No Comment,private final String target;,java.lang.String target,"private , final "
+org.apache.commons.jxpath.ri.compiler.ExtensionFunction.functionName,Field,No Comment,private final QName functionName;,org.apache.commons.jxpath.ri.QName functionName,"private , final "
+org.apache.commons.jxpath.ri.compiler.NodeTypeTest.nodeType,Field,No Comment,private final int nodeType;,int nodeType,"private , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.OR_PRECEDENCE,Field,Or precedence,protected static final int OR_PRECEDENCE = 0;,int OR_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.AND_PRECEDENCE,Field,And precedence,protected static final int AND_PRECEDENCE = 1;,int AND_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.COMPARE_PRECEDENCE,Field,Compare precedence,protected static final int COMPARE_PRECEDENCE = 2;,int COMPARE_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.RELATIONAL_EXPR_PRECEDENCE,Field,Relational expression precedence,protected static final int RELATIONAL_EXPR_PRECEDENCE = 3;,int RELATIONAL_EXPR_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.ADD_PRECEDENCE,Field,Add/subtract precedence,protected static final int ADD_PRECEDENCE = 4;,int ADD_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.MULTIPLY_PRECEDENCE,Field,Multiply/divide/mod precedence,protected static final int MULTIPLY_PRECEDENCE = 5;,int MULTIPLY_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.NEGATE_PRECEDENCE,Field,Negate precedence,protected static final int NEGATE_PRECEDENCE = 6;,int NEGATE_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreOperation.UNION_PRECEDENCE,Field,Union precedence,protected static final int UNION_PRECEDENCE = 7;,int UNION_PRECEDENCE,"protected , static , final "
+org.apache.commons.jxpath.ri.compiler.VariableReference.varName,Field,No Comment,private final QName varName;,org.apache.commons.jxpath.ri.QName varName,"private , final "
+org.apache.commons.jxpath.ri.compiler.Path.steps,Field,No Comment,private final Step[] steps;,org.apache.commons.jxpath.ri.compiler.Step[] steps,"private , final "
+org.apache.commons.jxpath.ri.compiler.Path.basicKnown,Field,No Comment,private boolean basicKnown = false;,boolean basicKnown,private 
+org.apache.commons.jxpath.ri.compiler.Path.basic,Field,No Comment,private boolean basic;,boolean basic,private 
+org.apache.commons.jxpath.ri.compiler.NodeNameTest.qname,Field,No Comment,private final QName qname;,org.apache.commons.jxpath.ri.QName qname,"private , final "
+org.apache.commons.jxpath.ri.compiler.NodeNameTest.namespaceURI,Field,No Comment,private String namespaceURI;,java.lang.String namespaceURI,private 
+org.apache.commons.jxpath.ri.compiler.CoreFunction.ZERO,Field,No Comment,private static final Double ZERO = Double.valueOf(0);,java.lang.Double ZERO,"private , static , final "
+org.apache.commons.jxpath.ri.compiler.CoreFunction.functionCode,Field,No Comment,private final int functionCode;,int functionCode,"private , final "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.USE_SOFT_CACHE,Field,* Change this to {@code false} to disable soft caching of\n     * CompiledExpressions.,public static final boolean USE_SOFT_CACHE = true;,boolean USE_SOFT_CACHE,"public , static , final "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.COMPILER,Field,No Comment,private static final Compiler COMPILER = new TreeCompiler();,org.apache.commons.jxpath.ri.Compiler COMPILER,"private , static , final "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.compiled,Field,No Comment,private static Map compiled = new HashMap();,java.util.Map compiled,"private , static "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.cleanupCount,Field,No Comment,private static int cleanupCount = 0;,int cleanupCount,"private , static "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.nodeFactoryArray,Field,No Comment,private static NodePointerFactory[] nodeFactoryArray = null;,org.apache.commons.jxpath.ri.model.NodePointerFactory[] nodeFactoryArray,"private , static "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.CLEANUP_THRESHOLD,Field,The frequency of the cache cleanup,private static final int CLEANUP_THRESHOLD = 500;,int CLEANUP_THRESHOLD,"private , static , final "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.nodeFactories,Field,No Comment,private static final Vector nodeFactories = new Vector();,java.util.Vector nodeFactories,"private , static , final "
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.namespaceResolver,Field,Namespace resolver,protected NamespaceResolver namespaceResolver;,org.apache.commons.jxpath.ri.NamespaceResolver namespaceResolver,protected 
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.rootPointer,Field,No Comment,private Pointer rootPointer;,org.apache.commons.jxpath.Pointer rootPointer,private 
+org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.contextPointer,Field,No Comment,private Pointer contextPointer;,org.apache.commons.jxpath.Pointer contextPointer,private 
+org.apache.commons.jxpath.ri.EvalContext.parentContext,Field,Parent context,protected EvalContext parentContext;,org.apache.commons.jxpath.ri.EvalContext parentContext,protected 
+org.apache.commons.jxpath.ri.EvalContext.rootContext,Field,Root context,protected RootContext rootContext;,org.apache.commons.jxpath.ri.axes.RootContext rootContext,protected 
+org.apache.commons.jxpath.ri.EvalContext.position,Field,Position,protected int position = 0;,int position,protected 
+org.apache.commons.jxpath.ri.EvalContext.startedSetIteration,Field,No Comment,private boolean startedSetIteration = false;,boolean startedSetIteration,private 
+org.apache.commons.jxpath.ri.EvalContext.done,Field,No Comment,private boolean done = false;,boolean done,private 
+org.apache.commons.jxpath.ri.EvalContext.hasPerformedIteratorStep,Field,No Comment,private boolean hasPerformedIteratorStep = false;,boolean hasPerformedIteratorStep,private 
+org.apache.commons.jxpath.ri.EvalContext.pointerIterator,Field,No Comment,private Iterator<Pointer> pointerIterator;,java.util.Iterator pointerIterator,private 
+org.apache.commons.jxpath.xml.XMLParser2.validating,Field,No Comment,private boolean validating = false;,boolean validating,private 
+org.apache.commons.jxpath.xml.XMLParser2.namespaceAware,Field,No Comment,private boolean namespaceAware = true;,boolean namespaceAware,private 
+org.apache.commons.jxpath.xml.XMLParser2.whitespace,Field,No Comment,private boolean whitespace = false;,boolean whitespace,private 
+org.apache.commons.jxpath.xml.XMLParser2.expandEntityRef,Field,No Comment,private boolean expandEntityRef = true;,boolean expandEntityRef,private 
+org.apache.commons.jxpath.xml.XMLParser2.ignoreComments,Field,No Comment,private boolean ignoreComments = false;,boolean ignoreComments,private 
+org.apache.commons.jxpath.xml.XMLParser2.coalescing,Field,No Comment,private boolean coalescing = false;,boolean coalescing,private 
+org.apache.commons.jxpath.xml.DocumentContainer.MODEL_DOM,Field,DOM constant,"public static final String MODEL_DOM = ""DOM"";",java.lang.String MODEL_DOM,"public , static , final "
+org.apache.commons.jxpath.xml.DocumentContainer.MODEL_JDOM,Field,JDOM constant,"public static final String MODEL_JDOM = ""JDOM"";",java.lang.String MODEL_JDOM,"public , static , final "
+org.apache.commons.jxpath.xml.DocumentContainer.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8713290334113427066L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.xml.DocumentContainer.parserClasses,Field,No Comment,private static HashMap parserClasses = new HashMap();,java.util.HashMap parserClasses,"private , static "
+org.apache.commons.jxpath.xml.DocumentContainer.parsers,Field,No Comment,private static HashMap parsers = new HashMap();,java.util.HashMap parsers,"private , static "
+org.apache.commons.jxpath.xml.DocumentContainer.document,Field,No Comment,private Object document;,java.lang.Object document,private 
+org.apache.commons.jxpath.xml.DocumentContainer.xmlURL,Field,No Comment,private final URL xmlURL;,java.net.URL xmlURL,"private , final "
+org.apache.commons.jxpath.xml.DocumentContainer.model,Field,No Comment,private final String model;,java.lang.String model,"private , final "
+org.apache.commons.jxpath.JXPathFunctionNotFoundException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8875537628056117241L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.FunctionLibrary.allFunctions,Field,No Comment,private final List allFunctions = new ArrayList();,java.util.List allFunctions,"private , final "
+org.apache.commons.jxpath.FunctionLibrary.byNamespace,Field,No Comment,private Map byNamespace;,java.util.Map byNamespace,private 
+org.apache.commons.jxpath.JXPathContextFactoryConfigurationError.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.JXPathContextFactoryConfigurationError.exception,Field,@serial,private final Exception exception;,java.lang.Exception exception,"private , final "
+org.apache.commons.jxpath.JXPathAbstractFactoryException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -4403564377958943239L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.functions.MethodFunction.method,Field,No Comment,private final Method method;,java.lang.reflect.Method method,"private , final "
+org.apache.commons.jxpath.functions.MethodFunction.EMPTY_ARRAY,Field,No Comment,private static final Object[] EMPTY_ARRAY = {};,java.lang.Object[] EMPTY_ARRAY,"private , static , final "
+org.apache.commons.jxpath.functions.ConstructorFunction.EMPTY_ARRAY,Field,No Comment,private static final Object[] EMPTY_ARRAY = {};,java.lang.Object[] EMPTY_ARRAY,"private , static , final "
+org.apache.commons.jxpath.functions.ConstructorFunction.constructor,Field,No Comment,private final Constructor constructor;,java.lang.reflect.Constructor constructor,"private , final "
+org.apache.commons.jxpath.PackageFunctions.classPrefix,Field,No Comment,private final String classPrefix;,java.lang.String classPrefix,"private , final "
+org.apache.commons.jxpath.PackageFunctions.namespace,Field,No Comment,private final String namespace;,java.lang.String namespace,"private , final "
+org.apache.commons.jxpath.PackageFunctions.EMPTY_ARRAY,Field,No Comment,private static final Object[] EMPTY_ARRAY = {};,java.lang.Object[] EMPTY_ARRAY,"private , static , final "
+org.apache.commons.jxpath.JXPathNotFoundException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = -8875537628056117241L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.JXPathException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 4306409701468017766L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.JXPathException.exception,Field,@serial,private final Throwable exception;,java.lang.Throwable exception,"private , final "
+org.apache.commons.jxpath.JXPathContextFactory.FACTORY_NAME_PROPERTY,Field,The default property,"public static final String FACTORY_NAME_PROPERTY = ""org.apache.commons.jxpath.JXPathContextFactory"";",java.lang.String FACTORY_NAME_PROPERTY,"public , static , final "
+org.apache.commons.jxpath.JXPathContextFactory.DEFAULT_FACTORY_CLASS,Field,The default factory class,"private static final String DEFAULT_FACTORY_CLASS = ""org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl"";",java.lang.String DEFAULT_FACTORY_CLASS,"private , static , final "
+org.apache.commons.jxpath.JXPathContextFactory.FACTORY_IMPL_NAME,Field,Avoid reading all the files when the findFactory\n        method is called the second time ( cache the result of\n        finding the default impl ),"private static final String FACTORY_IMPL_NAME = findFactory(FACTORY_NAME_PROPERTY, DEFAULT_FACTORY_CLASS);",java.lang.String FACTORY_IMPL_NAME,"private , static , final "
+org.apache.commons.jxpath.JXPathContextFactory.debug,Field,Temp debug code - this will be removed after we test everything,private static boolean debug = false;,boolean debug,"private , static "
+org.apache.commons.jxpath.BasicNodeSet.pointers,Field,No Comment,private final List pointers = new ArrayList();,java.util.List pointers,"private , final "
+org.apache.commons.jxpath.BasicNodeSet.readOnlyPointers,Field,No Comment,private List readOnlyPointers;,java.util.List readOnlyPointers,private 
+org.apache.commons.jxpath.BasicNodeSet.nodes,Field,No Comment,private List nodes;,java.util.List nodes,private 
+org.apache.commons.jxpath.BasicNodeSet.values,Field,No Comment,private List values;,java.util.List values,private 
+org.apache.commons.jxpath.JXPathIntrospector.byClass,Field,No Comment,private static Map byClass = Collections.synchronizedMap(new HashMap());,java.util.Map byClass,"private , static "
+org.apache.commons.jxpath.JXPathIntrospector.byInterface,Field,No Comment,private static Map byInterface = Collections.synchronizedMap(new HashMap());,java.util.Map byInterface,"private , static "
+org.apache.commons.jxpath.BasicVariables.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 2708263960832062725L;,long serialVersionUID,"private , static , final "
+org.apache.commons.jxpath.BasicVariables.vars,Field,* Contains the values of declared variables,private final HashMap vars = new HashMap();,java.util.HashMap vars,"private , final "

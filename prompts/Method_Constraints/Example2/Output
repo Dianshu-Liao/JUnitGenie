@@ -1,0 +1,24 @@
+```thinking
+In the CFG_Path, we have several external methods that need to be analyzed for their constraints based on the control flow.
+
+1. **`org.apache.commons.lang3.StringUtils.isEmpty(CharSequence)`**:
+   - This method is invoked at node "6". The result is stored in `$stack9`, and the condition at node "18" checks if `$stack9 != 0`. For the path to continue, this condition must evaluate to false, meaning `$stack9` must be `0`. Therefore, the return value of `isEmpty` must be `false`.
+
+2. **`org.apache.commons.lang3.CharSetUtils.deepEmpty(String[])`**:
+   - This method is invoked at node "1". The result is stored in `$stack10`, and the condition at node "16" checks if `$stack10 == 0`. For the path to continue, this condition must evaluate to true, meaning `$stack10` must be `0`. Therefore, the return value of `deepEmpty` must be `true`.
+
+3. **`org.apache.commons.lang3.CharSet.getInstance(String[])`**:
+   - This method is invoked at node "10". The result is stored in `chars`, and it is used later in the method. There are no specific constraints derived from the CFG for this method, but it must return a valid `CharSet` instance for the subsequent calls to work correctly.
+
+4. **`org.apache.commons.lang3.CharSet.contains(char)`**:
+   - This method is invoked at node "5". The result is stored in `$stack14`, and the condition at node "17" checks if `$stack14 == 0`. For the path to continue, this condition must evaluate to false, meaning `$stack14` must be `1`. Therefore, the return value of `contains` must be `true`.
+
+Based on this analysis, the constraints for the external methods are as follows:
+```
+
+```external method constraints
+"org.apache.commons.lang3.StringUtils.isEmpty(CharSequence)": The return value must be `false`.
+"org.apache.commons.lang3.CharSetUtils.deepEmpty(String[])": The return value must be `true`.
+"org.apache.commons.lang3.CharSet.getInstance(String[])": There are no specific constraints derived from the CFG for this method
+"org.apache.commons.lang3.CharSet.contains(char)": The return value must be `true`.
+```

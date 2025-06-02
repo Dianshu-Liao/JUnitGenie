@@ -1,0 +1,15 @@
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.sonatype.guice.bean.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_5' from annotation processor 'org.sonatype.guice.bean.scanners.index.QualifiedIndexAPT6' less than -source '1.8'
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-codec-master/src/test/java/org/apache/commons/codec/binary/binary_BaseNCodec_isStrictDecoding__Test.java:28: error: cannot find symbol
+        codec.setCodecPolicy(BaseNCodec.CodecPolicy.STRICT); // Use the correct method to set the decoding policy
+                                       ^
+  symbol:   variable CodecPolicy
+  location: class BaseNCodec
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-codec-master/src/test/java/org/apache/commons/codec/binary/binary_BaseNCodec_isStrictDecoding__Test.java:51: error: cannot find symbol
+        codec.setCodecPolicy(BaseNCodec.CodecPolicy.LOOSY); // Corrected to use the appropriate policy
+                                       ^
+  symbol:   variable CodecPolicy
+  location: class BaseNCodec
+2 errors
+3 warnings

@@ -1,0 +1,10 @@
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.sonatype.guice.bean.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_5' from annotation processor 'org.sonatype.guice.bean.scanners.index.QualifiedIndexAPT6' less than -source '1.8'
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/jackson-databind-2.19/src/test/java/com/fasterxml/jackson/databind/DeserializationConfig_withNoProblemHandlers__Test.java:6: error: cannot find symbol
+import com.fasterxml.jackson.databind.DeserializationProblemHandler;
+                                     ^
+  symbol:   class DeserializationProblemHandler
+  location: package com.fasterxml.jackson.databind
+1 error
+3 warnings

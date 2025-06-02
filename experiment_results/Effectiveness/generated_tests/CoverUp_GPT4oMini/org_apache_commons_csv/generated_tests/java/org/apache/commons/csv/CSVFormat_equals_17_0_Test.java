@@ -1,0 +1,102 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.DuplicateHeaderMode;
+import org.apache.commons.csv.QuoteMode;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+import org.apache.commons.codec.binary.Base64OutputStream;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.function.IOStream;
+import org.apache.commons.io.function.Uncheck;
+import org.apache.commons.io.output.AppendableOutputStream;
+
+class CSVFormat_equals_17_0_Test {
+
+    @Test
+    void testEquals_SameObject() {
+        CSVFormat format = CSVFormat.DEFAULT;
+        assertTrue(format.equals(format));
+    }
+
+    @Test
+    void testEquals_NullObject() {
+        CSVFormat format = CSVFormat.DEFAULT;
+        assertFalse(format.equals(null));
+    }
+
+    @Test
+    void testEquals_DifferentClass() {
+        CSVFormat format = CSVFormat.DEFAULT;
+        assertFalse(format.equals(new Object()));
+    }
+
+    @Test
+    void testEquals_IdenticalFormats() throws Exception {
+        CSVFormat format1 = createCSVFormat();
+        CSVFormat format2 = createCSVFormat();
+        assertTrue(format1.equals(format2));
+    }
+
+    @Test
+    void testEquals_DifferentAllowMissingColumnNames() throws Exception {
+        CSVFormat format1 = createCSVFormat();
+        CSVFormat format2 = createCSVFormat();
+        setField(format2, "allowMissingColumnNames", false);
+        assertFalse(format1.equals(format2));
+    }
+
+    @Test
+    void testEquals_DifferentDelimiter() throws Exception {
+        CSVFormat format1 = createCSVFormat();
+        CSVFormat format2 = createCSVFormat();
+        setField(format2, "delimiter", ";");
+        assertFalse(format1.equals(format2));
+    }
+
+    @Test
+    void testEquals_DifferentQuoteCharacter() throws Exception {
+        CSVFormat format1 = createCSVFormat();
+        CSVFormat format2 = createCSVFormat();
+        setField(format2, "quoteCharacter", '\'');
+        assertFalse(format1.equals(format2));
+    }
+
+    private CSVFormat createCSVFormat() throws Exception {
+        Constructor<CSVFormat> constructor = CSVFormat.class.getDeclaredConstructor(CSVFormat.Builder.class);
+        constructor.setAccessible(true);
+        return constructor.newInstance(CSVFormat.Builder.create());
+    }
+
+    private void setField(CSVFormat format, String fieldName, Object value) throws Exception {
+        Field field = CSVFormat.class.getDeclaredField(fieldName);
+        field.setAccessible(true);
+        field.set(format, value);
+    }
+}

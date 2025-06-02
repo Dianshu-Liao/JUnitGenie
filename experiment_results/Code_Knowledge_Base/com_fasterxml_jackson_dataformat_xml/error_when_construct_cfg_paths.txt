@@ -1,0 +1,22 @@
+CFG path number for com.fasterxml.jackson.dataformat.xml.util.StaxUtil.sanitizeXmlTypeName(String) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder.encodeXmlClassName(String)
+Error when constructing CFG paths for com.fasterxml.jackson.dataformat.xml.XmlTypeResolverBuilder.decodeXmlClassName(String)
+CFG path number for com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser.nextToken() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.XmlFactory.hasXMLFormat(InputAccessor) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase.serializeFields(Object,JsonGenerator,SerializerProvider) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase.serializeFieldsFiltered(Object,JsonGenerator,SerializerProvider) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerBase.<init>(BeanSerializerBase) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializeValue(JsonGenerator,Object,JavaType,JsonSerializer) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializePolymorphic(JsonGenerator,Object,JavaType,JsonSerializer,TypeSerializer) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.initGenerator() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeString(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeString(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeRawValue(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeRawValue(String,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeRawValue(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeStreamAsBinary(Base64Variant,InputStream,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeNull() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeNumber(double) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeNumber(float) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.writeNumber(BigDecimal) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.dataformat.xml.ser.XmlBeanPropertyWriter.serializeAsField(Object,JsonGenerator,SerializerProvider) is more than 100, which is too large.

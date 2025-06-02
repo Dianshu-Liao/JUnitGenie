@@ -1,0 +1,25 @@
+package org.apache.commons.collections4.bloomfilter;
+import org.apache.commons.collections4.bloomfilter.IndexExtractor;
+import org.apache.commons.collections4.bloomfilter.Shape;
+import org.apache.commons.collections4.bloomfilter.SparseBloomFilter;
+import org.junit.Test;
+import java.util.TreeSet;
+import static org.junit.Assert.*;
+
+public class bloomfilter_SparseBloomFilter_merge_IndexExtractor_cfg_path_3_Test {
+
+
+
+
+    private void setField(SparseBloomFilter bloomFilter, String fieldName, Object value) {
+        try {
+            java.lang.reflect.Field field = SparseBloomFilter.class.getDeclaredField(fieldName);
+            field.setAccessible(true);
+            field.set(bloomFilter, value);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+}

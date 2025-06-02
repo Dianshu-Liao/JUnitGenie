@@ -1,0 +1,98 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVFormat;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+import org.apache.commons.codec.binary.Base64OutputStream;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.function.IOStream;
+import org.apache.commons.io.function.Uncheck;
+import org.apache.commons.io.output.AppendableOutputStream;
+
+class CSVFormat_getHeaderComments_32_0_Test {
+
+    @Test
+    void testGetHeaderComments_NullComments() throws Exception {
+        // Create an instance of CSVFormat with null headerComments
+        CSVFormat csvFormat = createCSVFormatWithHeaderComments(null);
+        // Invoke the getHeaderComments method
+        String[] result = csvFormat.getHeaderComments();
+        // Verify the result
+        assertNull(result, "Expected null when headerComments is null");
+    }
+
+    @Test
+    void testGetHeaderComments_EmptyComments() throws Exception {
+        // Create an instance of CSVFormat with empty headerComments
+        String[] comments = new String[0];
+        CSVFormat csvFormat = createCSVFormatWithHeaderComments(comments);
+        // Invoke the getHeaderComments method
+        String[] result = csvFormat.getHeaderComments();
+        // Verify the result
+        assertArrayEquals(comments, result, "Expected empty array when headerComments is empty");
+    }
+
+    @Test
+    void testGetHeaderComments_ValidComments() throws Exception {
+        // Create an instance of CSVFormat with valid headerComments
+        String[] comments = { "Comment 1", "Comment 2" };
+        CSVFormat csvFormat = createCSVFormatWithHeaderComments(comments);
+        // Invoke the getHeaderComments method
+        String[] result = csvFormat.getHeaderComments();
+        // Verify the result
+        assertArrayEquals(comments, result, "Expected the same array when headerComments is valid");
+    }
+
+    @Test
+    void testGetHeaderComments_CloneBehavior() throws Exception {
+        // Create an instance of CSVFormat with valid headerComments
+        String[] comments = { "Comment 1", "Comment 2" };
+        CSVFormat csvFormat = createCSVFormatWithHeaderComments(comments);
+        // Invoke the getHeaderComments method
+        String[] result = csvFormat.getHeaderComments();
+        // Modify the result array
+        result[0] = "Modified Comment";
+        // Verify that the original headerComments in CSVFormat is unchanged
+        assertNotEquals("Modified Comment", csvFormat.getHeaderComments()[0], "Expected original headerComments to remain unchanged");
+    }
+
+    private CSVFormat createCSVFormatWithHeaderComments(String[] headerComments) throws Exception {
+        // Use reflection to access the private constructor
+        Constructor<CSVFormat> constructor = CSVFormat.class.getDeclaredConstructor(CSVFormat.Builder.class);
+        constructor.setAccessible(true);
+        // Create a Builder instance
+        CSVFormat.Builder builder = (CSVFormat.Builder) CSVFormat.DEFAULT.builder();
+        // Use reflection to set the headerComments field
+        Field headerCommentsField = builder.getClass().getDeclaredField("headerComments");
+        headerCommentsField.setAccessible(true);
+        headerCommentsField.set(builder, headerComments);
+        // Build the CSVFormat instance
+        return constructor.newInstance(builder);
+    }
+}

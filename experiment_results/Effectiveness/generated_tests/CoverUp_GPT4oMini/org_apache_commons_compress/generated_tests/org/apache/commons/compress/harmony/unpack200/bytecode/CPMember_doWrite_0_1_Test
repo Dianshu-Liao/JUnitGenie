@@ -1,0 +1,85 @@
+package org.apache.commons.compress.harmony.unpack200.bytecode;
+
+import org.apache.commons.compress.harmony.unpack200.bytecode.Attribute;
+import org.apache.commons.compress.harmony.unpack200.bytecode.CPMember;
+import org.apache.commons.compress.harmony.unpack200.bytecode.CPUTF8;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.Collections;
+import java.util.Objects;
+
+class CPMember_doWrite_0_1_Test {
+
+    private CPMember cpMember;
+
+    private CPUTF8 name;
+
+    private CPUTF8 descriptor;
+
+    private List<Attribute> attributes;
+
+    @BeforeEach
+    void setUp() {
+        name = new CPUTF8("TestName");
+        descriptor = new CPUTF8("TestDescriptor");
+        attributes = new ArrayList<>();
+        cpMember = new CPMember(name, descriptor, 0, attributes);
+    }
+
+    @Test
+    void testDoWriteWithNoAttributes() throws Exception {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        DataOutputStream dos = new DataOutputStream(baos);
+        invokeDoWrite(cpMember, dos);
+        byte[] expected = new byte[] { // flags
+        // flags
+        // nameIndex
+        // descriptorIndex
+        0, // attributeCount
+        0, // attributeCount
+        0, 0, 0, 0, 0, 0 };
+        verifyOutput(baos.toByteArray(), expected);
+    }
+
+    @Test
+    void testDoWriteWithAttributes() throws Exception {
+        Attribute mockAttribute = mock(Attribute.class);
+        doNothing().when(mockAttribute).doWrite(any(DataOutputStream.class));
+        attributes.add(mockAttribute);
+        cpMember = new CPMember(name, descriptor, 0, attributes);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        DataOutputStream dos = new DataOutputStream(baos);
+        invokeDoWrite(cpMember, dos);
+        byte[] expected = new byte[] { // flags
+        // flags
+        // nameIndex
+        // descriptorIndex
+        0, // attributeCount
+        0, // attributeCount
+        0, 0, 0, 0, 0, 1 };
+        verify(mockAttribute, times(1)).doWrite(dos);
+        verifyOutput(baos.toByteArray(), expected);
+    }
+
+    private void invokeDoWrite(CPMember cpMember, DataOutputStream dos) throws Exception {
+        Method method = CPMember.class.getDeclaredMethod("doWrite", DataOutputStream.class);
+        method.setAccessible(true);
+        method.invoke(cpMember, dos);
+    }
+
+    private void verifyOutput(byte[] actual, byte[] expected) {
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], actual[i]);
+        }
+    }
+}

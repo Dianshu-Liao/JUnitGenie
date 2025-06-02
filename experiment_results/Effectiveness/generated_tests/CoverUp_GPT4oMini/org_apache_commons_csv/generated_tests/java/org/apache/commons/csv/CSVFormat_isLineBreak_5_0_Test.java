@@ -1,0 +1,85 @@
+package org.apache.commons.csv;
+
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+import org.apache.commons.codec.binary.Base64OutputStream;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.function.IOStream;
+import org.apache.commons.io.function.Uncheck;
+import org.apache.commons.io.output.AppendableOutputStream;
+
+class CSVFormat_isLineBreak_5_0_Test {
+
+    @Test
+    void testIsLineBreakWithLF() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, '\n');
+        assertTrue(result, "Expected true for line feed character");
+    }
+
+    @Test
+    void testIsLineBreakWithCR() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, '\r');
+        assertTrue(result, "Expected true for carriage return character");
+    }
+
+    @Test
+    void testIsLineBreakWithOtherCharacter() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, 'a');
+        assertFalse(result, "Expected false for non line break character");
+    }
+
+    @Test
+    void testIsLineBreakWithTab() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, '\t');
+        assertFalse(result, "Expected false for tab character");
+    }
+
+    @Test
+    void testIsLineBreakWithSpace() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, ' ');
+        assertFalse(result, "Expected false for space character");
+    }
+
+    @Test
+    void testIsLineBreakWithNullCharacter() throws Exception {
+        Method method = CSVFormat.class.getDeclaredMethod("isLineBreak", char.class);
+        method.setAccessible(true);
+        boolean result = (boolean) method.invoke(null, '\0');
+        assertFalse(result, "Expected false for null character");
+    }
+}

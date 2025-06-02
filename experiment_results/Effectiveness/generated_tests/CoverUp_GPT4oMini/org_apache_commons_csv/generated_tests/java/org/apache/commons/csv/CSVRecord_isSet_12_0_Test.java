@@ -1,0 +1,58 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class CSVRecord_isSet_12_0_Test {
+
+    private CSVRecord csvRecord;
+
+    @BeforeEach
+    void setUp() {
+        // Assuming CSVParser is a mock or a stub that you can use
+        // Replace with a mock or a real instance if needed
+        CSVParser parser = null;
+        String[] values = { "value1", "value2", "value3" };
+        String comment = "Test comment";
+        long recordNumber = 1;
+        long characterPosition = 0;
+        long bytePosition = 0;
+        csvRecord = new CSVRecord(parser, values, comment, recordNumber, characterPosition, bytePosition);
+    }
+
+    @Test
+    void testIsSet_ValidIndex() {
+        assertTrue(csvRecord.isSet(0), "Index 0 should be set");
+        assertTrue(csvRecord.isSet(1), "Index 1 should be set");
+        assertTrue(csvRecord.isSet(2), "Index 2 should be set");
+    }
+
+    @Test
+    void testIsSet_InvalidIndex_Negative() {
+        assertFalse(csvRecord.isSet(-1), "Negative index should not be set");
+    }
+
+    @Test
+    void testIsSet_InvalidIndex_OutOfBounds() {
+        assertFalse(csvRecord.isSet(3), "Index 3 should not be set (out of bounds)");
+    }
+
+    @Test
+    void testIsSet_IndexEqualToLength() {
+        assertFalse(csvRecord.isSet(3), "Index equal to length should not be set");
+    }
+}

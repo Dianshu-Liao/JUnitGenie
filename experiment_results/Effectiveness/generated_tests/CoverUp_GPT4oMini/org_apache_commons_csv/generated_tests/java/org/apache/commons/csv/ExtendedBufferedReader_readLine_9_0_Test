@@ -1,0 +1,108 @@
+package org.apache.commons.csv;
+
+import java.io.IOException;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import static org.apache.commons.csv.Constants.CR;
+import static org.apache.commons.csv.Constants.LF;
+import static org.apache.commons.csv.Constants.UNDEFINED;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.Reader;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.input.UnsynchronizedBufferedReader;
+
+class ExtendedBufferedReader_readLine_9_0_Test {
+
+    private ExtendedBufferedReader reader;
+
+    @BeforeEach
+    void setUp() {
+        reader = new ExtendedBufferedReader(new StringReader("Hello World\nThis is a test.\r\nEnd of line."));
+    }
+
+    @Test
+    void testReadLineWhenEOF() throws IOException {
+        // Read the first line
+        reader.readLine();
+        // Read the second line
+        reader.readLine();
+        // Read the third line
+        reader.readLine();
+        assertNull(reader.readLine(), "Expected null when EOF is reached");
+    }
+
+    @Test
+    void testReadLineWithCRLF() throws IOException {
+        String line = reader.readLine();
+        assertEquals("Hello World", line, "First line should match");
+        line = reader.readLine();
+        assertEquals("This is a test.", line, "Second line should match");
+        line = reader.readLine();
+        assertEquals("End of line.", line, "Third line should match");
+    }
+
+    @Test
+    void testReadLineWithSingleCR() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("Line 1\rLine 2"));
+        String line = reader.readLine();
+        assertEquals("Line 1", line, "First line should match");
+        line = reader.readLine();
+        assertEquals("Line 2", line, "Second line should match");
+    }
+
+    @Test
+    void testReadLineWithSingleLF() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("Line 1\nLine 2"));
+        String line = reader.readLine();
+        assertEquals("Line 1", line, "First line should match");
+        line = reader.readLine();
+        assertEquals("Line 2", line, "Second line should match");
+    }
+
+    @Test
+    void testReadLineWithEmptyInput() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader(""));
+        assertNull(reader.readLine(), "Expected null for empty input");
+    }
+
+    @Test
+    void testReadLineWithOnlyCR() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("\r"));
+        assertEquals("", reader.readLine(), "Expected empty string for CR only");
+    }
+
+    @Test
+    void testReadLineWithOnlyLF() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("\n"));
+        assertEquals("", reader.readLine(), "Expected empty string for LF only");
+    }
+
+    @Test
+    void testReadLineWithMultipleLines() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("First Line\nSecond Line\nThird Line"));
+        assertEquals("First Line", reader.readLine(), "First line should match");
+        assertEquals("Second Line", reader.readLine(), "Second line should match");
+        assertEquals("Third Line", reader.readLine(), "Third line should match");
+        assertNull(reader.readLine(), "Expected null when EOF is reached");
+    }
+
+    @Test
+    void testReadLineHandlesMixedLineEndings() throws IOException {
+        reader = new ExtendedBufferedReader(new StringReader("Line1\rLine2\nLine3\r\nLine4"));
+        assertEquals("Line1", reader.readLine(), "First line should match");
+        assertEquals("Line2", reader.readLine(), "Second line should match");
+        assertEquals("Line3", reader.readLine(), "Third line should match");
+        assertEquals("Line4", reader.readLine(), "Fourth line should match");
+        assertNull(reader.readLine(), "Expected null when EOF is reached");
+    }
+}

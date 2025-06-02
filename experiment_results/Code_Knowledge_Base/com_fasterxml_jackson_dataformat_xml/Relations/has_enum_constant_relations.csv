@@ -1,0 +1,10 @@
+:START_ID,:END_ID,:TYPE
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature,com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature.AUTO_DETECT_XSI_TYPE,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature,com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature.EMPTY_ELEMENT_AS_NULL,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature,com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser$Feature.PROCESS_XSI_NIL,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.WRITE_XML_DECLARATION,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.WRITE_XML_1_1,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.WRITE_NULLS_AS_XSI_NIL,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.UNWRAP_ROOT_OBJECT_NODE,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.AUTO_DETECT_XSI_TYPE,Has_Enum_Constant
+com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature,com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator$Feature.WRITE_XML_SCHEMA_CONFORMING_FLOATS,Has_Enum_Constant

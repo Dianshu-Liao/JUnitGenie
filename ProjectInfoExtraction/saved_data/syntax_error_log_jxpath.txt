@@ -1,0 +1,17 @@
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.sonatype.guice.bean.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_5' from annotation processor 'org.sonatype.guice.bean.scanners.index.QualifiedIndexAPT6' less than -source '1.8'
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-jxpath-master/src/test/java/org/apache/commons/jxpath/JXPathContext_getLocale__Test.java:12: error: <anonymous org.apache.commons.jxpath.JXPathContext_getLocale__Test$1> is not abstract and does not override abstract method getPointer(String) in JXPathContext
+        JXPathContext context = new JXPathContext(null, null) {
+                                                              ^
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-jxpath-master/src/test/java/org/apache/commons/jxpath/JXPathContext_getLocale__Test.java:30: error: <anonymous org.apache.commons.jxpath.JXPathContext_getLocale__Test$2> is not abstract and does not override abstract method getPointer(String) in JXPathContext
+        JXPathContext parentContext = new JXPathContext(null, null) {
+                                                                    ^
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-jxpath-master/src/test/java/org/apache/commons/jxpath/JXPathContext_getLocale__Test.java:41: error: <anonymous org.apache.commons.jxpath.JXPathContext_getLocale__Test$3> is not abstract and does not override abstract method getPointer(String) in JXPathContext
+        JXPathContext context = new JXPathContext(parentContext, null) {
+                                                                       ^
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/commons-jxpath-master/src/test/java/org/apache/commons/jxpath/JXPathContext_getLocale__Test.java:58: error: <anonymous org.apache.commons.jxpath.JXPathContext_getLocale__Test$4> is not abstract and does not override abstract method getPointer(String) in JXPathContext
+        JXPathContext context = new JXPathContext(null, null) {
+                                                              ^
+4 errors
+3 warnings

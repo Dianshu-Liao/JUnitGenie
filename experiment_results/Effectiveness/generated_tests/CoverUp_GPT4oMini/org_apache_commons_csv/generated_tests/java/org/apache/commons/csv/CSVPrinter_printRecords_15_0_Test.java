@@ -1,0 +1,88 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
+import java.io.StringWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.csv.Constants.CR;
+import static org.apache.commons.csv.Constants.LF;
+import static org.apache.commons.csv.Constants.SP;
+import java.io.Closeable;
+import java.io.Flushable;
+import java.io.InputStream;
+import java.io.Reader;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Objects;
+import java.util.stream.Stream;
+import org.apache.commons.io.function.IOStream;
+
+public class CSVPrinter_printRecords_15_0_Test {
+
+    private StringWriter stringWriter;
+
+    private CSVPrinter csvPrinter;
+
+    @BeforeEach
+    public void setUp() throws IOException {
+        stringWriter = new StringWriter();
+        CSVFormat format = CSVFormat.DEFAULT;
+        csvPrinter = new CSVPrinter(stringWriter, format);
+    }
+
+    @Test
+    public void testPrintRecords_singleRecord() throws IOException {
+        List<String> records = Arrays.asList("value1", "value2", "value3");
+        csvPrinter.printRecords(records);
+        // Adjust based on the format's line separator
+        String expectedOutput = "value1,value2,value3\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecords_multipleRecords() throws IOException {
+        List<List<String>> records = Arrays.asList(Arrays.asList("value1", "value2"), Arrays.asList("value3", "value4"));
+        csvPrinter.printRecords(records);
+        // Adjust based on the format's line separator
+        String expectedOutput = "value1,value2\nvalue3,value4\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecords_emptyRecords() throws IOException {
+        List<String> records = Arrays.asList();
+        csvPrinter.printRecords(records);
+        // No output for empty records
+        String expectedOutput = "";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecords_nullRecords() throws IOException {
+        List<String> records = null;
+        csvPrinter.printRecords(records);
+        // No output for null records
+        String expectedOutput = "";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecords_withComments() throws IOException {
+        csvPrinter.printComment("This is a comment");
+        List<String> records = Arrays.asList("value1", "value2");
+        csvPrinter.printRecords(records);
+        // Adjust based on the format's line separator
+        String expectedOutput = "# This is a comment\nvalue1,value2\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+}

@@ -1,0 +1,88 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.csv.Constants.CR;
+import static org.apache.commons.csv.Constants.LF;
+import static org.apache.commons.csv.Constants.SP;
+import java.io.Closeable;
+import java.io.Flushable;
+import java.io.InputStream;
+import java.io.Reader;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Objects;
+import java.util.stream.Stream;
+import org.apache.commons.io.function.IOStream;
+
+public class CSVPrinter_printRecordObject_13_0_Test {
+
+    private CSVPrinter csvPrinter;
+
+    private StringWriter stringWriter;
+
+    private CSVFormat csvFormat;
+
+    @BeforeEach
+    public void setUp() throws IOException {
+        stringWriter = new StringWriter();
+        // Use default CSV format
+        csvFormat = CSVFormat.DEFAULT;
+        csvPrinter = new CSVPrinter(stringWriter, csvFormat);
+    }
+
+    @Test
+    public void testPrintRecordObjectWithArray() throws Exception {
+        Object[] values = { "value1", "value2", "value3" };
+        invokePrintRecordObject(values);
+        // Adjust based on actual CSV format
+        String expectedOutput = "value1,value2,value3\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecordObjectWithIterable() throws Exception {
+        List<String> values = Arrays.asList("value1", "value2", "value3");
+        invokePrintRecordObject(values);
+        // Adjust based on actual CSV format
+        String expectedOutput = "value1,value2,value3\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecordObjectWithSingleValue() throws Exception {
+        String value = "singleValue";
+        invokePrintRecordObject(value);
+        // Adjust based on actual CSV format
+        String expectedOutput = "singleValue\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    @Test
+    public void testPrintRecordObjectWithNull() throws Exception {
+        Object value = null;
+        invokePrintRecordObject(value);
+        // Adjust based on actual CSV format for null
+        String expectedOutput = "\n";
+        assertEquals(expectedOutput, stringWriter.toString());
+    }
+
+    private void invokePrintRecordObject(Object value) throws Exception {
+        Method method = CSVPrinter.class.getDeclaredMethod("printRecordObject", Object.class);
+        method.setAccessible(true);
+        method.invoke(csvPrinter, value);
+    }
+}

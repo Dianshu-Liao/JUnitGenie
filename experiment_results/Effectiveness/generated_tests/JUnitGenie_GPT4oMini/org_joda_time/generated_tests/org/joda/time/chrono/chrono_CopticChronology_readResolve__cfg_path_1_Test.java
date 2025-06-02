@@ -1,0 +1,32 @@
+package org.joda.time.chrono;
+import org.joda.time.DateTimeZone;
+import org.joda.time.chrono.CopticChronology;
+import java.lang.reflect.Method;
+import org.junit.Test;
+import static org.junit.Assert.assertNotNull;
+
+public class chrono_CopticChronology_readResolve__cfg_path_1_Test {
+
+    @Test(timeout = 4000)
+    public void testReadResolve() {
+        try {
+            // Create an instance of CopticChronology with valid parameters
+            CopticChronology chronology = CopticChronology.getInstance(DateTimeZone.UTC);
+            
+            // Access the private method readResolve using reflection
+            Method method = CopticChronology.class.getDeclaredMethod("readResolve");
+            method.setAccessible(true);
+            
+            // Invoke the method and capture the result
+            Object result = method.invoke(chronology);
+            
+            // Assert that the result is not null
+            assertNotNull("The result of readResolve should not be null", result);
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Handle the exception as per rule 4
+        }
+    }
+
+
+}

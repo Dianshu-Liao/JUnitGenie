@@ -1,0 +1,56 @@
+start_time=$(date +%s)
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#handleNull -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#hasComment -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isConsistent -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getHeader -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getAllowDuplicateHeaderNames -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#hasTrailerComment -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#print -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#containsLineBreak -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#withAllowDuplicateHeaderNames -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isCommentMarkerSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printRecords -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#copy -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#CSVRecord -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isQuoteChar -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#parseSimpleToken -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#putIn -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isNullStringSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#trim -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#equals -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#readEscape -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#read -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#createEmptyHeaderMap -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#read -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#getEncodedCharLength -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#get -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getHeaderComments -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isCommentStart -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#isStrictQuoteMode -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isMapped -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printComment -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#ExtendedBufferedReader -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printRecordObject -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#println -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isQuoteCharacterSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isEscapeCharacterSet -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getEscapeChar -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isDelimiter -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#printRecord -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isLineBreak -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#getHeaderMap -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#print -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#CSVPrinter -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#readLine -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#appendNextEscapedCharacterToToken -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#getLineNumber -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#addRecordValue -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isMetaChar -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#close -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isEscape -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#getHeaderMapRaw -DphaseType=CHATTESTER -DnoExecution=true -DtestOutput=./chattester-tests
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+echo "Execution time: $duration seconds"

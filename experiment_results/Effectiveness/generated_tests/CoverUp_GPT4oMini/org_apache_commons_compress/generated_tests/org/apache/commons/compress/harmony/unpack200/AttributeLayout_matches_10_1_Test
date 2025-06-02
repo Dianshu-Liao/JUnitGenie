@@ -1,0 +1,49 @@
+package org.apache.commons.compress.harmony.unpack200;
+
+import org.apache.commons.compress.harmony.pack200.Pack200Exception;
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.apache.commons.compress.harmony.pack200.Codec;
+import org.apache.commons.compress.harmony.unpack200.bytecode.ClassFileEntry;
+import org.apache.commons.lang3.StringUtils;
+
+public class // Additional tests can be added to cover other scenarios as needed.
+AttributeLayout_matches_10_1_Test {
+
+    private AttributeLayout attributeLayout;
+
+    @BeforeEach
+    public void setUp() throws Pack200Exception {
+        // Initialize the AttributeLayout object with valid parameters
+        attributeLayout = new AttributeLayout("testName", AttributeLayout.CONTEXT_CLASS, "testLayout", 0);
+    }
+
+    @Test
+    public void testMatches_withMatchingMask() throws Exception {
+        // Set the mask field using reflection
+        // Set mask to 1
+        setPrivateField(attributeLayout, "mask", 0b0001);
+        // Test with a value that matches the mask
+        assertTrue(attributeLayout.matches(0b0001), "Expected matches to return true");
+    }
+
+    @Test
+    public void testMatches_withoutMatchingMask() throws Exception {
+        // Set the mask field using reflection
+        // Set mask to 1
+        setPrivateField(attributeLayout, "mask", 0b0001);
+        // Test with a value that does not match the mask
+        assertFalse(attributeLayout.matches(0b0010), "Expected matches to return false");
+    }
+
+    private void setPrivateField(Object obj, String fieldName, long value) throws Exception {
+        java.lang.reflect.Field field = obj.getClass().getDeclaredField(fieldName);
+        field.setAccessible(true);
+        field.setLong(obj, value);
+    }
+}

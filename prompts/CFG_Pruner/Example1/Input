@@ -1,0 +1,29 @@
+###CFG
+```dot
+digraph cfg_isEmpty {
+	"1" [label="$stack1 = interfaceinvoke cs.<java.lang.CharSequence: int length()>()"];
+	"2" [label="$stack2 = 0"];
+	"3" [label="$stack2 = 1"];
+	"4" [label="cs := @parameter0: java.lang.CharSequence"];
+	"5" [label="goto"];
+	"6" [label="if $stack1 != 0"];
+	"7" [label="if cs == null"];
+	"8" [label="return $stack2"];
+	"1" -> "6"[label="cfg_next"];
+	"2" -> "8"[label="cfg_next"];
+	"3" -> "5"[label="cfg_next"];
+	"4" -> "7"[label="cfg_next"];
+	"5" -> "8"[label="cfg_goto"];
+	"6" -> "2"[label="cfg_true"];
+	"6" -> "3"[label="cfg_false"];
+	"7" -> "1"[label="cfg_false"];
+	"7" -> "3"[label="cfg_true"];
+}
+```
+
+
+###Method_Constraints
+The return value must be `false`
+
+
+Please note that the entry node of CFG after prune must be "4" [label="cs := @parameter0: java.lang.CharSequence"]; and it must be the only entry point!

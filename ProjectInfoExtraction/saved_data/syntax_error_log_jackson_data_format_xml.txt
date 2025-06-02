@@ -1,0 +1,23 @@
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.sonatype.guice.bean.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_5' from annotation processor 'org.sonatype.guice.bean.scanners.index.QualifiedIndexAPT6' less than -source '1.8'
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/jackson-dataformat-xml-2.19/src/test/java/com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test.java:5: error: cannot find symbol
+import com.fasterxml.jackson.databind.MapperConfig;
+                                     ^
+  symbol:   class MapperConfig
+  location: package com.fasterxml.jackson.databind
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/jackson-dataformat-xml-2.19/src/test/java/com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test.java:12: error: cannot find symbol
+class XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test extends MapperConfig<MockMapperConfig> {
+                                                                                                                               ^
+  symbol: class MapperConfig
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/jackson-dataformat-xml-2.19/src/test/java/com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test.java:12: error: cannot find symbol
+class XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test extends MapperConfig<MockMapperConfig> {
+                                                                                                                                            ^
+  symbol: class MockMapperConfig
+/Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/TenJavaProjects/jackson-dataformat-xml-2.19/src/test/java/com/fasterxml/jackson/dataformat/xml/XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test.java:14: error: cannot find symbol
+    public MockMapperConfig createUnshared() {
+           ^
+  symbol:   class MockMapperConfig
+  location: class XmlTypeResolverBuilder_idResolver_MapperConfig_JavaType_PolymorphicTypeValidator_Collection_boolean_boolean_Test
+4 errors
+3 warnings

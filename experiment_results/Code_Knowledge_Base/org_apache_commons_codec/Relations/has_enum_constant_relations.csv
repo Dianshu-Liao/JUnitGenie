@@ -1,0 +1,15 @@
+:START_ID,:END_ID,:TYPE
+org.apache.commons.codec.CodecPolicy,org.apache.commons.codec.CodecPolicy.STRICT,Has_Enum_Constant
+org.apache.commons.codec.CodecPolicy,org.apache.commons.codec.CodecPolicy.LENIENT,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_MD5,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_SHA_1,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_SHA_224,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_SHA_256,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_SHA_384,Has_Enum_Constant
+org.apache.commons.codec.digest.HmacAlgorithms,org.apache.commons.codec.digest.HmacAlgorithms.HMAC_SHA_512,Has_Enum_Constant
+org.apache.commons.codec.language.bm.NameType,org.apache.commons.codec.language.bm.NameType.ASHKENAZI,Has_Enum_Constant
+org.apache.commons.codec.language.bm.NameType,org.apache.commons.codec.language.bm.NameType.GENERIC,Has_Enum_Constant
+org.apache.commons.codec.language.bm.NameType,org.apache.commons.codec.language.bm.NameType.SEPHARDIC,Has_Enum_Constant
+org.apache.commons.codec.language.bm.RuleType,org.apache.commons.codec.language.bm.RuleType.APPROX,Has_Enum_Constant
+org.apache.commons.codec.language.bm.RuleType,org.apache.commons.codec.language.bm.RuleType.EXACT,Has_Enum_Constant
+org.apache.commons.codec.language.bm.RuleType,org.apache.commons.codec.language.bm.RuleType.RULES,Has_Enum_Constant

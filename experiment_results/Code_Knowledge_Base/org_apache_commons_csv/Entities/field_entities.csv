@@ -1,0 +1,137 @@
+FEN:ID,:LABEL,Comment,Source Code,Signature,Modifiers
+org.apache.commons.csv.CSVParser.headerComment,Field,No Comment,private String headerComment;,java.lang.String headerComment,private 
+org.apache.commons.csv.CSVParser.trailerComment,Field,No Comment,private String trailerComment;,java.lang.String trailerComment,private 
+org.apache.commons.csv.CSVParser.format,Field,No Comment,private final CSVFormat format;,org.apache.commons.csv.CSVFormat format,"private , final "
+org.apache.commons.csv.CSVParser.headers,Field,No Comment,private final Headers headers;,org.apache.commons.csv.CSVParser$Headers headers,"private , final "
+org.apache.commons.csv.CSVParser.lexer,Field,No Comment,private final Lexer lexer;,org.apache.commons.csv.Lexer lexer,"private , final "
+org.apache.commons.csv.CSVParser.csvRecordIterator,Field,No Comment,private final CSVRecordIterator csvRecordIterator;,org.apache.commons.csv.CSVParser$CSVRecordIterator csvRecordIterator,"private , final "
+org.apache.commons.csv.CSVParser.recordList,Field,A record buffer for getRecord(). Grows as necessary and is reused.,private final List<String> recordList = new ArrayList<>();,java.util.List recordList,"private , final "
+org.apache.commons.csv.CSVParser.recordNumber,Field,* The next record number to assign.,private long recordNumber;,long recordNumber,private 
+org.apache.commons.csv.CSVParser.characterOffset,Field,* Lexer offset when the parser does not start parsing at the beginning of the source. Usually used in combination\n     * with {@link #recordNumber}.,private final long characterOffset;,long characterOffset,"private , final "
+org.apache.commons.csv.CSVParser.reusableToken,Field,No Comment,private final Token reusableToken = new Token();,org.apache.commons.csv.Token reusableToken,"private , final "
+org.apache.commons.csv.CSVParser$Builder.format,Field,No Comment,private CSVFormat format;,org.apache.commons.csv.CSVFormat format,private 
+org.apache.commons.csv.CSVParser$Builder.characterOffset,Field,No Comment,private long characterOffset;,long characterOffset,private 
+org.apache.commons.csv.CSVParser$Builder.recordNumber,Field,No Comment,private long recordNumber = 1;,long recordNumber,private 
+org.apache.commons.csv.CSVParser$Builder.trackBytes,Field,No Comment,private boolean trackBytes;,boolean trackBytes,private 
+org.apache.commons.csv.CSVParser$CSVRecordIterator.current,Field,No Comment,private CSVRecord current;,org.apache.commons.csv.CSVRecord current,private 
+org.apache.commons.csv.CSVParser$Headers.headerMap,Field,* Header column positions (0-based),"final Map<String, Integer> headerMap;",java.util.Map headerMap,final 
+org.apache.commons.csv.CSVParser$Headers.headerNames,Field,* Header names in column order,final List<String> headerNames;,java.util.List headerNames,final 
+org.apache.commons.csv.CSVPrinter.appendable,Field,The place that the values get written.,private final Appendable appendable;,java.lang.Appendable appendable,"private , final "
+org.apache.commons.csv.CSVPrinter.format,Field,No Comment,private final CSVFormat format;,org.apache.commons.csv.CSVFormat format,"private , final "
+org.apache.commons.csv.CSVPrinter.newRecord,Field,True if we just began a new record.,private boolean newRecord = true;,boolean newRecord,private 
+org.apache.commons.csv.CSVPrinter.recordCount,Field,No Comment,private long recordCount;,long recordCount,private 
+org.apache.commons.csv.CSVFormat.DEFAULT,Field,"* Standard Comma Separated Value format, as for {@link #RFC4180} but allowing empty lines.\n     *\n     * <p>\n     * The {@link Builder} settings are:\n     * </p>\n     * <ul>\n     * <li>{@link Builder#setDelimiter(char) setDelimiter}{@code (',')}</li>\n     * <li>{@link Builder#setQuote(char) setQuote}{@code ('""')}</li>\n     * <li>{@link Builder#setRecordSeparator(String) setRecordSeparator}{@code (""\r\n"")}</li>\n     * <li>{@link Builder#setIgnoreEmptyLines(boolean) setIgnoreEmptyLines}{@code (true)}</li>\n     * <li>{@link Builder#setDuplicateHeaderMode(DuplicateHeaderMode) setDuplicateHeaderMode}{@code (DuplicateHeaderMode.ALLOW_ALL)}</li>\n     * </ul>\n     *\n     * @see Predefined#Default\n     * @see DuplicateHeaderMode#ALLOW_ALL",public static final CSVFormat DEFAULT = new CSVFormat(Builder.create());,org.apache.commons.csv.CSVFormat DEFAULT,"public , static , final "
+org.apache.commons.csv.CSVFormat.EXCEL,Field,@formatter:off,public static final CSVFormat EXCEL = DEFAULT.builder().setIgnoreEmptyLines(false).setAllowMissingColumnNames(true).setTrailingData(true).setLenientEof(true).get();,org.apache.commons.csv.CSVFormat EXCEL,"public , static , final "
+org.apache.commons.csv.CSVFormat.INFORMIX_UNLOAD,Field,@formatter:off,public static final CSVFormat INFORMIX_UNLOAD = DEFAULT.builder().setDelimiter(Constants.PIPE).setEscape(Constants.BACKSLASH).setQuote(Constants.DOUBLE_QUOTE_CHAR).setRecordSeparator(Constants.LF).get();,org.apache.commons.csv.CSVFormat INFORMIX_UNLOAD,"public , static , final "
+org.apache.commons.csv.CSVFormat.INFORMIX_UNLOAD_CSV,Field,@formatter:off,public static final CSVFormat INFORMIX_UNLOAD_CSV = DEFAULT.builder().setDelimiter(Constants.COMMA).setQuote(Constants.DOUBLE_QUOTE_CHAR).setRecordSeparator(Constants.LF).get();,org.apache.commons.csv.CSVFormat INFORMIX_UNLOAD_CSV,"public , static , final "
+org.apache.commons.csv.CSVFormat.MONGODB_CSV,Field,@formatter:off,public static final CSVFormat MONGODB_CSV = DEFAULT.builder().setDelimiter(Constants.COMMA).setEscape(Constants.DOUBLE_QUOTE_CHAR).setQuote(Constants.DOUBLE_QUOTE_CHAR).setQuoteMode(QuoteMode.MINIMAL).get();,org.apache.commons.csv.CSVFormat MONGODB_CSV,"public , static , final "
+org.apache.commons.csv.CSVFormat.MONGODB_TSV,Field,@formatter:off,public static final CSVFormat MONGODB_TSV = DEFAULT.builder().setDelimiter(Constants.TAB).setEscape(Constants.DOUBLE_QUOTE_CHAR).setQuote(Constants.DOUBLE_QUOTE_CHAR).setQuoteMode(QuoteMode.MINIMAL).setSkipHeaderRecord(false).get();,org.apache.commons.csv.CSVFormat MONGODB_TSV,"public , static , final "
+org.apache.commons.csv.CSVFormat.MYSQL,Field,@formatter:off,public static final CSVFormat MYSQL = DEFAULT.builder().setDelimiter(Constants.TAB).setEscape(Constants.BACKSLASH).setIgnoreEmptyLines(false).setQuote(null).setRecordSeparator(Constants.LF).setNullString(Constants.SQL_NULL_STRING).setQuoteMode(QuoteMode.ALL_NON_NULL).get();,org.apache.commons.csv.CSVFormat MYSQL,"public , static , final "
+org.apache.commons.csv.CSVFormat.ORACLE,Field,@formatter:off,public static final CSVFormat ORACLE = DEFAULT.builder().setDelimiter(Constants.COMMA).setEscape(Constants.BACKSLASH).setIgnoreEmptyLines(false).setQuote(Constants.DOUBLE_QUOTE_CHAR).setNullString(Constants.SQL_NULL_STRING).setTrim(true).setRecordSeparator(System.lineSeparator()).setQuoteMode(QuoteMode.MINIMAL).get();,org.apache.commons.csv.CSVFormat ORACLE,"public , static , final "
+org.apache.commons.csv.CSVFormat.POSTGRESQL_CSV,Field,@formatter:off,public static final CSVFormat POSTGRESQL_CSV = DEFAULT.builder().setDelimiter(Constants.COMMA).setEscape(null).setIgnoreEmptyLines(false).setQuote(Constants.DOUBLE_QUOTE_CHAR).setRecordSeparator(Constants.LF).setNullString(Constants.EMPTY).setQuoteMode(QuoteMode.ALL_NON_NULL).get();,org.apache.commons.csv.CSVFormat POSTGRESQL_CSV,"public , static , final "
+org.apache.commons.csv.CSVFormat.POSTGRESQL_TEXT,Field,@formatter:off,public static final CSVFormat POSTGRESQL_TEXT = DEFAULT.builder().setDelimiter(Constants.TAB).setEscape(Constants.BACKSLASH).setIgnoreEmptyLines(false).setQuote(null).setRecordSeparator(Constants.LF).setNullString(Constants.SQL_NULL_STRING).setQuoteMode(QuoteMode.ALL_NON_NULL).get();,org.apache.commons.csv.CSVFormat POSTGRESQL_TEXT,"public , static , final "
+org.apache.commons.csv.CSVFormat.RFC4180,Field,"* Comma separated format as defined by <a href=""https://tools.ietf.org/html/rfc4180"">RFC 4180</a>.\n     *\n     * <p>\n     * The {@link Builder} settings are the {@link #DEFAULT} <em>with</em>:\n     * </p>\n     * <ul>\n     * <li>{@link Builder#setDelimiter(char) setDelimiter}{@code (',')}</li>\n     * <li>{@link Builder#setQuote(char) setQuote}{@code ('""')}</li>\n     * <li>{@link Builder#setRecordSeparator(String) setRecordSeparator}{@code (""\r\n"")}</li>\n     * <li>{@link Builder#setIgnoreEmptyLines(boolean) setIgnoreEmptyLines}{@code (false)}</li>\n     * </ul>\n     *\n     * @see Predefined#RFC4180\n     * @see <a href=""https://tools.ietf.org/html/rfc4180"">RFC 4180</a>",public static final CSVFormat RFC4180 = DEFAULT.builder().setIgnoreEmptyLines(false).get();,org.apache.commons.csv.CSVFormat RFC4180,"public , static , final "
+org.apache.commons.csv.CSVFormat.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 2L;,long serialVersionUID,"private , static , final "
+org.apache.commons.csv.CSVFormat.TDF,Field,@formatter:off,public static final CSVFormat TDF = DEFAULT.builder().setDelimiter(Constants.TAB).setIgnoreSurroundingSpaces(true).get();,org.apache.commons.csv.CSVFormat TDF,"public , static , final "
+org.apache.commons.csv.CSVFormat.duplicateHeaderMode,Field,How duplicate headers are handled.,private final DuplicateHeaderMode duplicateHeaderMode;,org.apache.commons.csv.DuplicateHeaderMode duplicateHeaderMode,"private , final "
+org.apache.commons.csv.CSVFormat.allowMissingColumnNames,Field,Whether missing column names are allowed when parsing the header line.,private final boolean allowMissingColumnNames;,boolean allowMissingColumnNames,"private , final "
+org.apache.commons.csv.CSVFormat.autoFlush,Field,Whether to flush on close.,private final boolean autoFlush;,boolean autoFlush,"private , final "
+org.apache.commons.csv.CSVFormat.commentMarker,Field,Set to null if commenting is disabled.,private final Character commentMarker;,java.lang.Character commentMarker,"private , final "
+org.apache.commons.csv.CSVFormat.delimiter,Field,"The character delimiting the values (typically "";"", "","" or ""\t"").",private final String delimiter;,java.lang.String delimiter,"private , final "
+org.apache.commons.csv.CSVFormat.escapeCharacter,Field,Set to null if escaping is disabled.,private final Character escapeCharacter;,java.lang.Character escapeCharacter,"private , final "
+org.apache.commons.csv.CSVFormat.headers,Field,Array of header column names.,private final String[] headers;,java.lang.String[] headers,"private , final "
+org.apache.commons.csv.CSVFormat.headerComments,Field,Array of header comment lines.,private final String[] headerComments;,java.lang.String[] headerComments,"private , final "
+org.apache.commons.csv.CSVFormat.ignoreEmptyLines,Field,Whether empty lines between records are ignored when parsing input.,private final boolean ignoreEmptyLines;,boolean ignoreEmptyLines,"private , final "
+org.apache.commons.csv.CSVFormat.ignoreHeaderCase,Field,Should ignore header names case.,private final boolean ignoreHeaderCase;,boolean ignoreHeaderCase,"private , final "
+org.apache.commons.csv.CSVFormat.ignoreSurroundingSpaces,Field,Should leading/trailing spaces be ignored around values?.,private final boolean ignoreSurroundingSpaces;,boolean ignoreSurroundingSpaces,"private , final "
+org.apache.commons.csv.CSVFormat.nullString,Field,The string to be used for null values.,private final String nullString;,java.lang.String nullString,"private , final "
+org.apache.commons.csv.CSVFormat.quoteCharacter,Field,Set to null if quoting is disabled.,private final Character quoteCharacter;,java.lang.Character quoteCharacter,"private , final "
+org.apache.commons.csv.CSVFormat.quotedNullString,Field,Set to {@code quoteCharacter + nullString + quoteCharacter},private final String quotedNullString;,java.lang.String quotedNullString,"private , final "
+org.apache.commons.csv.CSVFormat.quoteMode,Field,The quote policy output fields.,private final QuoteMode quoteMode;,org.apache.commons.csv.QuoteMode quoteMode,"private , final "
+org.apache.commons.csv.CSVFormat.recordSeparator,Field,For output.,private final String recordSeparator;,java.lang.String recordSeparator,"private , final "
+org.apache.commons.csv.CSVFormat.skipHeaderRecord,Field,Whether to skip the header record.,private final boolean skipHeaderRecord;,boolean skipHeaderRecord,"private , final "
+org.apache.commons.csv.CSVFormat.lenientEof,Field,"Whether reading end-of-file is allowed even when input is malformed, helps Excel compatibility.",private final boolean lenientEof;,boolean lenientEof,"private , final "
+org.apache.commons.csv.CSVFormat.trailingData,Field,"Whether reading trailing data is allowed in records, helps Excel compatibility.",private final boolean trailingData;,boolean trailingData,"private , final "
+org.apache.commons.csv.CSVFormat.trailingDelimiter,Field,Whether to add a trailing delimiter.,private final boolean trailingDelimiter;,boolean trailingDelimiter,"private , final "
+org.apache.commons.csv.CSVFormat.trim,Field,Whether to trim leading and trailing blanks.,private final boolean trim;,boolean trim,"private , final "
+org.apache.commons.csv.CSVFormat.maxRows,Field,"The maximum number of rows to process, excluding the header row.",private final long maxRows;,long maxRows,"private , final "
+org.apache.commons.csv.CSVFormat$Builder.allowMissingColumnNames,Field,No Comment,private boolean allowMissingColumnNames;,boolean allowMissingColumnNames,private 
+org.apache.commons.csv.CSVFormat$Builder.autoFlush,Field,No Comment,private boolean autoFlush;,boolean autoFlush,private 
+org.apache.commons.csv.CSVFormat$Builder.commentMarker,Field,No Comment,private Character commentMarker;,java.lang.Character commentMarker,private 
+org.apache.commons.csv.CSVFormat$Builder.delimiter,Field,No Comment,private String delimiter;,java.lang.String delimiter,private 
+org.apache.commons.csv.CSVFormat$Builder.duplicateHeaderMode,Field,No Comment,private DuplicateHeaderMode duplicateHeaderMode;,org.apache.commons.csv.DuplicateHeaderMode duplicateHeaderMode,private 
+org.apache.commons.csv.CSVFormat$Builder.escapeCharacter,Field,No Comment,private Character escapeCharacter;,java.lang.Character escapeCharacter,private 
+org.apache.commons.csv.CSVFormat$Builder.headerComments,Field,No Comment,private String[] headerComments;,java.lang.String[] headerComments,private 
+org.apache.commons.csv.CSVFormat$Builder.headers,Field,No Comment,private String[] headers;,java.lang.String[] headers,private 
+org.apache.commons.csv.CSVFormat$Builder.ignoreEmptyLines,Field,No Comment,private boolean ignoreEmptyLines;,boolean ignoreEmptyLines,private 
+org.apache.commons.csv.CSVFormat$Builder.ignoreHeaderCase,Field,No Comment,private boolean ignoreHeaderCase;,boolean ignoreHeaderCase,private 
+org.apache.commons.csv.CSVFormat$Builder.ignoreSurroundingSpaces,Field,No Comment,private boolean ignoreSurroundingSpaces;,boolean ignoreSurroundingSpaces,private 
+org.apache.commons.csv.CSVFormat$Builder.nullString,Field,No Comment,private String nullString;,java.lang.String nullString,private 
+org.apache.commons.csv.CSVFormat$Builder.quoteCharacter,Field,No Comment,private Character quoteCharacter;,java.lang.Character quoteCharacter,private 
+org.apache.commons.csv.CSVFormat$Builder.quotedNullString,Field,No Comment,private String quotedNullString;,java.lang.String quotedNullString,private 
+org.apache.commons.csv.CSVFormat$Builder.quoteMode,Field,No Comment,private QuoteMode quoteMode;,org.apache.commons.csv.QuoteMode quoteMode,private 
+org.apache.commons.csv.CSVFormat$Builder.recordSeparator,Field,No Comment,private String recordSeparator;,java.lang.String recordSeparator,private 
+org.apache.commons.csv.CSVFormat$Builder.skipHeaderRecord,Field,No Comment,private boolean skipHeaderRecord;,boolean skipHeaderRecord,private 
+org.apache.commons.csv.CSVFormat$Builder.lenientEof,Field,No Comment,private boolean lenientEof;,boolean lenientEof,private 
+org.apache.commons.csv.CSVFormat$Builder.trailingData,Field,No Comment,private boolean trailingData;,boolean trailingData,private 
+org.apache.commons.csv.CSVFormat$Builder.trailingDelimiter,Field,No Comment,private boolean trailingDelimiter;,boolean trailingDelimiter,private 
+org.apache.commons.csv.CSVFormat$Builder.trim,Field,No Comment,private boolean trim;,boolean trim,private 
+org.apache.commons.csv.CSVFormat$Builder.maxRows,Field,"The maximum number of rows to process, excluding the header row.",private long maxRows;,long maxRows,private 
+org.apache.commons.csv.ExtendedBufferedReader.lastChar,Field,The last char returned,private int lastChar = UNDEFINED;,int lastChar,private 
+org.apache.commons.csv.ExtendedBufferedReader.lastCharMark,Field,No Comment,private int lastCharMark = UNDEFINED;,int lastCharMark,private 
+org.apache.commons.csv.ExtendedBufferedReader.lineNumber,Field,The count of EOLs (CR/LF/CRLF) seen so far,private long lineNumber;,long lineNumber,private 
+org.apache.commons.csv.ExtendedBufferedReader.lineNumberMark,Field,No Comment,private long lineNumberMark;,long lineNumberMark,private 
+org.apache.commons.csv.ExtendedBufferedReader.position,Field,"The position, which is the number of characters read so far",private long position;,long position,private 
+org.apache.commons.csv.ExtendedBufferedReader.positionMark,Field,No Comment,private long positionMark;,long positionMark,private 
+org.apache.commons.csv.ExtendedBufferedReader.bytesRead,Field,The number of bytes read so far.,private long bytesRead;,long bytesRead,private 
+org.apache.commons.csv.ExtendedBufferedReader.bytesReadMark,Field,No Comment,private long bytesReadMark;,long bytesReadMark,private 
+org.apache.commons.csv.ExtendedBufferedReader.encoder,Field,Encoder for calculating the number of bytes for each character read.,private final CharsetEncoder encoder;,java.nio.charset.CharsetEncoder encoder,"private , final "
+org.apache.commons.csv.Lexer.CR_STRING,Field,No Comment,private static final String CR_STRING = Character.toString(Constants.CR);,java.lang.String CR_STRING,"private , static , final "
+org.apache.commons.csv.Lexer.LF_STRING,Field,No Comment,private static final String LF_STRING = Character.toString(Constants.LF);,java.lang.String LF_STRING,"private , static , final "
+org.apache.commons.csv.Lexer.delimiter,Field,No Comment,private final char[] delimiter;,char[] delimiter,"private , final "
+org.apache.commons.csv.Lexer.delimiterBuf,Field,No Comment,private final char[] delimiterBuf;,char[] delimiterBuf,"private , final "
+org.apache.commons.csv.Lexer.escapeDelimiterBuf,Field,No Comment,private final char[] escapeDelimiterBuf;,char[] escapeDelimiterBuf,"private , final "
+org.apache.commons.csv.Lexer.escape,Field,No Comment,private final int escape;,int escape,"private , final "
+org.apache.commons.csv.Lexer.quoteChar,Field,No Comment,private final int quoteChar;,int quoteChar,"private , final "
+org.apache.commons.csv.Lexer.commentStart,Field,No Comment,private final int commentStart;,int commentStart,"private , final "
+org.apache.commons.csv.Lexer.ignoreSurroundingSpaces,Field,No Comment,private final boolean ignoreSurroundingSpaces;,boolean ignoreSurroundingSpaces,"private , final "
+org.apache.commons.csv.Lexer.ignoreEmptyLines,Field,No Comment,private final boolean ignoreEmptyLines;,boolean ignoreEmptyLines,"private , final "
+org.apache.commons.csv.Lexer.lenientEof,Field,No Comment,private final boolean lenientEof;,boolean lenientEof,"private , final "
+org.apache.commons.csv.Lexer.trailingData,Field,No Comment,private final boolean trailingData;,boolean trailingData,"private , final "
+org.apache.commons.csv.Lexer.reader,Field,The buffered reader.,private final ExtendedBufferedReader reader;,org.apache.commons.csv.ExtendedBufferedReader reader,"private , final "
+org.apache.commons.csv.Lexer.firstEol,Field,No Comment,private String firstEol;,java.lang.String firstEol,private 
+org.apache.commons.csv.Lexer.isLastTokenDelimiter,Field,No Comment,private boolean isLastTokenDelimiter;,boolean isLastTokenDelimiter,private 
+org.apache.commons.csv.Token.INITIAL_TOKEN_LENGTH,Field,Length of the initial token (content-)buffer,private static final int INITIAL_TOKEN_LENGTH = 50;,int INITIAL_TOKEN_LENGTH,"private , static , final "
+org.apache.commons.csv.Token.type,Field,Token type,Token.Type type = INVALID;,org.apache.commons.csv.Token$Type type,default
+org.apache.commons.csv.Token.content,Field,The content buffer.,final StringBuilder content = new StringBuilder(INITIAL_TOKEN_LENGTH);,java.lang.StringBuilder content,final 
+org.apache.commons.csv.Token.isReady,Field,Token ready flag: indicates a valid token with content (ready for the parser).,boolean isReady;,boolean isReady,default
+org.apache.commons.csv.Token.isQuoted,Field,No Comment,boolean isQuoted;,boolean isQuoted,default
+org.apache.commons.csv.CSVException.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.csv.Constants.BACKSLASH,Field,No Comment,static final char BACKSLASH = '\\';,char BACKSLASH,"static , final "
+org.apache.commons.csv.Constants.BACKSPACE,Field,No Comment,static final char BACKSPACE = '\b';,char BACKSPACE,"static , final "
+org.apache.commons.csv.Constants.COMMA,Field,No Comment,"static final String COMMA = "","";",java.lang.String COMMA,"static , final "
+org.apache.commons.csv.Constants.COMMENT,Field,"* Starts a comment, the remainder of the line is the comment.",static final char COMMENT = '#';,char COMMENT,"static , final "
+org.apache.commons.csv.Constants.CR,Field,No Comment,static final char CR = '\r';,char CR,"static , final "
+org.apache.commons.csv.Constants.CRLF,Field,RFC 4180 defines line breaks as CRLF.,"static final String CRLF = ""\r\n"";",java.lang.String CRLF,"static , final "
+org.apache.commons.csv.Constants.DOUBLE_QUOTE_CHAR,Field,Explicit (un)boxing is intentional.,"static final Character DOUBLE_QUOTE_CHAR = Character.valueOf('""');",java.lang.Character DOUBLE_QUOTE_CHAR,"static , final "
+org.apache.commons.csv.Constants.EMPTY,Field,No Comment,"static final String EMPTY = """";",java.lang.String EMPTY,"static , final "
+org.apache.commons.csv.Constants.EMPTY_STRING_ARRAY,Field,No Comment,static final String[] EMPTY_STRING_ARRAY = {};,java.lang.String[] EMPTY_STRING_ARRAY,"static , final "
+org.apache.commons.csv.Constants.FF,Field,No Comment,static final char FF = '\f';,char FF,"static , final "
+org.apache.commons.csv.Constants.LF,Field,No Comment,static final char LF = '\n';,char LF,"static , final "
+org.apache.commons.csv.Constants.LINE_SEPARATOR,Field,* Unicode line separator.,"static final String LINE_SEPARATOR = ""\u2028"";",java.lang.String LINE_SEPARATOR,"static , final "
+org.apache.commons.csv.Constants.NEXT_LINE,Field,* Unicode next line.,"static final String NEXT_LINE = ""\u0085"";",java.lang.String NEXT_LINE,"static , final "
+org.apache.commons.csv.Constants.PARAGRAPH_SEPARATOR,Field,* Unicode paragraph separator.,"static final String PARAGRAPH_SEPARATOR = ""\u2029"";",java.lang.String PARAGRAPH_SEPARATOR,"static , final "
+org.apache.commons.csv.Constants.PIPE,Field,No Comment,static final char PIPE = '|';,char PIPE,"static , final "
+org.apache.commons.csv.Constants.RS,Field,ASCII record separator.,static final char RS = 30;,char RS,"static , final "
+org.apache.commons.csv.Constants.SP,Field,No Comment,static final char SP = ' ';,char SP,"static , final "
+org.apache.commons.csv.Constants.SQL_NULL_STRING,Field,No Comment,"static final String SQL_NULL_STRING = ""\\N"";",java.lang.String SQL_NULL_STRING,"static , final "
+org.apache.commons.csv.Constants.TAB,Field,No Comment,static final char TAB = '\t';,char TAB,"static , final "
+org.apache.commons.csv.Constants.UNDEFINED,Field,Undefined state for the lookahead char.,static final int UNDEFINED = -2;,int UNDEFINED,"static , final "
+org.apache.commons.csv.Constants.US,Field,ASCII unit separator.,static final char US = 31;,char US,"static , final "
+org.apache.commons.csv.CSVRecord.serialVersionUID,Field,No Comment,private static final long serialVersionUID = 1L;,long serialVersionUID,"private , static , final "
+org.apache.commons.csv.CSVRecord.characterPosition,Field,* The start position of this record as a character position in the source stream. This may or may not correspond to the byte position depending on the\n     * character set.,private final long characterPosition;,long characterPosition,"private , final "
+org.apache.commons.csv.CSVRecord.bytePosition,Field,"* The starting position of this record in the source stream, measured in bytes.",private final long bytePosition;,long bytePosition,"private , final "
+org.apache.commons.csv.CSVRecord.comment,Field,The accumulated comments (if any),private final String comment;,java.lang.String comment,"private , final "
+org.apache.commons.csv.CSVRecord.recordNumber,Field,The record number.,private final long recordNumber;,long recordNumber,"private , final "
+org.apache.commons.csv.CSVRecord.values,Field,The values of the record,private final String[] values;,java.lang.String[] values,"private , final "
+org.apache.commons.csv.CSVRecord.parser,Field,The parser that originates this record. This is not serialized.,private final transient CSVParser parser;,org.apache.commons.csv.CSVParser parser,"private , final , transient "

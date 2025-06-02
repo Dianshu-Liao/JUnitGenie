@@ -1,0 +1,38 @@
+###CFG
+```dot
+digraph cfg_contains {
+	"1" [label="$stack4 = this.<org.apache.commons.lang3.CharSet: java.util.Set set>"];
+	"2" [label="$stack5 = interfaceinvoke l2.<java.util.Iterator: boolean hasNext()>()"];
+	"3" [label="$stack6 = interfaceinvoke l2.<java.util.Iterator: java.lang.Object next()>()"];
+	"4" [label="$stack7 = virtualinvoke range.<org.apache.commons.lang3.CharRange: boolean contains(char)>(ch)"];
+	"5" [label="ch := @parameter0: char"];
+	"6" [label="goto"];
+	"7" [label="if $stack5 == 0"];
+	"8" [label="if $stack7 == 0"];
+	"9" [label="l2 = interfaceinvoke $stack4.<java.util.Set: java.util.Iterator iterator()>()"];
+	"10" [label="range = (org.apache.commons.lang3.CharRange) $stack6"];
+	"11" [label="return 0"];
+	"12" [label="return 1"];
+	"13" [label="this := @this: org.apache.commons.lang3.CharSet"];
+	"1" -> "9"[label="cfg_next"];
+	"10" -> "4"[label="cfg_next"];
+	"13" -> "5"[label="cfg_next"];
+	"2" -> "7"[label="cfg_next"];
+	"3" -> "10"[label="cfg_next"];
+	"4" -> "8"[label="cfg_next"];
+	"5" -> "1"[label="cfg_next"];
+	"6" -> "2"[label="cfg_goto"];
+	"7" -> "11"[label="cfg_true"];
+	"7" -> "3"[label="cfg_false"];
+	"8" -> "12"[label="cfg_false"];
+	"8" -> "6"[label="cfg_true"];
+	"9" -> "2"[label="cfg_next"];
+}
+```
+
+
+###Method_Constraints
+The return value must be `true`.
+
+
+Please note that the entry node of CFG after prune must be "13" [label="this := @this: org.apache.commons.lang3.CharSet"]; and it must be the only entry point!

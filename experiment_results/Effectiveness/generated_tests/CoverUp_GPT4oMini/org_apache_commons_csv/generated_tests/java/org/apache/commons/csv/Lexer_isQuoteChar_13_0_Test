@@ -1,0 +1,62 @@
+package org.apache.commons.csv;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.lang.reflect.Field;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.Closeable;
+import org.apache.commons.io.IOUtils;
+
+@ExtendWith(MockitoExtension.class)
+class Lexer_isQuoteChar_13_0_Test {
+
+    private Lexer lexer;
+
+    // Example quote character
+    private final int quoteChar = '"';
+
+    @BeforeEach
+    void setUp() {
+        // Mocking CSVFormat and ExtendedBufferedReader for the Lexer constructor
+        CSVFormat format = CSVFormat.DEFAULT;
+        // Creating a suitable reader
+        ExtendedBufferedReader reader = new ExtendedBufferedReader(new StringReader("test"));
+        lexer = new Lexer(format, reader);
+        setQuoteChar(quoteChar);
+    }
+
+    private void setQuoteChar(int quoteChar) {
+        try {
+            Field field = Lexer.class.getDeclaredField("quoteChar");
+            field.setAccessible(true);
+            field.setInt(lexer, quoteChar);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            fail("Failed to set quoteChar field: " + e.getMessage());
+        }
+    }
+
+    @Test
+    void testIsQuoteCharReturnsTrue() {
+        assertTrue(lexer.isQuoteChar(quoteChar), "Expected isQuoteChar to return true for the quote character.");
+    }
+
+    @Test
+    void testIsQuoteCharReturnsFalse() {
+        assertFalse(lexer.isQuoteChar('a'), "Expected isQuoteChar to return false for a non-quote character.");
+        assertFalse(lexer.isQuoteChar('1'), "Expected isQuoteChar to return false for a non-quote character.");
+        assertFalse(lexer.isQuoteChar('\n'), "Expected isQuoteChar to return false for a non-quote character.");
+    }
+
+    @Test
+    void testIsQuoteCharWithDifferentCharacters() {
+        assertFalse(lexer.isQuoteChar(' '), "Expected isQuoteChar to return false for a space character.");
+        assertFalse(lexer.isQuoteChar('\t'), "Expected isQuoteChar to return false for a tab character.");
+    }
+}

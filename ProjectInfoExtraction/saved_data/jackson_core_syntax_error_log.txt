@@ -1,0 +1,10 @@
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.eclipse.sisu.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_6' from annotation processor 'org.sonatype.guice.bean.scanners.index.SisuIndexAPT6' less than -source '1.8'
+warning: Supported source version 'RELEASE_5' from annotation processor 'org.sonatype.guice.bean.scanners.index.QualifiedIndexAPT6' less than -source '1.8'
+warning: Implicitly compiled files were not subject to annotation processing.
+  Use -proc:none to disable annotation processing or -implicit to specify a policy for implicit compilation.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 warnings

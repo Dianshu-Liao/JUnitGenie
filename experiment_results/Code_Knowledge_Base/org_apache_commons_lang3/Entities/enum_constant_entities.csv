@@ -1,0 +1,53 @@
+FEN:ID,:LABEL,Comment,Source Code,Signature,Modifiers
+org.apache.commons.lang3.ClassUtils$Interfaces.INCLUDE,Enum Constant,Includes interfaces.,INCLUDE,org.apache.commons.lang3.ClassUtils$Interfaces INCLUDE,public 
+org.apache.commons.lang3.ClassUtils$Interfaces.EXCLUDE,Enum Constant,Excludes interfaces.,EXCLUDE,org.apache.commons.lang3.ClassUtils$Interfaces EXCLUDE,public 
+org.apache.commons.lang3.time.StopWatch$SplitState.SPLIT,Enum Constant,No Comment,SPLIT,org.apache.commons.lang3.time.StopWatch$SplitState SPLIT,private 
+org.apache.commons.lang3.time.StopWatch$SplitState.UNSPLIT,Enum Constant,No Comment,UNSPLIT,org.apache.commons.lang3.time.StopWatch$SplitState UNSPLIT,private 
+org.apache.commons.lang3.time.StopWatch$State.RUNNING,Enum Constant,No Comment,RUNNING {\n\n    @Override\n    boolean isStarted() {\n        return true;\n    }\n\n    @Override\n    boolean isStopped() {\n        return false;\n    }\n\n    @Override\n    boolean isSuspended() {\n        return false;\n    }\n},org.apache.commons.lang3.time.StopWatch$State RUNNING,private 
+org.apache.commons.lang3.time.StopWatch$State.STOPPED,Enum Constant,No Comment,STOPPED {\n\n    @Override\n    boolean isStarted() {\n        return false;\n    }\n\n    @Override\n    boolean isStopped() {\n        return true;\n    }\n\n    @Override\n    boolean isSuspended() {\n        return false;\n    }\n},org.apache.commons.lang3.time.StopWatch$State STOPPED,private 
+org.apache.commons.lang3.time.StopWatch$State.SUSPENDED,Enum Constant,No Comment,SUSPENDED {\n\n    @Override\n    boolean isStarted() {\n        return true;\n    }\n\n    @Override\n    boolean isStopped() {\n        return false;\n    }\n\n    @Override\n    boolean isSuspended() {\n        return true;\n    }\n},org.apache.commons.lang3.time.StopWatch$State SUSPENDED,private 
+org.apache.commons.lang3.time.StopWatch$State.UNSTARTED,Enum Constant,No Comment,UNSTARTED {\n\n    @Override\n    boolean isStarted() {\n        return false;\n    }\n\n    @Override\n    boolean isStopped() {\n        return true;\n    }\n\n    @Override\n    boolean isSuspended() {\n        return false;\n    }\n},org.apache.commons.lang3.time.StopWatch$State UNSTARTED,private 
+org.apache.commons.lang3.time.DateUtils$ModifyType.TRUNCATE,Enum Constant,* Truncation.,TRUNCATE,org.apache.commons.lang3.time.DateUtils$ModifyType TRUNCATE,private 
+org.apache.commons.lang3.time.DateUtils$ModifyType.ROUND,Enum Constant,* Rounding.,ROUND,org.apache.commons.lang3.time.DateUtils$ModifyType ROUND,private 
+org.apache.commons.lang3.time.DateUtils$ModifyType.CEILING,Enum Constant,* Ceiling.,CEILING,org.apache.commons.lang3.time.DateUtils$ModifyType CEILING,private 
+org.apache.commons.lang3.JavaVersion.JAVA_0_9,Enum Constant,* The Java version reported by Android. This is not an official Java version number.,"JAVA_0_9(1.5f, ""0.9"")",org.apache.commons.lang3.JavaVersion JAVA_0_9,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_1,Enum Constant,* Java 1.1.,"JAVA_1_1(1.1f, ""1.1"")",org.apache.commons.lang3.JavaVersion JAVA_1_1,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_2,Enum Constant,* Java 1.2.,"JAVA_1_2(1.2f, ""1.2"")",org.apache.commons.lang3.JavaVersion JAVA_1_2,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_3,Enum Constant,* Java 1.3.,"JAVA_1_3(1.3f, ""1.3"")",org.apache.commons.lang3.JavaVersion JAVA_1_3,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_4,Enum Constant,* Java 1.4.,"JAVA_1_4(1.4f, ""1.4"")",org.apache.commons.lang3.JavaVersion JAVA_1_4,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_5,Enum Constant,* Java 1.5.,"JAVA_1_5(1.5f, ""1.5"")",org.apache.commons.lang3.JavaVersion JAVA_1_5,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_6,Enum Constant,* Java 1.6.,"JAVA_1_6(1.6f, ""1.6"")",org.apache.commons.lang3.JavaVersion JAVA_1_6,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_7,Enum Constant,* Java 1.7.,"JAVA_1_7(1.7f, ""1.7"")",org.apache.commons.lang3.JavaVersion JAVA_1_7,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_8,Enum Constant,* Java 1.8.,"JAVA_1_8(1.8f, ""1.8"")",org.apache.commons.lang3.JavaVersion JAVA_1_8,public 
+org.apache.commons.lang3.JavaVersion.JAVA_1_9,Enum Constant,"* Java 1.9.\n     *\n     * @deprecated As of release 3.5, replaced by {@link #JAVA_9}","@Deprecated\nJAVA_1_9(9.0f, ""9"")",org.apache.commons.lang3.JavaVersion JAVA_1_9,public 
+org.apache.commons.lang3.JavaVersion.JAVA_9,Enum Constant,* Java 9.\n     *\n     * @since 3.5,"JAVA_9(9.0f, ""9"")",org.apache.commons.lang3.JavaVersion JAVA_9,public 
+org.apache.commons.lang3.JavaVersion.JAVA_10,Enum Constant,* Java 10.\n     *\n     * @since 3.7,"JAVA_10(10.0f, ""10"")",org.apache.commons.lang3.JavaVersion JAVA_10,public 
+org.apache.commons.lang3.JavaVersion.JAVA_11,Enum Constant,* Java 11.\n     *\n     * @since 3.8,"JAVA_11(11.0f, ""11"")",org.apache.commons.lang3.JavaVersion JAVA_11,public 
+org.apache.commons.lang3.JavaVersion.JAVA_12,Enum Constant,* Java 12.\n     *\n     * @since 3.9,"JAVA_12(12.0f, ""12"")",org.apache.commons.lang3.JavaVersion JAVA_12,public 
+org.apache.commons.lang3.JavaVersion.JAVA_13,Enum Constant,* Java 13.\n     *\n     * @since 3.9,"JAVA_13(13.0f, ""13"")",org.apache.commons.lang3.JavaVersion JAVA_13,public 
+org.apache.commons.lang3.JavaVersion.JAVA_14,Enum Constant,* Java 14.\n     *\n     * @since 3.11,"JAVA_14(14.0f, ""14"")",org.apache.commons.lang3.JavaVersion JAVA_14,public 
+org.apache.commons.lang3.JavaVersion.JAVA_15,Enum Constant,* Java 15.\n     *\n     * @since 3.11,"JAVA_15(15.0f, ""15"")",org.apache.commons.lang3.JavaVersion JAVA_15,public 
+org.apache.commons.lang3.JavaVersion.JAVA_16,Enum Constant,* Java 16.\n     *\n     * @since 3.11,"JAVA_16(16.0f, ""16"")",org.apache.commons.lang3.JavaVersion JAVA_16,public 
+org.apache.commons.lang3.JavaVersion.JAVA_17,Enum Constant,* Java 17.\n     *\n     * @since 3.12.0,"JAVA_17(17.0f, ""17"")",org.apache.commons.lang3.JavaVersion JAVA_17,public 
+org.apache.commons.lang3.JavaVersion.JAVA_18,Enum Constant,* Java 18.\n     *\n     * @since 3.13.0,"JAVA_18(18.0f, ""18"")",org.apache.commons.lang3.JavaVersion JAVA_18,public 
+org.apache.commons.lang3.JavaVersion.JAVA_19,Enum Constant,* Java 19.\n     *\n     * @since 3.13.0,"JAVA_19(19.0f, ""19"")",org.apache.commons.lang3.JavaVersion JAVA_19,public 
+org.apache.commons.lang3.JavaVersion.JAVA_20,Enum Constant,* Java 20.\n     *\n     * @since 3.13.0,"JAVA_20(20, ""20"")",org.apache.commons.lang3.JavaVersion JAVA_20,public 
+org.apache.commons.lang3.JavaVersion.JAVA_21,Enum Constant,* Java 21.\n     *\n     * @since 3.13.0,"JAVA_21(21, ""21"")",org.apache.commons.lang3.JavaVersion JAVA_21,public 
+org.apache.commons.lang3.JavaVersion.JAVA_22,Enum Constant,* Java 22.\n     *\n     * @since 3.15.0,"JAVA_22(22, ""22"")",org.apache.commons.lang3.JavaVersion JAVA_22,public 
+org.apache.commons.lang3.JavaVersion.JAVA_23,Enum Constant,* Java 23.\n     *\n     * @since 3.18.0,"JAVA_23(23, ""23"")",org.apache.commons.lang3.JavaVersion JAVA_23,public 
+org.apache.commons.lang3.JavaVersion.JAVA_RECENT,Enum Constant,* The most recent Java version. Mainly introduced to avoid to break when a new version of Java is used.,"JAVA_RECENT(maxVersion(), Float.toString(maxVersion()))",org.apache.commons.lang3.JavaVersion JAVA_RECENT,public 
+org.apache.commons.lang3.arch.Processor$Arch.BIT_32,Enum Constant,* A 32-bit processor architecture.,"BIT_32(""32-bit"")",org.apache.commons.lang3.arch.Processor$Arch BIT_32,public 
+org.apache.commons.lang3.arch.Processor$Arch.BIT_64,Enum Constant,* A 64-bit processor architecture.,"BIT_64(""64-bit"")",org.apache.commons.lang3.arch.Processor$Arch BIT_64,public 
+org.apache.commons.lang3.arch.Processor$Arch.UNKNOWN,Enum Constant,* An unknown-bit processor architecture.,"UNKNOWN(""Unknown"")",org.apache.commons.lang3.arch.Processor$Arch UNKNOWN,public 
+org.apache.commons.lang3.arch.Processor$Type.AARCH_64,Enum Constant,* ARM 64-bit.\n         *\n         * @since 3.13.0,"AARCH_64(""AArch64"")",org.apache.commons.lang3.arch.Processor$Type AARCH_64,public 
+org.apache.commons.lang3.arch.Processor$Type.X86,Enum Constant,* Intel x86 series of instruction set architectures.,"X86(""x86"")",org.apache.commons.lang3.arch.Processor$Type X86,public 
+org.apache.commons.lang3.arch.Processor$Type.IA_64,Enum Constant,* Intel Itanium 64-bit architecture.,"IA_64(""IA-64"")",org.apache.commons.lang3.arch.Processor$Type IA_64,public 
+org.apache.commons.lang3.arch.Processor$Type.PPC,Enum Constant,* Apple–IBM–Motorola PowerPC architecture.,"PPC(""PPC"")",org.apache.commons.lang3.arch.Processor$Type PPC,public 
+org.apache.commons.lang3.arch.Processor$Type.RISC_V,Enum Constant,* RISC-V architecture.\n         *\n         * @since 3.14.0,"RISC_V(""RISC-V"")",org.apache.commons.lang3.arch.Processor$Type RISC_V,public 
+org.apache.commons.lang3.arch.Processor$Type.UNKNOWN,Enum Constant,* Unknown architecture.,"UNKNOWN(""Unknown"")",org.apache.commons.lang3.arch.Processor$Type UNKNOWN,public 
+org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State.CLOSED,Enum Constant,The closed state.,CLOSED {\n\n    /**\n     * {@inheritDoc}\n     */\n    @Override\n    public State oppositeState() {\n        return OPEN;\n    }\n},org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State CLOSED,protected 
+org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State.OPEN,Enum Constant,The open state.,OPEN {\n\n    /**\n     * {@inheritDoc}\n     */\n    @Override\n    public State oppositeState() {\n        return CLOSED;\n    }\n},org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State OPEN,protected 
+org.apache.commons.lang3.Range$ComparableComparator.INSTANCE,Enum Constant,No Comment,INSTANCE,org.apache.commons.lang3.Range$ComparableComparator INSTANCE,private 
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION.semiColonRequired,Enum Constant,* Require a semicolon.,semiColonRequired,org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION semiColonRequired,public 
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION.semiColonOptional,Enum Constant,* Do not require a semicolon.,semiColonOptional,org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION semiColonOptional,public 
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION.errorIfNoSemiColon,Enum Constant,* Throw an exception if a semicolon is missing.,errorIfNoSemiColon,org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION errorIfNoSemiColon,public 

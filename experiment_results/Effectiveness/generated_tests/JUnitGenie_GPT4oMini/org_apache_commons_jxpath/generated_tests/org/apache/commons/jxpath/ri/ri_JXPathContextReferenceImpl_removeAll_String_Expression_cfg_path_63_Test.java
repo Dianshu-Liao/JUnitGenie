@@ -1,0 +1,77 @@
+package org.apache.commons.jxpath.ri;
+import org.apache.commons.jxpath.ri.JXPathContextReferenceImpl;
+import org.apache.commons.jxpath.ri.compiler.Expression;
+import org.apache.commons.jxpath.ri.EvalContext;
+import org.apache.commons.jxpath.JXPathException;
+import org.apache.commons.jxpath.util.ReverseComparator;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Collections;
+
+public class ri_JXPathContextReferenceImpl_removeAll_String_Expression_cfg_path_63_Test {
+
+    private class TestExpression extends Expression {
+        private final ArrayList<Object> pointers;
+
+        public TestExpression(ArrayList<Object> pointers) {
+            this.pointers = pointers;
+        }
+
+        @Override
+        public Object computeValue(EvalContext context) {
+            return null; // Implement as needed for your test
+        }
+
+        @Override
+        public boolean computeContextDependent() {
+            return false; // Implement as needed for your test
+        }
+
+        @Override
+        public Object compute(EvalContext context) {
+            return null; // Implement as needed for your test
+        }
+
+        @Override
+        public Iterator<Object> iteratePointers(EvalContext context) {
+            return pointers.iterator();
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testRemoveAll() {
+        JXPathContextReferenceImpl context = new JXPathContextReferenceImpl(null, new Object());
+        ArrayList<Object> pointers = new ArrayList<>();
+        pointers.add(new Object()); // Add mock pointers as needed
+        TestExpression expr = new TestExpression(pointers);
+
+        try {
+            context.removeAll("some/xpath", expr);
+        } catch (JXPathException e) {
+            fail("Exception should not be thrown: " + e.getMessage());
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testRemoveAllThrowsException() {
+        JXPathContextReferenceImpl context = new JXPathContextReferenceImpl(null, new Object());
+        ArrayList<Object> pointers = new ArrayList<>();
+        pointers.add(new Object()); // Add mock pointers as needed
+        TestExpression expr = new TestExpression(pointers) {
+            @Override
+            public Iterator<Object> iteratePointers(EvalContext context) {
+                throw new RuntimeException("Simulated exception");
+            }
+        };
+
+        try {
+            context.removeAll("some/xpath", expr);
+            fail("Expected JXPathException to be thrown");
+        } catch (JXPathException e) {
+            assertTrue(e.getMessage().contains("Exception trying to remove all for xpath some/xpath"));
+        }
+    }
+
+}

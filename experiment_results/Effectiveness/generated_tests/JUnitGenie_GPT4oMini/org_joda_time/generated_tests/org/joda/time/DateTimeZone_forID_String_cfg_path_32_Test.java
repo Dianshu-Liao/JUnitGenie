@@ -1,0 +1,102 @@
+package org.joda.time;
+import org.joda.time.DateTimeZone;
+import org.joda.time.tz.Provider;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class DateTimeZone_forID_String_cfg_path_32_Test {
+
+    // Concrete implementation of the abstract DateTimeZone class for testing purposes
+    private static class TestDateTimeZone extends DateTimeZone {
+        protected TestDateTimeZone(String id) {
+            super(id);
+        }
+
+        @Override
+        public boolean isFixed() {
+            return false;
+        }
+
+        @Override
+        public String getNameKey(long instant) {
+            return null;
+        }
+
+        @Override
+        public int getStandardOffset(long instant) {
+            return 0;
+        }
+
+        @Override
+        public long previousTransition(long instant) {
+            return 0;
+        }
+
+        @Override
+        public int getOffset(long instant) {
+            return 0;
+        }
+
+        @Override
+        public long nextTransition(long instant) {
+            return 0;
+        }
+
+        // Override the equals method correctly
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (!(obj instanceof TestDateTimeZone)) return false;
+            TestDateTimeZone other = (TestDateTimeZone) obj;
+            return this.getID().equals(other.getID());
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_ValidUTC() {
+        DateTimeZone zone = DateTimeZone.forID("UTC");
+        assertEquals(DateTimeZone.UTC, zone);
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_ValidUT() {
+        DateTimeZone zone = DateTimeZone.forID("UT");
+        assertEquals(DateTimeZone.UTC, zone);
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_ValidGMT() {
+        DateTimeZone zone = DateTimeZone.forID("GMT");
+        assertEquals(DateTimeZone.UTC, zone);
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_ValidZ() {
+        DateTimeZone zone = DateTimeZone.forID("Z");
+        assertEquals(DateTimeZone.UTC, zone);
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_ValidOffset() {
+        DateTimeZone zone = DateTimeZone.forID("UTC+05:00"); // Corrected format for offset
+        assertNotNull(zone);
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_InvalidID() {
+        try {
+            DateTimeZone.forID("InvalidID");
+            fail("Expected IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+            assertEquals("The datetime zone id 'InvalidID' is not recognised", e.getMessage());
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testForID_NullID() {
+        DateTimeZone zone = DateTimeZone.forID(null);
+        assertEquals(DateTimeZone.UTC, zone);
+    }
+
+
+}

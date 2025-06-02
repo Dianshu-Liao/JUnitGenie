@@ -1,0 +1,29 @@
+###CFG_Path
+CFG Nodes:
+"28" [label="str := @parameter0: java.lang.String"];
+"26" [label="set := @parameter1: java.lang.String[]"];
+"6" [label="$stack9 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isEmpty(java.lang.CharSequence)>(str)"];
+"18" [label="if $stack9 != 0"];
+"1" [label="$stack10 = staticinvoke <org.apache.commons.lang3.CharSetUtils: boolean deepEmpty(java.lang.String[])>(set)"];
+"16" [label="if $stack10 == 0"];
+"25" [label="return str"];
+
+CFG Edges:
+"28" -> "26"[label="cfg_next"];
+"26" -> "6"[label="cfg_next"];
+"6" -> "18"[label="cfg_next"];
+"18" -> "1"[label="cfg_false"];
+"1" -> "16"[label="cfg_next"];
+"16" -> "25"[label="cfg_false"];
+
+CFG Path: ['28', '26', '6', '18', '1', '16', '25']
+
+
+
+###External_Methods
+"org.apache.commons.lang3.StringUtils: boolean isEmpty(java.lang.CharSequence)" with the fully entity name "org.apache.commons.lang3.StringUtils.isEmpty(CharSequence)"
+"org.apache.commons.lang3.CharSetUtils: boolean deepEmpty(java.lang.String[])" with the fully entity name "org.apache.commons.lang3.CharSetUtils.deepEmpty(String[])"
+
+
+
+###External_Methods_Constraints

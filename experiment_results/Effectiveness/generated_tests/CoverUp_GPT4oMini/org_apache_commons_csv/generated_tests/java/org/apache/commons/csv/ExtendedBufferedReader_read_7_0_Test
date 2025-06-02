@@ -1,0 +1,134 @@
+package org.apache.commons.csv;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.nio.charset.Charset;
+import org.apache.commons.csv.ExtendedBufferedReader;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import static org.apache.commons.csv.Constants.CR;
+import static org.apache.commons.csv.Constants.LF;
+import static org.apache.commons.csv.Constants.UNDEFINED;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.CharsetEncoder;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.input.UnsynchronizedBufferedReader;
+
+class ExtendedBufferedReader_read_7_0_Test {
+
+    private ExtendedBufferedReader reader;
+
+    @BeforeEach
+    void setUp() {
+        // Initialize with a simple string reader
+        Reader stringReader = new StringReader("Hello\nWorld\r\n");
+        reader = new ExtendedBufferedReader(stringReader, Charset.defaultCharset(), true);
+    }
+
+    @Test
+    void testReadRegularCharacter() throws IOException {
+        assertEquals('H', reader.read());
+        assertEquals('e', reader.read());
+        assertEquals('l', reader.read());
+        assertEquals('l', reader.read());
+        assertEquals('o', reader.read());
+        assertEquals('\n', reader.read());
+        assertEquals('W', reader.read());
+        assertEquals('o', reader.read());
+        assertEquals('r', reader.read());
+        assertEquals('l', reader.read());
+        assertEquals('d', reader.read());
+        assertEquals('\r', reader.read());
+        assertEquals('\n', reader.read());
+        // EOF
+        assertEquals(-1, reader.read());
+    }
+
+    @Test
+    void testReadLineEndings() throws IOException {
+        // Read 'H'
+        reader.read();
+        // Read 'e'
+        reader.read();
+        // Read 'l'
+        reader.read();
+        // Read 'l'
+        reader.read();
+        // Read 'o'
+        reader.read();
+        // Read '\n'
+        reader.read();
+        // Line number should be 1
+        assertEquals(1, reader.getLineNumber());
+        // Read 'W'
+        reader.read();
+        // Read 'o'
+        reader.read();
+        // Read 'r'
+        reader.read();
+        // Read 'l'
+        reader.read();
+        // Read 'd'
+        reader.read();
+        // Read '\r'
+        reader.read();
+        // Read '\n'
+        reader.read();
+        // Line number should be 2
+        assertEquals(2, reader.getLineNumber());
+    }
+
+    @Test
+    void testReadEOF() throws IOException {
+        while (reader.read() != -1) {
+            // Read until EOF
+        }
+        // Ensure line number is correct at EOF
+        assertEquals(2, reader.getLineNumber());
+        // Check bytes read
+        assertEquals(12, reader.getBytesRead());
+    }
+
+    @Test
+    void testReadCRLF() throws IOException {
+        Reader crlfReader = new StringReader("Line1\rLine2\n");
+        ExtendedBufferedReader crlfExtendedReader = new ExtendedBufferedReader(crlfReader, Charset.defaultCharset(), true);
+        assertEquals('L', crlfExtendedReader.read());
+        assertEquals('i', crlfExtendedReader.read());
+        assertEquals('n', crlfExtendedReader.read());
+        assertEquals('e', crlfExtendedReader.read());
+        assertEquals('1', crlfExtendedReader.read());
+        assertEquals('\r', crlfExtendedReader.read());
+        assertEquals('L', crlfExtendedReader.read());
+        assertEquals('i', crlfExtendedReader.read());
+        assertEquals('n', crlfExtendedReader.read());
+        assertEquals('e', crlfExtendedReader.read());
+        assertEquals('2', crlfExtendedReader.read());
+        assertEquals('\n', crlfExtendedReader.read());
+        // Should count both lines
+        assertEquals(2, crlfExtendedReader.getLineNumber());
+    }
+
+    @Test
+    void testReadWithEncoder() throws IOException {
+        Reader readerWithEncoding = new StringReader("Test");
+        ExtendedBufferedReader extendedReader = new ExtendedBufferedReader(readerWithEncoding, Charset.forName("UTF-8"), true);
+        // Read 'T'
+        extendedReader.read();
+        // Read 'e'
+        extendedReader.read();
+        // Read 's'
+        extendedReader.read();
+        // Read 't'
+        extendedReader.read();
+        // Check bytes read
+        assertEquals(4, extendedReader.getBytesRead());
+    }
+}

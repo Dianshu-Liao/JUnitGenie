@@ -1,0 +1,69 @@
+package org.apache.commons.csv;
+
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+import java.lang.reflect.Method;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class CSVRecord_get_1_0_Test {
+
+    private CSVRecord csvRecord;
+
+    @BeforeEach
+    void setUp() {
+        String[] values = { "value1", "value2", "value3" };
+        // Mock or create an instance of CSVParser if needed
+        CSVParser parser = null;
+        csvRecord = new CSVRecord(parser, values, null, 1, 0, 0);
+    }
+
+    @Test
+    void testGetValidIndex() {
+        assertEquals("value1", csvRecord.get(0));
+        assertEquals("value2", csvRecord.get(1));
+        assertEquals("value3", csvRecord.get(2));
+    }
+
+    @Test
+    void testGetOutOfBoundsIndex() {
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            csvRecord.get(3);
+        });
+    }
+
+    @Test
+    void testGetNegativeIndex() {
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            csvRecord.get(-1);
+        });
+    }
+
+    @Test
+    void testGetWithNullValues() {
+        CSVRecord recordWithNullValues = new CSVRecord(null, new String[] { null, null, null }, null, 1, 0, 0);
+        assertNull(recordWithNullValues.get(0));
+        assertNull(recordWithNullValues.get(1));
+        assertNull(recordWithNullValues.get(2));
+    }
+
+    @Test
+    void testGetWithEmptyValues() {
+        CSVRecord recordWithEmptyValues = new CSVRecord(null, new String[] {}, null, 1, 0, 0);
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            recordWithEmptyValues.get(0);
+        });
+    }
+}

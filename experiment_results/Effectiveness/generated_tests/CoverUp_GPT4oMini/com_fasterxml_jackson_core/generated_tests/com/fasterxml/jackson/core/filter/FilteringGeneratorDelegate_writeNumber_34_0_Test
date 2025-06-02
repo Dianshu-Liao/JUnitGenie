@@ -1,0 +1,87 @@
+package com.fasterxml.jackson.core.filter;
+
+import com.fasterxml.jackson.core.filter.TokenFilter;
+import com.fasterxml.jackson.core.filter.TokenFilterContext;
+import java.io.IOException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import java.io.Reader;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import com.fasterxml.jackson.core.*;
+import com.fasterxml.jackson.core.filter.TokenFilter.Inclusion;
+import com.fasterxml.jackson.core.util.JsonGeneratorDelegate;
+
+class FilteringGeneratorDelegate_writeNumber_34_0_Test {
+
+    private JsonGenerator mockJsonGenerator;
+
+    private TokenFilter mockTokenFilter;
+
+    private TokenFilterContext mockFilterContext;
+
+    private FilteringGeneratorDelegate filteringGeneratorDelegate;
+
+    @BeforeEach
+    void setUp() {
+        mockJsonGenerator = mock(JsonGenerator.class);
+        mockTokenFilter = mock(TokenFilter.class);
+        mockFilterContext = mock(TokenFilterContext.class);
+        filteringGeneratorDelegate = new FilteringGeneratorDelegate(mockJsonGenerator, mockTokenFilter, true, true);
+        filteringGeneratorDelegate._filterContext = mockFilterContext;
+        filteringGeneratorDelegate._itemFilter = mockTokenFilter;
+    }
+
+    @Test
+    void testWriteNumberWithNullItemFilter() throws IOException {
+        filteringGeneratorDelegate._itemFilter = null;
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator, never()).writeNumber(anyLong());
+    }
+
+    @Test
+    void testWriteNumberWithIncludeAll() throws IOException {
+        filteringGeneratorDelegate._itemFilter = TokenFilter.INCLUDE_ALL;
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator).writeNumber(42L);
+    }
+
+    @Test
+    void testWriteNumberWithExcludedValue() throws IOException {
+        when(mockFilterContext.checkValue(mockTokenFilter)).thenReturn(mockTokenFilter);
+        when(mockTokenFilter.includeNumber(42L)).thenReturn(false);
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator, never()).writeNumber(42L);
+    }
+
+    @Test
+    void testWriteNumberWithIncludedValue() throws IOException {
+        when(mockFilterContext.checkValue(mockTokenFilter)).thenReturn(mockTokenFilter);
+        when(mockTokenFilter.includeNumber(42L)).thenReturn(true);
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator).writeNumber(42L);
+    }
+
+    @Test
+    void testWriteNumberWithNullState() throws IOException {
+        when(mockFilterContext.checkValue(mockTokenFilter)).thenReturn(null);
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator, never()).writeNumber(42L);
+    }
+
+    @Test
+    void testWriteNumberWithParentPathCheck() throws IOException {
+        when(mockFilterContext.checkValue(mockTokenFilter)).thenReturn(mockTokenFilter);
+        when(mockTokenFilter.includeNumber(42L)).thenReturn(true);
+        filteringGeneratorDelegate.writeNumber(42L);
+        verify(mockJsonGenerator).writeNumber(42L);
+        // Assuming _checkParentPath() is called in the method
+        // You can verify its invocation using reflection if it's private
+        filteringGeneratorDelegate._checkParentPath();
+    }
+}

@@ -1,0 +1,38 @@
+###CFG_Path
+CFG Nodes:
+"13" [label="strings := @parameter0: java.lang.String[]"];
+"5" [label="if strings == null"];
+"6" [label="l1 = strings"];
+"7" [label="l2 = lengthof l1"];
+"8" [label="l3 = 0"];
+"4" [label="if l3 >= l2"];
+"12" [label="s = l1[l3]"];
+"1" [label="$stack5 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isNotEmpty(java.lang.CharSequence)>(s)"];
+"3" [label="if $stack5 == 0"];
+"10" [label="return 0"];
+
+CFG Edges:
+"13" -> "5"[label="cfg_next"];
+"5" -> "6"[label="cfg_false"];
+"6" -> "7"[label="cfg_next"];
+"7" -> "8"[label="cfg_next"];
+"8" -> "4"[label="cfg_next"];
+"4" -> "12"[label="cfg_false"];
+"12" -> "1"[label="cfg_next"];
+"1" -> "3"[label="cfg_next"];
+"3" -> "10"[label="cfg_false"];
+
+CFG Path: ['13', '5', '6', '7', '8', '4', '12', '1', '3', '10']
+
+###Current_Method_Constraints
+The return value must be false
+
+
+###External_Method_Parameters_Constraints
+The parameters of method "org.apache.commons.lang3.StringUtils.isNotEmpty(CharSequence)" in this ###CFG_Path must meet the following conditions to ensure the successful execution of the ###CFG_Path:
+parameter0:
+- `parameter0` must not be `null`.
+- The `length()` method of `parameter0` must not return `0`.
+
+
+###Current_Method_Parameters_Constraints

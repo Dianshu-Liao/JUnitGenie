@@ -1,0 +1,11 @@
+###CFG
+```dot
+#{}#
+```
+
+
+###Method_Constraints
+#{}#
+
+
+Please note that the entry node of CFG after prune must be #{}# and it must be the only entry point!

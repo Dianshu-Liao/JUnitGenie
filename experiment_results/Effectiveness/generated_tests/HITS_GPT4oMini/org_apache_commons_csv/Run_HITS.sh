@@ -1,0 +1,56 @@
+start_time=$(date +%s)
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#handleNull -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#hasComment -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isConsistent -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getHeader -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getAllowDuplicateHeaderNames -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#hasTrailerComment -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#print -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#containsLineBreak -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#withAllowDuplicateHeaderNames -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isCommentMarkerSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printRecords -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#copy -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#CSVRecord -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isQuoteChar -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#parseSimpleToken -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#putIn -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isNullStringSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#trim -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#equals -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#readEscape -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#read -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#createEmptyHeaderMap -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#read -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#getEncodedCharLength -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#get -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getHeaderComments -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isCommentStart -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#isStrictQuoteMode -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isMapped -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printComment -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#ExtendedBufferedReader -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#printRecordObject -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#println -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#isSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isQuoteCharacterSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isEscapeCharacterSet -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#getEscapeChar -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isDelimiter -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#printRecord -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#isLineBreak -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#getHeaderMap -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVFormat#print -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#CSVPrinter -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#readLine -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#appendNextEscapedCharacterToToken -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.ExtendedBufferedReader#getLineNumber -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVParser#addRecordValue -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isMetaChar -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVPrinter#close -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.Lexer#isEscape -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+gtimeout 1200 mvn chatunitest:method -DselectMethod=org.apache.commons.csv.CSVRecord#getHeaderMapRaw -DphaseType=HITS -DnoExecution=true -DtestOutput=./hits-tests
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+echo "Execution time: $duration seconds"

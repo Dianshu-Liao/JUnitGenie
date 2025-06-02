@@ -1,0 +1,72 @@
+package org.apache.commons.jxpath.ri.model;
+import org.apache.commons.jxpath.ri.model.NodePointer;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import java.util.Locale;
+
+public class ri_model_NodePointer_asPath__cfg_path_36_Test {
+
+    private class TestNodePointer extends NodePointer {
+        protected TestNodePointer parent;
+        private boolean attribute = false;
+        protected int index = WHOLE_COLLECTION;
+
+        public TestNodePointer(TestNodePointer parent) {
+            super(parent, Locale.getDefault()); // Call the appropriate constructor of NodePointer
+            this.parent = parent;
+        }
+
+        @Override
+        public Object getImmediateNode() {
+            return null;
+        }
+
+        @Override
+        public org.apache.commons.jxpath.ri.QName getName() {
+            return new org.apache.commons.jxpath.ri.QName("testName");
+        }
+
+        @Override
+        public Object getBaseValue() {
+            return null;
+        }
+
+        @Override
+        public void setValue(Object value) {
+            // No implementation needed for this test
+        }
+
+        @Override
+        public boolean isLeaf() {
+            return false;
+        }
+
+        @Override
+        public boolean isCollection() {
+            return false; // Ensure this returns false for the test case
+        }
+
+        @Override
+        public int compareChildNodePointers(NodePointer nodePointer1, NodePointer nodePointer2) {
+            return 0;
+        }
+
+        @Override
+        public int getLength() {
+            return 0;
+        }
+    }
+
+    @Test(timeout = 4000)
+    public void testAsPath() {
+        TestNodePointer childNode = new TestNodePointer(null);
+        TestNodePointer parentNode = new TestNodePointer(childNode);
+        childNode.parent = parentNode;
+
+        String expectedPath = "/testName";
+        String actualPath = childNode.asPath();
+        assertEquals(expectedPath, actualPath);
+    }
+
+
+}

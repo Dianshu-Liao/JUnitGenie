@@ -1,0 +1,13 @@
+package com.fasterxml.jackson.dataformat.xml.deser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.io.IOException;
+
+public class deser_FromXmlParser_isExpectedNumberIntToken__cfg_path_62_Test {
+
+
+
+
+}

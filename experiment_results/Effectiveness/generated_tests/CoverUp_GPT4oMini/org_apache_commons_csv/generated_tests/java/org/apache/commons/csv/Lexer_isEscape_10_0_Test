@@ -1,0 +1,62 @@
+package org.apache.commons.csv;
+
+import java.io.IOException;
+import java.io.StringReader;
+import org.apache.commons.csv.CSVFormat;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.apache.commons.io.IOUtils.EOF;
+import java.io.Closeable;
+import org.apache.commons.io.IOUtils;
+
+@ExtendWith(MockitoExtension.class)
+class Lexer_isEscape_10_0_Test {
+
+    private Lexer lexer;
+
+    @BeforeEach
+    void setUp() {
+        char[] delimiter = { ',', ' ' };
+        int escape = '\\';
+        int quoteChar = '"';
+        int commentStart = '#';
+        // Mocking ExtendedBufferedReader with a StringReader
+        ExtendedBufferedReader reader = new ExtendedBufferedReader(new StringReader("test input"));
+        lexer = new Lexer(CSVFormat.DEFAULT, reader);
+    }
+
+    @Test
+    void testIsEscape_withEscapeCharacter() {
+        // Test with the escape character
+        assertTrue(invokeIsEscape(lexer, '\\'));
+    }
+
+    @Test
+    void testIsEscape_withNonEscapeCharacter() {
+        // Test with a non-escape character
+        assertFalse(invokeIsEscape(lexer, 'a'));
+    }
+
+    @Test
+    void testIsEscape_withDifferentCharacters() {
+        // Test with various characters
+        assertFalse(invokeIsEscape(lexer, '1'));
+        assertFalse(invokeIsEscape(lexer, '!'));
+        // Assuming escape character is '\\'
+        assertTrue(invokeIsEscape(lexer, '\\'));
+    }
+
+    private boolean invokeIsEscape(Lexer lexer, int ch) {
+        try {
+            java.lang.reflect.Method method = Lexer.class.getDeclaredMethod("isEscape", int.class);
+            method.setAccessible(true);
+            return (boolean) method.invoke(lexer, ch);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

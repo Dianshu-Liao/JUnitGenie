@@ -1,0 +1,66 @@
+package com.fasterxml.jackson.core.sym;
+import com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer;
+import org.junit.Test;
+import java.lang.reflect.Method;
+import static org.junit.Assert.assertEquals;
+
+public class sym_ByteQuadsCanonicalizer__findSecondary_int_int_int_cfg_path_15_Test {
+
+    @Test(timeout = 4000)
+    public void testFindSecondary() {
+        try {
+            // Create an instance of ByteQuadsCanonicalizer using reflection
+            ByteQuadsCanonicalizer instance = (ByteQuadsCanonicalizer) ByteQuadsCanonicalizer.class
+                    .getDeclaredConstructor(int.class, int.class)
+                    .newInstance(16, 32); // Example parameters for the constructor
+
+            // Set up the protected fields using reflection
+            int[] hashArea = new int[64]; // Example size
+            String[] names = new String[16]; // Example size
+            int tertiaryShift = 2;
+            int tertiaryStart = 0;
+
+            // Initialize the fields
+            java.lang.reflect.Field hashAreaField = ByteQuadsCanonicalizer.class.getDeclaredField("_hashArea");
+            hashAreaField.setAccessible(true);
+            hashAreaField.set(instance, hashArea);
+
+            java.lang.reflect.Field namesField = ByteQuadsCanonicalizer.class.getDeclaredField("_names");
+            namesField.setAccessible(true);
+            namesField.set(instance, names);
+
+            java.lang.reflect.Field tertiaryShiftField = ByteQuadsCanonicalizer.class.getDeclaredField("_tertiaryShift");
+            tertiaryShiftField.setAccessible(true);
+            tertiaryShiftField.set(instance, tertiaryShift);
+
+            java.lang.reflect.Field tertiaryStartField = ByteQuadsCanonicalizer.class.getDeclaredField("_tertiaryStart");
+            tertiaryStartField.setAccessible(true);
+            tertiaryStartField.set(instance, tertiaryStart);
+
+            // Prepare test data
+            int origOffset = 0; // Example value
+            int q1 = 1; // Example value
+            int q2 = 2; // Example value
+
+            // Set up the hashArea and names for the test case
+            hashArea[0] = q1;
+            hashArea[1] = q2;
+            hashArea[3] = 2; // Length of the entry
+            names[0] = "TestName";
+
+            // Access the private method using reflection
+            Method method = ByteQuadsCanonicalizer.class.getDeclaredMethod("_findSecondary", int.class, int.class, int.class);
+            method.setAccessible(true);
+
+            // Invoke the method
+            String result = (String) method.invoke(instance, origOffset, q1, q2);
+
+            // Assert the expected result
+            assertEquals("TestName", result);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+}

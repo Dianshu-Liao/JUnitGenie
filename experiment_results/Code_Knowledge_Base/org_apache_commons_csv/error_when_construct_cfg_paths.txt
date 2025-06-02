@@ -1,0 +1,11 @@
+Error when parsing CFG for org.apache.commons.csv.CSVParser.createHeaders()
+Error when constructing CFG paths for org.apache.commons.csv.CSVParser.nextRecord()
+CFG path number for org.apache.commons.csv.CSVPrinter.printRecords(ResultSet) is more than 100, which is too large.
+CFG path number for org.apache.commons.csv.CSVFormat.printWithEscapes(CharSequence,Appendable) is more than 100, which is too large.
+CFG path number for org.apache.commons.csv.CSVFormat.printWithEscapes(Reader,Appendable) is more than 100, which is too large.
+CFG path number for org.apache.commons.csv.CSVFormat.printWithQuotes(Object,CharSequence,Appendable,boolean) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.csv.CSVFormat.printWithQuotes(Reader,Appendable)
+CFG path number for org.apache.commons.csv.CSVFormat.toString() is more than 100, which is too large.
+Error when parsing CFG for org.apache.commons.csv.CSVFormat.validate()
+CFG path number for org.apache.commons.csv.Lexer.nextToken(Token) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.csv.Lexer.parseEncapsulatedToken(Token)

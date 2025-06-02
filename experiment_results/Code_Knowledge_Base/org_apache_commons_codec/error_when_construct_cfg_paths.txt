@@ -1,0 +1,20 @@
+CFG path number for org.apache.commons.codec.net.QuotedPrintableCodec.encodeQuotedPrintable(BitSet,byte[],boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.digest.Md5Crypt.md5Crypt(byte[],String,String,Random) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.digest.Sha2Crypt.sha2Crypt(byte[],String,String,int,String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.ColognePhonetic.colognePhonetic(String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.Metaphone.metaphone(String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.DoubleMetaphone.doubleMetaphone(String,boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.DoubleMetaphone.handleG(String,DoubleMetaphoneResult,int,boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.DoubleMetaphone.handleGH(String,DoubleMetaphoneResult,int) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.bm.Lang.loadFromResource(String,Languages) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.bm.Languages.getInstance(String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.bm.Rule.parseRules(Scanner,String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.bm.Rule.pattern(String) is more than 100, which is too large.
+Error when parsing CFG for org.apache.commons.codec.language.bm.Rule.stripQuotes(String)
+CFG path number for org.apache.commons.codec.language.DaitchMokotoffSoundex.parseRules(Scanner,String,Map,Map) is more than 100, which is too large.
+Error when parsing CFG for org.apache.commons.codec.language.DaitchMokotoffSoundex.stripQuotes(String)
+CFG path number for org.apache.commons.codec.language.DaitchMokotoffSoundex.soundex(String,boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.Nysiis.transcodeRemaining(char,char,char,char) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.language.Nysiis.nysiis(String) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.binary.Base32.decode(byte[],int,int,Context) is more than 100, which is too large.
+CFG path number for org.apache.commons.codec.binary.Base64.decode(byte[],int,int,Context) is more than 100, which is too large.

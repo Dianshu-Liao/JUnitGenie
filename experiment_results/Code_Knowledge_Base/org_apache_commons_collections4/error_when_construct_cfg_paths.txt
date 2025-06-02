@@ -1,0 +1,49 @@
+Error when constructing CFG paths for org.apache.commons.collections4.bidimap.AbstractDualBidiMap$View.retainAll(Collection)
+Error when parsing CFG for org.apache.commons.collections4.bidimap.TreeBidiMap.doPut(Comparable,Comparable)
+Error when parsing CFG for org.apache.commons.collections4.bidimap.TreeBidiMap.insertValue(Node)
+CFG path number for org.apache.commons.collections4.bidimap.TreeBidiMap.swapPosition(Node,Node,DataElement) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.collection.IndexedCollection.removeIf(Predicate)
+CFG path number for org.apache.commons.collections4.functors.PrototypeFactory.prototypeFactory(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.functors.PrototypeFactory$PrototypeSerializationFactory.create() is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.CollectionUtils.filter(Iterable,Predicate)
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie.addEntry(TrieEntry,int) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie.nextEntryImpl(TrieEntry,TrieEntry,TrieEntry) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie.removeInternalEntry(TrieEntry) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie.subtree(Object,int,int) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeMap.clear()
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeMap.fixup() is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieEntry.toString() is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer.bitIndex(String,int,int,String,int,int) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.Flat3Map.put(Object,Object) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.map.AbstractHashedMap.ensureCapacity(int)
+CFG path number for org.apache.commons.collections4.map.ConcurrentReferenceHashMap.containsValue(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.ConcurrentReferenceHashMap.size() is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.ConcurrentReferenceHashMap.<init>(int,float,int,ReferenceType,ReferenceType,EnumSet) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.advance()
+Error when constructing CFG paths for org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.nextEntry()
+CFG path number for org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Segment.putInternal(Object,int,Object,Function,boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Segment.removeInternal(Object,int,Object,boolean) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap.containsValue(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap.hashCode() is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap.put(Object,Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap.remove(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap$BaseIterator.hasNext() is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap$EntrySet.remove(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.StaticBucketMap$KeySet.remove(Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.map.LRUMap.reuseMapping(LinkEntry,int,int,Object,Object) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.properties.AbstractPropertiesFactory.load(ClassLoader,String) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.properties.AbstractPropertiesFactory.load(File) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.properties.AbstractPropertiesFactory.load(Path) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.properties.AbstractPropertiesFactory.load(String) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.properties.AbstractPropertiesFactory.load(URL) is more than 100, which is too large.
+CFG path number for org.apache.commons.collections4.list.TreeList$AVLNode.addAll(AVLNode,int) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedListJava21.equals(Object)
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedListJava21.removeAll(Collection)
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedListJava21.retainAll(Collection)
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedList.equals(Object)
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedList.removeAll(Collection)
+Error when constructing CFG paths for org.apache.commons.collections4.list.AbstractLinkedList.retainAll(Collection)
+CFG path number for org.apache.commons.collections4.sequence.SequencesComparator.getMiddleSnake(int,int,int,int) is more than 100, which is too large.
+Error when constructing CFG paths for org.apache.commons.collections4.bag.CollectionBag.retainAll(Collection)
+Error when constructing CFG paths for org.apache.commons.collections4.bag.CollectionSortedBag.retainAll(Collection)
+CFG path number for org.apache.commons.collections4.iterators.PermutationIterator.next() is more than 100, which is too large.

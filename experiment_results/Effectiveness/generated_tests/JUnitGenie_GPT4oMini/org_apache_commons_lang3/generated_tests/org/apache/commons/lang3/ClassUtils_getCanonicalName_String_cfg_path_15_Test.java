@@ -1,0 +1,40 @@
+package org.apache.commons.lang3;
+import org.apache.commons.lang3.ClassUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Test;
+import java.lang.reflect.Method;
+import static org.junit.Assert.assertEquals;
+
+public class ClassUtils_getCanonicalName_String_cfg_path_15_Test {
+
+    @Test(timeout = 4000)
+    public void testGetCanonicalName() {
+        try {
+            // Accessing the private static method using reflection
+            Method method = ClassUtils.class.getDeclaredMethod("getCanonicalName", String.class);
+            method.setAccessible(true);
+
+            // Test case 1: Non-empty string with no array dimension
+            String input1 = "String";
+            String expectedOutput1 = "String";
+            String actualOutput1 = (String) method.invoke(null, input1);
+            assertEquals(expectedOutput1, actualOutput1);
+
+            // Test case 2: Non-empty string with array dimension
+            String input2 = "[[LString;";
+            String expectedOutput2 = "String[][]";
+            String actualOutput2 = (String) method.invoke(null, input2);
+            assertEquals(expectedOutput2, actualOutput2);
+
+            // Test case 3: Non-empty string with abbreviation
+            String input3 = "I";
+            String expectedOutput3 = "int";
+            String actualOutput3 = (String) method.invoke(null, input3);
+            assertEquals(expectedOutput3, actualOutput3);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+}

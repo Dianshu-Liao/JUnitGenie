@@ -1,0 +1,11 @@
+package org.apache.commons.compress.harmony.pack200;
+import org.junit.Test;
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
+import java.io.IOException;
+
+public class harmony_pack200_ClassBands_pack_OutputStream_cfg_path_11_Test {
+
+
+
+}

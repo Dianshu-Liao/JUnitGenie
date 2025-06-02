@@ -1,0 +1,49 @@
+CFG path number for org.joda.time.Partial.<init>(DateTimeFieldType[],int[],Chronology) is more than 100, which is too large.
+CFG path number for org.joda.time.PeriodType.forFields(DurationFieldType[]) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.GregorianChronology.getInstance(DateTimeZone,int) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.GJLocaleSymbols.halfdayTextToValue(String) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.IslamicChronology.getInstance(DateTimeZone,LeapYearPatternType) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.EthiopicChronology.getInstance(DateTimeZone,int) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.JulianChronology.getInstance(DateTimeZone,int) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.AssembledChronology.setFields() is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom(Chronology) is more than 100, which is too large.
+CFG path number for org.joda.time.chrono.CopticChronology.getInstance(DateTimeZone,int) is more than 100, which is too large.
+CFG path number for org.joda.time.field.BaseDateTimeField.addWrapPartial(ReadablePartial,int,int[],int) is more than 100, which is too large.
+Error when constructing CFG paths for org.joda.time.field.ImpreciseDateTimeField.getDifferenceAsLong(long,long)
+CFG path number for org.joda.time.DateTimeZone.getDefault() is more than 100, which is too large.
+CFG path number for org.joda.time.DateTimeZone.getDefaultProvider() is more than 100, which is too large.
+CFG path number for org.joda.time.DateTimeZone.getDefaultNameProvider() is more than 100, which is too large.
+Error when parsing CFG for org.joda.time.format.DateTimeParserBucket.computeMillis(boolean,CharSequence)
+CFG path number for org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.printTo(StringBuffer,ReadablePeriod,Locale) is more than 100, which is too large.
+CFG path number for org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.parseInto(ReadWritablePeriod,String,int,Locale) is more than 100, which is too large.
+CFG path number for org.joda.time.format.PeriodFormatterBuilder$FieldFormatter.getFieldValue(ReadablePeriod) is more than 100, which is too large.
+CFG path number for org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto(ReadWritablePeriod,String,int,Locale) is more than 100, which is too large.
+Error when parsing CFG for org.joda.time.format.FormatUtils.createErrorMessage(String,int)
+CFG path number for org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto(DateTimeParserBucket,CharSequence,int) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormatterBuilder$TwoDigitYear.parseInto(DateTimeParserBucket,CharSequence,int) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData(long,DateTimeField) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.printTo(Appendable,long,Chronology,int,DateTimeZone,Locale) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.parseInto(DateTimeParserBucket,CharSequence,int) is more than 100, which is too large.
+CFG path number for org.joda.time.format.PeriodFormat.buildRegExFormatter(ResourceBundle,Locale) is more than 100, which is too large.
+Error when constructing CFG paths for org.joda.time.format.PeriodFormat.containsKey(ResourceBundle,String)
+CFG path number for org.joda.time.format.ISODateTimeFormat.time(DateTimeFormatterBuilder,Collection,boolean,boolean,boolean,boolean) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormat.parsePatternTo(DateTimeFormatterBuilder,String) is more than 100, which is too large.
+CFG path number for org.joda.time.format.DateTimeFormat.parseToken(String,int[]) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.ZoneInfoCompiler.test(String,DateTimeZone) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.ZoneInfoCompiler.compile(File,File[]) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.ZoneInfoCompiler.parseDataFile(BufferedReader,boolean) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear.<init>(StringTokenizer) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.ZoneInfoCompiler$Zone.addToBuilder(Zone,DateTimeZoneBuilder,Map) is more than 100, which is too large.
+Error when parsing CFG for org.joda.time.tz.ZoneInfoProvider.openResource(String)
+CFG path number for org.joda.time.tz.ZoneInfoProvider.loadZoneData(String) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.DefaultNameProvider.getNameSet(Locale,String,String) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.DefaultNameProvider.getNameSet(Locale,String,String,boolean) is more than 100, which is too large.
+Error when constructing CFG paths for org.joda.time.tz.DateTimeZoneBuilder.toDateTimeZone(String,boolean)
+CFG path number for org.joda.time.tz.DateTimeZoneBuilder$DSTZone.nextTransition(long) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.DateTimeZoneBuilder$DSTZone.previousTransition(long) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.create(String,boolean,ArrayList,DSTZone) is more than 100, which is too large.
+CFG path number for org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.writeTo(DataOutput) is more than 100, which is too large.
+Error when parsing CFG for org.joda.time.convert.StringConverter.getDurationMillis(Object)
+Error when parsing CFG for org.joda.time.convert.StringConverter.setInto(ReadWritablePeriod,Object,Chronology)
+Error when constructing CFG paths for org.joda.time.convert.ConverterSet.select(Class)
+Error when parsing CFG for org.joda.time.convert.ConverterSet.selectSlow(ConverterSet,Class)

@@ -1,0 +1,119 @@
+Error when constructing CFG paths for com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer._verifyLongName2(int[],int,int)
+CFG path number for com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer.findSymbol(char[],int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer$Bucket.has(char[],int,int) is more than 100, which is too large.
+Error when parsing CFG for com.fasterxml.jackson.core.JsonPointer.compile(String)
+CFG path number for com.fasterxml.jackson.core.JsonPointer.forPath(JsonStreamContext,boolean) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.JsonPointer._compare(String,int,String,int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.util.TextBuffer.append(char[],int,int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.util.TextBuffer.append(String,int,int)
+CFG path number for com.fasterxml.jackson.core.util.TextBuffer._doTrim(int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.util.JsonParserSequence.close()
+CFG path number for com.fasterxml.jackson.core.io.UTF32Reader.read(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.schubfach.DoubleToDecimal.toDecimal(int,long,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.schubfach.FloatToDecimal.toDecimal(int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.JsonStringEncoder.quoteAsString(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.JsonStringEncoder.quoteAsString(CharSequence) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.JsonStringEncoder.quoteAsUTF8(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.JsonStringEncoder.encodeAsUTF8(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.JsonStringEncoder.encodeAsUTF8(CharSequence) is more than 100, which is too large.
+Error when parsing CFG for com.fasterxml.jackson.core.io.BigDecimalParser._getValueDesc(String)
+Error when parsing CFG for com.fasterxml.jackson.core.io.BigDecimalParser._getValueDesc(char[],int,int)
+Error when parsing CFG for com.fasterxml.jackson.core.io.BigIntegerParser.parseWithFastParser(String)
+Error when parsing CFG for com.fasterxml.jackson.core.io.BigIntegerParser.parseWithFastParser(String,int)
+CFG path number for com.fasterxml.jackson.core.io.ContentReference.appendSourceDescription(StringBuilder) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.UTF8Writer.write(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.UTF8Writer.write(String,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.io.NumberInput.parseInt(String) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.close() is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeLongString(String)
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeSegment(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeString(char[],int,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeStringASCII(int,int)
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeSegmentASCII(int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeStringASCII(char[],int,int,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeStringCustom(int)
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeSegmentCustom(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeStringCustom(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._writeBinary(Base64Variant,InputStream,byte[],int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._readMore(InputStream,byte[],int,int,int)
+CFG path number for com.fasterxml.jackson.core.json.UTF8JsonGenerator._writePPFieldName(SerializableString) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeString(Reader,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8JsonGenerator.close() is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeStringSegments(char[],int,int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeStringSegments(String,int,int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeUTF8Segments(byte[],int,int)
+CFG path number for com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeBinary(Base64Variant,InputStream,byte[],int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8JsonGenerator._readMore(InputStream,byte[],int,int,int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._readBinary(Base64Variant,OutputStream,byte[])
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseSignedNumber(boolean) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._verifyNoLeadingZeroes()
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseFloat(char[],int,int,boolean,int) is more than 100, which is too large.
+Error when parsing CFG for com.fasterxml.jackson.core.json.UTF8StreamJsonParser.slowParseName()
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser.parseEscapedName(int[],int,int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseAposName() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser.addName(int[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishString2(char[],int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipString()
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleApos() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleInvalidNumberStart(int,boolean,boolean) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._matchToken(String,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._matchToken2(String,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd()
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(boolean) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipCComment() is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8StreamJsonParser._decodeBase64(Base64Variant)
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._readBinary(Base64Variant,OutputStream,byte[])
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser.nextToken() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser.nextFieldName() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._parseSignedNumber(boolean) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._parseFloat(char[],int,int,boolean,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser.parseEscapedName(int[],int,int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._handleOddName(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._parseAposName() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser.addName(int[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._finishString() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._finishAndReturnString() is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._skipString()
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._handleApos()
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._handleInvalidNumberStart(int,boolean,boolean) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._matchToken(String,int)
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._skipColon() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._skipCComment() is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.UTF8DataInputJsonParser._decodeBase64(Base64Variant)
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._startDocument(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._startValueExpectComma(int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._startValueExpectColon(int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._skipWS(int)
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._startPositiveNumber() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._startFloat(char[],int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._parseEscapedName(int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._finishAposName(int,int,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._finishRegularString() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingUtf8JsonParserBase._finishAposString() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.async.NonBlockingJsonParserBase._addName(int[],int,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._readBinary(Base64Variant,OutputStream,byte[])
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseFloat(int,int,int,boolean,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseNumber2(boolean,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNLZ2()
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleInvalidNumberStart(int,boolean,boolean) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName(int)
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseAposName()
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._finishString() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipColon2(boolean) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComma(int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd()
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipCComment() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(String,int) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken2(String,int) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.json.ReaderBasedJsonParser._decodeBase64(Base64Variant)
+CFG path number for com.fasterxml.jackson.core.JsonGenerator._copyCurrentContents(JsonParser) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.Base64Variant.decode(String,ByteArrayBuilder) is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextToken2() is more than 100, which is too large.
+CFG path number for com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextTokenWithBuffering(TokenFilterContext) is more than 100, which is too large.
+Error when constructing CFG paths for com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextBuffered(TokenFilterContext)

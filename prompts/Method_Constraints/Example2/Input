@@ -1,0 +1,74 @@
+###CFG_Path
+CFG Nodes:
+"28" [label="str := @parameter0: java.lang.String"];
+"26" [label="set := @parameter1: java.lang.String[]"];
+"6" [label="$stack9 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isEmpty(java.lang.CharSequence)>(str)"];
+"18" [label="if $stack9 != 0"];
+"1" [label="$stack10 = staticinvoke <org.apache.commons.lang3.CharSetUtils: boolean deepEmpty(java.lang.String[])>(set)"];
+"16" [label="if $stack10 == 0"];
+"10" [label="chars = staticinvoke <org.apache.commons.lang3.CharSet: org.apache.commons.lang3.CharSet getInstance(java.lang.String[])>(set)"];
+"3" [label="$stack12 = new java.lang.StringBuilder"];
+"2" [label="$stack11 = virtualinvoke str.<java.lang.String: int length()>()"];
+"27" [label="specialinvoke $stack12.<java.lang.StringBuilder: void <init>(int)>($stack11)"];
+"7" [label="buffer = $stack12"];
+"11" [label="chrs = virtualinvoke str.<java.lang.String: char[] toCharArray()>()"];
+"29" [label="sz = lengthof chrs"];
+"22" [label="lastChar = 32"];
+"8" [label="ch = 32"];
+"14" [label="i = 0"];
+"21" [label="if i >= sz"];
+"9" [label="ch = chrs[i]"];
+"19" [label="if ch != lastChar"];
+"20" [label="if i == 0"];
+"5" [label="$stack14 = virtualinvoke chars.<org.apache.commons.lang3.CharSet: boolean contains(char)>(ch)"];
+"17" [label="if $stack14 == 0"];
+"30" [label="virtualinvoke buffer.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(ch)"];
+"23" [label="lastChar = ch"];
+"15" [label="i = i + 1"];
+"13" [label="goto"];
+"4" [label="$stack13 = virtualinvoke buffer.<java.lang.StringBuilder: java.lang.String toString()>()"];
+"24" [label="return $stack13"];
+
+CFG Edges:
+"28" -> "26"[label="cfg_next"];
+"26" -> "6"[label="cfg_next"];
+"6" -> "18"[label="cfg_next"];
+"18" -> "1"[label="cfg_false"];
+"1" -> "16"[label="cfg_next"];
+"16" -> "10"[label="cfg_true"];
+"10" -> "3"[label="cfg_next"];
+"3" -> "2"[label="cfg_next"];
+"2" -> "27"[label="cfg_next"];
+"27" -> "7"[label="cfg_next"];
+"7" -> "11"[label="cfg_next"];
+"11" -> "29"[label="cfg_next"];
+"29" -> "22"[label="cfg_next"];
+"22" -> "8"[label="cfg_next"];
+"8" -> "14"[label="cfg_next"];
+"14" -> "21"[label="cfg_next"];
+"21" -> "9"[label="cfg_false"];
+"9" -> "19"[label="cfg_next"];
+"19" -> "20"[label="cfg_false"];
+"20" -> "5"[label="cfg_false"];
+"5" -> "17"[label="cfg_next"];
+"17" -> "30"[label="cfg_true"];
+"30" -> "23"[label="cfg_next"];
+"23" -> "15"[label="cfg_next"];
+"15" -> "13"[label="cfg_next"];
+"13" -> "21"[label="cfg_goto"];
+"21" -> "4"[label="cfg_true"];
+"4" -> "24"[label="cfg_next"];
+
+CFG Path: ['28', '26', '6', '18', '1', '16', '10', '3', '2', '27', '7', '11', '29', '22', '8', '14', '21', '9', '19', '20', '5', '17', '30', '23', '15', '13', '21', '4', '24']
+
+
+
+###External_Methods
+"org.apache.commons.lang3.StringUtils: boolean isEmpty(java.lang.CharSequence)" with the fully entity name "org.apache.commons.lang3.StringUtils.isEmpty(CharSequence)"
+"org.apache.commons.lang3.CharSet: org.apache.commons.lang3.CharSet getInstance(java.lang.String[])" with the fully entity name "org.apache.commons.lang3.CharSet.getInstance(String[])"
+"org.apache.commons.lang3.CharSetUtils: boolean deepEmpty(java.lang.String[])" with the fully entity name "org.apache.commons.lang3.CharSetUtils.deepEmpty(String[])"
+"org.apache.commons.lang3.CharSet: boolean contains(char)" with the fully entity name "org.apache.commons.lang3.CharSet.contains(char)"
+
+
+
+###Method_Constraints

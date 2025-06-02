@@ -1,0 +1,8 @@
+package org.apache.commons.lang3.text;
+import org.apache.commons.lang3.text.ExtendedMessageFormat;
+import org.junit.Test;
+import java.text.ParsePosition;
+import static org.junit.Assert.*;
+
+public class text_ExtendedMessageFormat_parseFormatDescription_String_ParsePosition_cfg_path_3_Test {
+}
