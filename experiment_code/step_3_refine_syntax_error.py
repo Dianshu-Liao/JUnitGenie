@@ -16,7 +16,6 @@ def remove_inline_warnings(log_text):
     # 2. Remove warning fragments that may be at the end (if not |)
     cleaned = re.sub(r'\|?\s*warning:.*$', '', cleaned)
 
-    # 3. 清理多余的 |（多个连续 | 或 | 开头结尾）
     cleaned = re.sub(r'\s*\|\s*', ' | ', cleaned)
     cleaned = re.sub(r'(\|\s*){2,}', '| ', cleaned)
     cleaned = re.sub(r'^\s*\|\s*', '', cleaned)
@@ -133,7 +132,7 @@ def get_test_code_after_refinement(our_approach_result_after_formatting_path, sy
     batch_size = 200
     current_num = 0
     futures = []
-    api_key_list = Config.api_key_list  # 假设 Config.api_key_list 包含多个可用的 OpenAI API Keys
+    api_key_list = Config.api_key_list 
 
     for index, row in tqdm.tqdm(our_approach_result.iterrows(), total=our_approach_result.shape[0]):
 
