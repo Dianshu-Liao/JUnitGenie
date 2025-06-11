@@ -11,7 +11,6 @@ class LLM_Utils:
 
         headers = {
             'Content-Type': 'application/json',
-            # 填写OpenKEY生成的令牌/KEY，注意前面的 Bearer 要保留，并且和 KEY 中间有一个空格。
             'Authorization': 'Bearer {}'.format(openai_key)
         }
 
