@@ -71,7 +71,7 @@ def get_list_of_all_method_FENs_that_coverage_less_than_100_percent(RQ1_our_appr
     jacoco_results = pd.read_csv(jacoco_results_path)
     jacoco_corresponding_rows = jacoco_results[jacoco_results['method_FEN'].isin(method_FENs)]
 
-    #对jacoco_corresponding_rows的'percentage_branches'列排序，从小到大
+
     jacoco_corresponding_rows = jacoco_corresponding_rows.sort_values(by='percentage_branches', ascending=True)
 
     list_of_all_method_FENs = jacoco_corresponding_rows['method_FEN'].tolist()
@@ -249,7 +249,7 @@ def get_test_code_after_refinement(RQ1_our_approach_results_path, RQ1_our_approa
     batch_size = 200
     current_num = 0
     futures = []
-    api_key_list = Config.api_key_list  # 假设 Config.api_key_list 包含多个可用的 OpenAI API Keys
+    api_key_list = Config.api_key_list
 
     for index, row in tqdm.tqdm(our_approach_result.iterrows(), total=our_approach_result.shape[0]):
 
