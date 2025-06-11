@@ -151,8 +151,8 @@ def get_test_code_after_refinement(our_approach_result_after_first_round_refinem
             if row['second_refinement_prompt'] == 'no syntax error thus no refinement needed':
                 continue  # Skip unnecessary processing
 
-            api_key = api_key_list[index % len(api_key_list)]  # 轮换 API Key
-            futures.append(executor.submit(process_refinement_row, index, row, api_key))  # 提交任务
+            api_key = api_key_list[index % len(api_key_list)]
+            futures.append(executor.submit(process_refinement_row, index, row, api_key)) 
 
         for future in tqdm.tqdm(as_completed(futures), total=len(futures)):
             index, test_code_after_second_refinement, test_code_after_second_refinement_after_formatting = future.result()
