@@ -209,41 +209,4 @@ public class check_syntax_error {
         }
     }
 
-    public static void main(String[] args) {
-        String testCodeDir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2/src/test/java/org/apache/commons/lang3";
-        String projectDir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2";
-        String syntaxErrorFile = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/syntax_error_log.txt";
-        String filesWithSyntaxErrorCsv = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/files_with_syntax_error.csv";
-
-        List<String[]> resultRows = new ArrayList<>();
-        resultRows.add(new String[]{"file_name", "syntax_error_message"}); // CSV Header
-
-        try {
-            List<Path> javaFiles = getJavaFiles(testCodeDir); // Get all Java files
-            System.out.println("Total Java files to process: " + javaFiles.size());
-
-            int count = 0;
-            for (Path javaFilePath : javaFiles) {
-                count++;
-                System.out.println("Processing file " + count + " of " + javaFiles.size() + ": " + javaFilePath.getFileName());
-
-                String javaFileName = javaFilePath.getFileName().toString();
-
-                if (hasSyntaxError(javaFilePath, projectDir, syntaxErrorFile)) {
-                    // Read the error log file
-                    String errorMessage = readErrorMessage(syntaxErrorFile);
-
-                    // Add the file name and error message to the list
-                    resultRows.add(new String[]{javaFileName, errorMessage});
-                }
-
-            }
-
-            // Write results to CSV
-            writeToCsv(resultRows, filesWithSyntaxErrorCsv);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
