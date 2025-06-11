@@ -38,7 +38,7 @@ public class check_syntax_error {
             // Compile the Java file
             ProcessBuilder builder = new ProcessBuilder(
                     "sh", "-c",
-                    "javac -cp target/classes:src/main/java:$(cat /Users/dianshuliao/Documents/Research/Knowledge_Distillation_for_LLM_Test_Gen/UnitTestGeneration/saved_data/Evosuite_and_randoop/classpath.txt) " +
+                    "javac -cp target/classes:src/main/java:$(cat /your_dir_path/classpath.txt) " +
                             "-d target/test-classes " + "'" + javaFile.toString() + "'" +
                             " 2>> " + errorLogFile
             );
