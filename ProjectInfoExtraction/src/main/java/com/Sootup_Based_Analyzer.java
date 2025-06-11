@@ -237,39 +237,4 @@ public class Sootup_Based_Analyzer {
     }
 
 
-    public static void main(String[] args) {
-//        String Project_Basic_Dir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/saved_data/experiment_results/Evosuite_and_Randoop/JavaProjects";
-//        String Experiment_Result_Basic_Dir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/saved_data/experiment_results";
-//
-//
-//        // for org.apache.commons.codec
-//        String package_name = "org.apache.commons.codec";
-//        String project_classes_dir = Project_Basic_Dir  + "/commons-codec-master/target/classes/";
-//        String outputCsvPath = Experiment_Result_Basic_Dir + '/' + package_name.replace('.', '_') + "/ByteBased_Results.csv";
-//        String ByteerrorLogPath = Experiment_Result_Basic_Dir + '/' + package_name.replace('.', '_') + "/byte_based_analysis_error_log.txt";
-//
-//        extract_info_from_all_classes_in_a_project(project_classes_dir, outputCsvPath, ByteerrorLogPath);
-
-
-        String project_classes_dir = Config.Project_Basic_Dir  + Config.projectclassDir;
-        String outputCsvPath = Config.Experiment_Result_Basic_Dir + '/' + Config.package_name.replace('.', '_') + "/ByteBased_Results.csv";
-        String ByteerrorLogPath = Config.Experiment_Result_Basic_Dir + '/' + Config.package_name.replace('.', '_') + "/byte_based_analysis_error_log.txt";
-
-        extract_info_from_all_classes_in_a_project(project_classes_dir, outputCsvPath, ByteerrorLogPath);
-
-
-
-//
-//        String outputCsvPath = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/org_apache_commons_lang3_BytecodeBased_Results.csv";
-//        String project_classes_dir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2/target/classes/";
-//        String error_log_path = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/error_log.txt";
-//
-//
-//////        String class_name = "org.apache.commons.lang3.StringUtils";
-////        String class_name = "org.apache.commons.lang3.mutable.MutableByte";
-////        extract_info_from_a_class_file(project_classes_dir, class_name, outputCsvPath, error_log_path);
-//
-//        extract_info_from_all_classes_in_a_project(project_classes_dir, outputCsvPath, error_log_path);
-
-    }
 }
