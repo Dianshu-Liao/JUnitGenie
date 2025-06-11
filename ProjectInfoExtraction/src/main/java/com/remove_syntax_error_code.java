@@ -397,55 +397,5 @@ public class remove_syntax_error_code {
         }
     }
 
-    public static void main(String[] args) {
-//        String testCodeDir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2/src/test/java/org/apache/commons/lang3";
-//        String projectDir = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2";
-//        String syntaxErrorFile = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/syntax_error_log.txt";
-//        String test_list_file = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/test_list.txt";
-
-        try {
-            List<Path> javaFiles = getJavaFiles(Config.testCodeDir); // Get all Java files
-            int count = 0;
-            for (Path javaFilePath : javaFiles) {
-                String javaFileName = javaFilePath.getFileName().toString();
-                System.out.println("Processing file " + count + " of " + javaFiles.size() + ": " + javaFileName);
-                if ((javaFileName.equals("ErrorTest.java")) | (javaFileName.equals("RegressionTest.java"))) {
-                    continue;
-                }
-                while (hasSyntaxError(javaFilePath, Config.Project_Basic_Dir, Config.syntaxErrorLog)) {
-                    System.out.println("Syntax error detected in: " + javaFileName);
-                    reviseCode(javaFileName, javaFilePath, Config.syntaxErrorLog, Config.package_name);
-                }
-                count++;
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-
-        try {
-            List<Path> javaFiles = getJavaFiles(Config.testCodeDir); // Get all Java files
-            for (Path javaFilePath : javaFiles) {
-                if (!containsTestAnnotation(javaFilePath)) {
-                    Files.delete(javaFilePath); // Delete file if it does not contain @Test
-                    System.out.println("Deleted: " + javaFilePath);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-//        String JavaFilePath = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/Java_Projects/lang_1_buggy_check_evosuite_results_2/src/test/java/org/apache/commons/lang3/tuple_Triple_equals_Object_cfg_path_6.java";
-//        String javaFileName = "tuple_Triple_equals_Object_cfg_path_6.java";
-//        String syntaxErrorFile = "/Users/dianshuliao/Documents/Research/TestCaseGeneration/UnitTestGeneration/ProjectInfoExtraction/saved_data/syntax_error_log.txt";
-//        if (hasSyntaxError(Paths.get(JavaFilePath), projectDir, syntaxErrorFile)) {
-//            reviseCode(javaFileName, Paths.get(JavaFilePath), syntaxErrorFile);
-//        }
-
-
-
-    }
 
 }
