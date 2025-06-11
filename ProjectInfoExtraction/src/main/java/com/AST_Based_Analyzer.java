@@ -25,7 +25,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 
 public class AST_Based_Analyzer {
 
-    // 辅助方法：尝试解析一个类型得到其 fully qualified name
+
     private static String resolveFQN(ClassOrInterfaceType type) {
         try {
             ResolvedType resolved = type.resolve();
@@ -45,7 +45,7 @@ public class AST_Based_Analyzer {
             String classFqn = cls.getFullyQualifiedName().orElse("UnknownClass");
             String classComment = cls.getComment().map(Comment::getContent).orElse("No Comment").trim();
 
-            // 判断是 Interface / Abstract Class / Class
+ 
             String type;
             if (cls.isInterface()) {
                 type = "Interface";
@@ -60,15 +60,15 @@ public class AST_Based_Analyzer {
                 modifiers = "default";
             }
 
-            // 针对类级别，抽取 extends 与 implements 信息
+
             String classExtends, implementsStr;
             if (cls.isInterface()) {
-                // 对于接口，接口可以扩展其他接口
+
                 classExtends = cls.getExtendedTypes().isEmpty() ? "" :
                         cls.getExtendedTypes().stream()
                                 .map(et -> resolveFQN(et))
                                 .reduce((a, b) -> a + ";" + b).orElse("");
-                implementsStr = ""; // 接口没有 implements 关键字
+                implementsStr = "";
             } else {
                 classExtends = cls.getExtendedTypes().isEmpty() ? "" :
                         cls.getExtendedTypes().stream()
@@ -90,11 +90,10 @@ public class AST_Based_Analyzer {
                     implementsStr
             });
 
-            // 递归抽取内部成员
+
             extractClassMembersRecursively(cls, classFqn, resultRows);
         });
 
-        // 处理顶层枚举
         extractTopLevelEnums(compilationUnit, resultRows);
     }
 
@@ -130,7 +129,7 @@ public class AST_Based_Analyzer {
     }
 
     private static void extractClassMembersRecursively(ClassOrInterfaceDeclaration cls, String currentClassFqn, List<String[]> resultRows) {
-        // 处理字段
+
         cls.getFields().forEach(field -> {
             field.getVariables().forEach(variable -> {
                 String fieldFqn = currentClassFqn + "." + variable.getNameAsString();
@@ -154,7 +153,7 @@ public class AST_Based_Analyzer {
             });
         });
 
-        // 处理方法
+
         cls.getMethods().forEach(method -> {
             String methodFqn = getFullyQualifiedName(method, currentClassFqn);
             String methodComment = method.getComment().map(Comment::getContent).orElse("No Comment").trim();
@@ -186,7 +185,7 @@ public class AST_Based_Analyzer {
             extractParameterInfo(method, methodFqn, resultRows);
         });
 
-        // 处理构造器
+
         cls.getConstructors().forEach(constructor -> {
             String constructorFqn = getFullyQualifiedNameForConstructor(constructor, currentClassFqn);
             String constructorComment = constructor.getComment().map(Comment::getContent).orElse("No Comment").trim();
@@ -210,7 +209,7 @@ public class AST_Based_Analyzer {
             extractParameterInfo(constructor, constructorFqn, resultRows);
         });
 
-        // 处理嵌套的类、接口、枚举（此处针对class level节点抽取extends/implements）
+
         cls.getMembers().stream()
                 .filter(member -> member instanceof ClassOrInterfaceDeclaration || member instanceof EnumDeclaration)
                 .forEach(member -> {
@@ -225,7 +224,7 @@ public class AST_Based_Analyzer {
                         nestedClassFqn = currentClassFqn + "$" + enumMember.getNameAsString();
                         nestedType = "Enum";
                         nestedClassComment = enumMember.getComment().map(Comment::getContent).orElse("No Comment").trim();
-                        // 枚举通常不显式继承其他类
+    
                         nestedExtends = "enum has no extends";
                         nestedImplements = enumMember.getImplementedTypes().isEmpty() ? "" :
                                 enumMember.getImplementedTypes().stream()
@@ -253,7 +252,7 @@ public class AST_Based_Analyzer {
                                             .reduce((a, b) -> a + ";" + b).orElse("");
                         }
                     } else {
-                        // 其他情况不处理
+
                         return;
                     }
 
@@ -268,7 +267,7 @@ public class AST_Based_Analyzer {
                             nestedImplements
                     });
 
-                    // 递归处理嵌套成员（仅对 ClassOrInterfaceDeclaration 递归）
+
                     if (member instanceof ClassOrInterfaceDeclaration) {
                         extractClassMembersRecursively((ClassOrInterfaceDeclaration) member, nestedClassFqn, resultRows);
                     } else if (member instanceof EnumDeclaration) {
@@ -283,7 +282,7 @@ public class AST_Based_Analyzer {
         if (modifiers.equals("")) {
             modifiers = "default";
         }
-        // 对于枚举，extends 固定提示，implements 根据实现接口获取
+
         String enumExtends = "enum has no extends";
         String enumImplements = enumDeclaration.getImplementedTypes().isEmpty() ? "" :
                 enumDeclaration.getImplementedTypes().stream()
@@ -301,7 +300,7 @@ public class AST_Based_Analyzer {
                 enumImplements
         });
 
-        // 处理枚举常量
+
         String finalModifiers = modifiers;
         enumDeclaration.getEntries().forEach(entry -> {
             String entryFqn = enumFqn + "." + entry.getNameAsString();
@@ -319,7 +318,7 @@ public class AST_Based_Analyzer {
             });
         });
 
-        // 处理枚举中方法
+
         String finalModifiers1 = modifiers;
         enumDeclaration.findAll(MethodDeclaration.class).forEach(method -> {
             String methodFqn = getFullyQualifiedName(method, enumFqn);
@@ -340,7 +339,7 @@ public class AST_Based_Analyzer {
             extractParameterInfo(method, methodFqn, resultRows);
         });
 
-        // 处理枚举构造器
+
         String finalModifiers2 = modifiers;
         enumDeclaration.findAll(ConstructorDeclaration.class).forEach(constructor -> {
             String constructorFqn = getFullyQualifiedNameForConstructor(constructor, enumFqn);
@@ -363,7 +362,7 @@ public class AST_Based_Analyzer {
     private static String convertGenericType(String rawType, MethodDeclaration method) {
         Map<String, String> genericTypeMap = new HashMap<>();
 
-        // 1. 从包含类提取泛型
+
         ClassOrInterfaceDeclaration containingClass = method.findAncestor(ClassOrInterfaceDeclaration.class).orElse(null);
         if (containingClass != null) {
             containingClass.getTypeParameters().forEach(typeParameter -> {
@@ -373,7 +372,7 @@ public class AST_Based_Analyzer {
             });
         }
 
-        // 2. 从方法中提取泛型
+
         method.getTypeParameters().forEach(typeParameter -> {
             String genericName = typeParameter.getNameAsString();
             String boundType = typeParameter.getTypeBound().isEmpty() ? "Object" : typeParameter.getTypeBound().get(0).toString();
@@ -392,7 +391,7 @@ public class AST_Based_Analyzer {
     private static String getFullyQualifiedName(MethodDeclaration method, String currentClassFqn) {
         Map<String, String> genericTypeMap = new HashMap<>();
 
-        // 1. 从包含类提取泛型
+
         ClassOrInterfaceDeclaration containingClass = method.findAncestor(ClassOrInterfaceDeclaration.class).orElse(null);
         if (containingClass != null) {
             containingClass.getTypeParameters().forEach(typeParameter -> {
@@ -402,7 +401,7 @@ public class AST_Based_Analyzer {
             });
         }
 
-        // 2. 从方法中提取泛型
+
         method.getTypeParameters().forEach(typeParameter -> {
             String genericName = typeParameter.getNameAsString();
             String boundType = typeParameter.getTypeBound().isEmpty() ? "Object" : typeParameter.getTypeBound().get(0).toString();
@@ -443,7 +442,7 @@ public class AST_Based_Analyzer {
     private static String getFullyQualifiedNameForConstructor(ConstructorDeclaration constructor, String currentClassFqn) {
         Map<String, String> genericTypeMap = new HashMap<>();
 
-        // 1. 从包含类提取泛型
+
         ClassOrInterfaceDeclaration containingClass = constructor.findAncestor(ClassOrInterfaceDeclaration.class).orElse(null);
         if (containingClass != null) {
             containingClass.getTypeParameters().forEach(typeParameter -> {
@@ -453,7 +452,7 @@ public class AST_Based_Analyzer {
             });
         }
 
-        // 2. 从构造器中提取泛型
+
         constructor.getTypeParameters().forEach(typeParameter -> {
             String genericName = typeParameter.getNameAsString();
             String boundType = typeParameter.getTypeBound().isEmpty() ? "Object" : typeParameter.getTypeBound().get(0).toString();
@@ -483,7 +482,7 @@ public class AST_Based_Analyzer {
     }
 
     public static void handle_all_java_files_in_a_directory(String projectDir, String outputCsv, String errorLogPath) throws IOException {
-        // 更新表头，增加 extends 与 implements 两列
+
         List<String[]> resultRows = new ArrayList<>();
         resultRows.add(new String[]{"FEN", "Type", "Comment", "Source Code", "Return Type", "Modifier", "class_extends", "implements"});
 
@@ -509,12 +508,12 @@ public class AST_Based_Analyzer {
 
     private static void handle_a_java_file(String projectDir, String filePath, List<String[]> resultRows, List<String> errorFiles) {
         try {
-            // 从filePath中找到src目录，然后把src目录作为源码目录
 
 
-            // 配置符号求解器：把 JDK 和项目源码的类型都添加进去
+
+
             CombinedTypeSolver typeSolver = new CombinedTypeSolver();
-            typeSolver.add(new ReflectionTypeSolver()); // JDK 类
+            typeSolver.add(new ReflectionTypeSolver());
 
             List<String> jarPaths = Files.readAllLines(Paths.get(projectDir.split("/src/main/java")[0] + "/jar_dependencies.txt"));
             for (String jarPath : jarPaths) {
@@ -529,9 +528,8 @@ public class AST_Based_Analyzer {
                 }
             }
 
-//            typeSolver.add(new JarTypeSolver(new File("/Users/dianshuliao/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0-SNAPSHOT/jackson-core-2.19.0-20250301.215542-43.jar")));
-//            typeSolver.add(new JarTypeSolver(new File("/Users/dianshuliao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0-SNAPSHOT/jackson-databind-2.19.0-20250314.000111-190.jar")));
-            typeSolver.add(new JavaParserTypeSolver(new File(projectDir.split("/src/main/java")[0] + "/src/main/java"))); // 指定源码目录，根据你的项目结构调整
+
+            typeSolver.add(new JavaParserTypeSolver(new File(projectDir.split("/src/main/java")[0] + "/src/main/java")));
 
             JavaSymbolSolver symbolSolver = new JavaSymbolSolver(typeSolver);
             ParserConfiguration config = new ParserConfiguration().setSymbolResolver(symbolSolver);
