@@ -4,7 +4,7 @@ import java.io.File;
 public class Config {
     public static final String CURRENT_DIR = System.getProperty("user.dir");
 
-    // 上一级目录（也就是你想要的 Basic_Dir）
+
     public static final String BASE_DIR = new File(CURRENT_DIR).getParent();
 
     public static String Experiment_Result_Basic_Dir = BASE_DIR + "/experiment_results/Code_Knowledge_Base";
