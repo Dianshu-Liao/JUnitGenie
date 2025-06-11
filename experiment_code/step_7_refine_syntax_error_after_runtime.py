@@ -133,7 +133,7 @@ def get_test_code_after_refinement(RQ1_our_approach_after_runtime_error_fixed_pa
     batch_size = 200
     current_num = 0
     futures = []
-    api_key_list = Config.api_key_list  # 假设 Config.api_key_list 包含多个可用的 OpenAI API Keys
+    api_key_list = Config.api_key_list
 
     for index, row in tqdm.tqdm(our_approach_result.iterrows(), total=our_approach_result.shape[0]):
 
@@ -147,8 +147,8 @@ def get_test_code_after_refinement(RQ1_our_approach_after_runtime_error_fixed_pa
             if row['syntax_refinement_prompt'] == 'no syntax error thus no refinement needed':
                 continue  # Skip unnecessary processing
 
-            api_key = api_key_list[index % len(api_key_list)]  # 轮换 API Key
-            futures.append(executor.submit(process_refinement_row, index, row, api_key))  # 提交任务
+            api_key = api_key_list[index % len(api_key_list)]
+            futures.append(executor.submit(process_refinement_row, index, row, api_key))
 
         for future in tqdm.tqdm(as_completed(futures), total=len(futures)):
             index, test_code_after_syntax_refinement, test_code_after_syntax_refinement_after_formatting = future.result()
