@@ -41,7 +41,7 @@ def extract_paths(cfg):
         if len(paths) > 100:
             return
 
-        if node not in cfg or not cfg[node]:  # 如果没有后继节点，则视为出口点
+        if node not in cfg or not cfg[node]: 
             paths.append(path[:])
             return
 
@@ -51,9 +51,9 @@ def extract_paths(cfg):
 
 
             if next_node in loop_entries:
-                continue  # 跳过已在循环中的节点
+                continue 
 
-            # 如果进入循环，则仅允许遍历一次
+
             if (edge_label == "cfg_goto" and next_node in path) or (edge_label == "cfg_except" and next_node in path):
                 loop_entries.add(next_node)
                 path.append(next_node)
@@ -88,7 +88,7 @@ def find_edge_label_from_dot(dot_input, from_node, to_node):
     return edge_label
 
 def obtain_cfg_path_info(path, cfg_dot_input):
-    printed_nodes = set()  # 用于记录已经打印的节点
+    printed_nodes = set()  
 
     cfg_path_info = 'CFG Nodes:\n'
     for node in path:
@@ -137,12 +137,11 @@ def obtain_all_cfg_paths(csv_file_path, saved_csv_file_path, error_file_path):
             cfg_from_dot = parse_dot_to_cfg(cfg_dot_input)
         except:
             with open(error_file_path, 'a') as f:
-                f.write(f'Error when parsing CFG for {FEN}\n')  # 记录错误信息
+                f.write(f'Error when parsing CFG for {FEN}\n') 
             continue
 
 
         # try:
-        #     # 使用 ProcessPoolExecutor 对 extract_paths 进行超时控制
         #     with concurrent.futures.ProcessPoolExecutor(max_workers=1) as executor:
         #         future = executor.submit(extract_paths, cfg_from_dot)
         #         all_paths = future.result(timeout=60)
@@ -189,7 +188,7 @@ def obtain_all_cfg_paths(csv_file_path, saved_csv_file_path, error_file_path):
 
 
 
-    # 我想得到一个分布, 1-5, 6-10, 10-20, 20-100, 100-1000, 1000以上，分别有多少，占比多少
+
     # 1-5
     num_1_5 = 0
     num_6_10 = 0
@@ -221,7 +220,7 @@ def obtain_all_cfg_paths(csv_file_path, saved_csv_file_path, error_file_path):
     print("There are {} methods with CFG Paths in the range {}, representing a proportion of {} of all methods.".format(num_100_1000, '100-1000', num_100_1000/total_num))
     print("There are {} methods with CFG Paths in the range {}, representing a proportion of {} of all methods.".format(num_1000, '1000+', num_1000/total_num))
     print('\n')
-    #计算1-100的总和和占比
+
     num_1_100 = num_1_5 + num_6_10 + num_10_20 + num_20_100
     print("There are {} methods with CFG Paths in the range {}, representing a proportion of {} of all methods.".format(num_1_100, '1-100', num_1_100/total_num))
 
