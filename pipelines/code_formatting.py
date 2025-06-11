@@ -9,7 +9,7 @@ import shutil
 #     matches = re.findall(pattern, test_code, re.DOTALL)
 #
 #     try:
-#         # 得到第倒数第一个```java```块
+
 #         test_code = matches[-1]
 #     except:
 #         a = 1
@@ -53,9 +53,9 @@ def extract_class_body(code):
 
 
 def get_runnable_code_from_test_code(test_code, package_name, class_name):
-    # 先删除 import 语句末尾的行内注释（// 开头的注释内容）
+
     test_code = re.sub(r'^(import\s+.*?;)\s*//.*$', r'\1', test_code, flags=re.MULTILINE)
-    # 如果需要，也可以删除整个 block 注释（例如 /* ... */）：
+
     test_code = re.sub(r'/\*.*?\*/', '', test_code, flags=re.DOTALL)
 
 
@@ -74,14 +74,14 @@ def get_runnable_code_from_test_code(test_code, package_name, class_name):
 
     class_code = extract_class_body(test_code)
 
-    # 获取 class 声明头部（包括 extends/implements）
+
     class_decl_pattern = r'(public\s+)?class\s+\w+[^\\{]*\{'
     class_decl_match = re.search(class_decl_pattern, test_code)
 
     if class_decl_match:
         class_decl_line = class_decl_match.group().strip('{').strip()
 
-        # 替换类名
+
         original_name_match = re.search(r'class\s+(\w+)', class_decl_line)
         if original_name_match:
             original_class_name = original_name_match.group(1)
@@ -125,9 +125,9 @@ def delete_all_contents(folder_path):
     if os.path.exists(folder_path):
         for item in os.listdir(folder_path):
             item_path = os.path.join(folder_path, item)
-            if os.path.isfile(item_path) or os.path.islink(item_path):  # 删除文件或符号链接
+            if os.path.isfile(item_path) or os.path.islink(item_path): 
                 os.remove(item_path)
-            elif os.path.isdir(item_path):  # 删除子文件夹
+            elif os.path.isdir(item_path):  
                 shutil.rmtree(item_path)
     else:
         print(f"Folder {folder_path} does not exist.")
