@@ -183,9 +183,12 @@ generate_unit_tests_for_a_method(...)
 - Run `evaluation_metrics_calculation/RQ2.py` to calculate coverage metrics for RQ2.  
 - Run `evaluation_metrics_calculation/RQ3.py` to calculate coverage metrics for RQ3.  
 
-⚠️ Please note: Minor fluctuations (up to ±1%) in the coverage results may occur due to factors such as non-determinism in test execution, JVM differences, or slight model generation variations.
+## 📑 Appendix
 
-
-
-
-
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Appendix_Table%201_Time_Budget_60s.png)
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Appendix_Table%201_Time_Budget_300s.png}
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Appendix_Table_Time_600s.png)
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Appendix_Table_Time_1200s.png)
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Appendix_Table_Time_all_time.png)
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Reflection_Configurations.png)
+![image](https://github.com/Dianshu-Liao/JUnitGenie/blob/main/Appendix/Valid_Tests_Across_Different_Foundation_Models.png)
